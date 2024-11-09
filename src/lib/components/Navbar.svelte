@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { Notebook, House, Star } from 'lucide-svelte';
-	import gsap from 'gsap';
 	import { navBarEnter } from '$lib/anims/landingAnims';
 	import { onMount } from 'svelte';
 	let navbar: HTMLElement;
@@ -17,16 +16,16 @@
 		</div>
 		<div class="navbar-center flex flex-row gap-3">
 			<a
-				class="btn btn-ghost rounded-none font-bebas text-2xl hover:border-b-2 hover:border-b-black"
+				class="btn btn-ghost rounded-none font-bebas text-2xl hover:border-b-2 hover:border-b-accent"
 				href="/"><House size="22" />Home</a
 			>
 			<a
-				class="btn btn-ghost rounded-none font-bebas text-2xl hover:border-b-2 hover:border-b-black"
+				class="btn btn-ghost rounded-none font-bebas text-2xl hover:border-b-2 hover:border-b-accent"
 				href="/"><Notebook size="22" />Blog</a
 			>
 			<a
-				class="btn btn-ghost rounded-none font-bebas text-2xl hover:border-b-2 hover:border-b-black"
-				href="/team"><Star size="22" />Team</a
+				class="btn btn-ghost rounded-none font-bebas text-2xl hover:border-b-2 hover:border-b-accent"
+				href="/team"><Star size="22"/>Team</a
 			>
 		</div>
 		<div class="navbar-end">

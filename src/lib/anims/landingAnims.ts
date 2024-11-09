@@ -69,3 +69,11 @@ export const navBarEnter = (navbar: HTMLElement) => {
 		ease: 'power2.inOut'
 	});
 };
+
+export const sec1MarqueeEnter = (sec1Marquee: HTMLDivElement) => {
+	return gsap.from(sec1Marquee, {
+		yPercent: 100,
+		duration: 1.5,
+		ease: 'power2.inOut'
+	});
+};
