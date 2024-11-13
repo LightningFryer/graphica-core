@@ -1,76 +1,47 @@
 <script lang="ts">
 	import Navbar from '$lib/components/Navbar.svelte';
-	import { onMount } from 'svelte';
-	import { gts1, gts2, gts2Bob, gts3, sec1Bob, sec1MarqueeEnter } from '$lib/anims/landingAnims';
-	export let p1: HTMLElement, p2: HTMLElement, p3: HTMLElement, sec1: SVGElement, sec1Marquee: HTMLDivElement;
+	import Landing from "$lib/components/Landing.svelte"
+
 	import gsap from 'gsap';
-	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-	import Marquee from 'svelte-fast-marquee';
+	import { onMount } from 'svelte';
+	import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 
 	onMount(() => {
 		gsap.registerPlugin(ScrollTrigger);
-		gsap.from('.this', {
+
+		gsap.from(".card", {
 			scrollTrigger: {
-				trigger: '.this',
+				trigger: ".card",
 				// markers: true,
-				start: "top 80%",
-				end: "center 50%",
-				scrub: 0.8,
-				
+				start: "top center",
+				end: "center 65%", 
+				scrub: 1.5,
 			},
-			// duration: 2,
+			xPercent: 150,
 			opacity: 0,
-			scale: '4'
-		});
-		gts1(p1);
-		gts2(p2).then(() => {
-			gts2Bob(p2);
-			sec1Bob(sec1);
-		});
-		gts3(p3);
-		sec1MarqueeEnter(sec1Marquee);
-	});
+			// scale: 0,
+			// duration: 2,
+		})
+	})
+
 </script>
 
 <main class="flex flex-col overflow-x-hidden">	
 	<Navbar />
-
-	<section class="sec1 flex h-screen flex-col items-center justify-between">
-		
-		<div class="h-20">
-			<!-- Empty div to justify between -->
-		</div>
-		
-		
-
-		<div class="flex flex-col">
-			<p class="flex justify-start font-pixelify text-5xl text-accent" bind:this={p1}>Welcome to</p>
-			<h1
-				class="mt-4 flex h-[19rem] w-full items-center justify-center font-bebas text-[22rem] font-bold"
-				bind:this={p2}
-			>
-				Graphica
-			</h1>
-			<p class="p3 flex justify-end font-pixelify text-5xl text-accent" bind:this={p3}>
-				The graphic designing club!
-			</p>
-		</div>
-
-		<div class="flex w-full p-6" bind:this={sec1Marquee}>
-			<Marquee gradient={true} class="border-t-4 border-b-4 border-accent p-2" gap="20%" style="--gradientColor: #18140e">
-				<p class="font-pixelify text-nowrap text-xl font-bold">Graphic Design</p>
-				<p class="font-pixelify text-nowrap text-xl font-bold">UI/UX</p>
-				<p class="font-pixelify text-nowrap text-xl font-bold">Figma</p>
-				<p class="font-pixelify text-nowrap text-xl font-bold">Web Development</p>
-			</Marquee>
-		</div>
-	</section>
+	<Landing />
 	
 
-	<section class="flex h-screen flex-col items-center justify-center border-4 border-black">
-		<h1 class="this font-galada text-8xl">
-			Welcome to <p class="inline font-bebas font-bold underline">GRAPHICA</p>
-		</h1>
+	<section class="sec2 flex h-screen flex-row items-center justify-evenly">
+		<div class="h-[80%] w-[40%] border-4">
+
+		</div>
+		
+		<div class="card bg-secondary bg-opacity-5 backdrop-blur-sm flex flex-col h-[85%] w-[40%] p-5 gap-6">
+			<h1 class="text-7xl font-bold font-bebas tracking-wider">Greetings!</h1>
+			<p class="font-nunito">We are Graphica! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae voluptatum facere placeat quod quam soluta asperiores ea magni consequuntur quibusdam libero deserunt laborum nobis ipsum dolorem, officia blanditiis quisquam ut. Expedita impedit obcaecati dolorem consequuntur. Dolores pariatur, at quae amet et, aut nam architecto hic cum ab voluptas! Ipsa, laboriosam. Impedit neque illo, quasi quibusdam sapiente esse perspiciatis laboriosam quo dignissimos veritatis eum nemo, nobis adipisci ut? Vel, saepe libero accusantium sed molestias exercitationem numquam nostrum enim quod fugit mollitia eligendi quisquam illum recusandae consectetur blanditiis. Amet laboriosam nisi mollitia sunt veniam. Sint distinctio iure eligendi ratione ad impedit aliquid.</p>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis possimus dolor molestias quod consequatur doloribus adipisci labore atque placeat quisquam perferendis nulla ea, dignissimos praesentium nihil eum ratione dolorem nam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quaerat reiciendis, reprehenderit, officia aliquid veritatis dolorum possimus quia deleniti dolor, laudantium et. Quis, tempora est. Sapiente exercitationem consequuntur magnam nesciunt?</p>
+		</div>
 	</section>
 
 	<section class="flex h-screen flex-col items-center justify-center">
@@ -81,32 +52,22 @@
 </main>
 
 <style>
-	.sec1 {
-		/* background-image: url("$lib/images/dotgrid2.png"); */
+	.sec2 {
+		background-image: url("$lib/images/DotGrid.png");
 		background-size: auto;
-		background-repeat: no-repeat;
-		animation: moveBg 45s linear infinite;
+		background-repeat: repeat;
+		animation: moveBg 40s linear infinite;
 	}
 
 	@keyframes moveBg{
-		0% {
-			background-position: 0% 0%;
+		from{
+			background-position-y: 0%;
+			background-position-x: 0%;
 		}
 
-		25% {
-			background-position: 25% 25%;
-		}
-
-		50% {
-			background-position: 50% 50%;
-		}
-
-		75% {
-			background-position: 75% 75%;
-		}
-
-		100% {
-			background-position: 100% 100%;
+		to{
+			background-position-y: 100%;
+			background-position-x: -100%;
 		}
 	}
 </style>

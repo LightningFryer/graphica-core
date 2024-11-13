@@ -38,7 +38,7 @@ export const gts1 = (p1: HTMLElement) => {
 	return gsap.from(p1, {
 		xPercent: -200,
 		// opacity: 25,
-		duration: 1.5,
+		duration: 2,
 		ease: 'power1.Out'
 	});
 };
@@ -46,10 +46,10 @@ export const gts1 = (p1: HTMLElement) => {
 export const gts2 = (p2: HTMLElement) => {
 	return gsap.from(p2, {
 		opacity: 0,
-		// yPercent: 100,
+		yPercent: 100,
 		duration: 1,
-		scale: 0,
-		ease: 'power1.Out'
+		// scale: 0,
+		ease: 'power1.inOut'
 	});
 };
 
@@ -57,7 +57,7 @@ export const gts3 = (p3: HTMLElement) => {
 	return gsap.from(p3, {
 		xPercent: 200,
 		// opacity: 0,
-		duration: 1.5,
+		duration: 2,
 		ease: 'power1.Out'
 	});
 };
@@ -74,6 +74,7 @@ export const sec1MarqueeEnter = (sec1Marquee: HTMLDivElement) => {
 	return gsap.from(sec1Marquee, {
 		yPercent: 100,
 		duration: 1.5,
-		ease: 'power2.inOut'
+		ease: 'power2.inOut',
+		opacity: 0,
 	});
 };
