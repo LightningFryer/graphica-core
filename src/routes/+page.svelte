@@ -26,7 +26,7 @@
 
 </script>
 
-<main class="flex flex-col overflow-x-hidden">	
+<main class="flex flex-col overflow-x-hidden" id="smooth-wrapper">	
 	<Navbar />
 	<Landing />
 	

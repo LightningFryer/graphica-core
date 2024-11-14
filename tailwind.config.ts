@@ -9,7 +9,9 @@ export default {
 				galada: ['Galada', 'sans-serif'],
 				bebas: ['Bebas Neue', 'sans-serif'],
 				nunito: ['Nunito', 'sans-serif'],
-				pixelify: ['Pixelify Sans', 'sans-serif']
+				pixelify: ['Pixelify Sans', 'sans-serif'],
+				poppins: ["Poppins", "sans-serif"],
+				inter: ["Inter", "sans-serif"],
 			}
 		}
 	},
