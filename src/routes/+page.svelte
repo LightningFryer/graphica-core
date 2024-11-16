@@ -5,6 +5,7 @@
 	import gsap from 'gsap';
 	import { onMount } from 'svelte';
 	import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+	import { pb } from '$lib/pocketbase';
 
 	onMount(() => {
 		gsap.registerPlugin(ScrollTrigger);
@@ -49,6 +50,20 @@
 			Welcome to <p class="inline font-bebas font-bold underline">GRAPHICA</p>
 		</h1>
 	</section>
+
+	<footer class="footer bg-accent dary p-10 ">
+		<nav>
+			<button class="btn btn-primary" onclick={async () =>{
+				const authData = await pb.collection('users').authWithOAuth2({ provider: 'google'});
+				location.reload();
+			}}>Login {pb.authStore.isValid ? "(Already logged in)" : ""}</button>
+			
+			<button class="btn btn-primary" onclick={async () => {
+				pb.authStore.clear();
+				location.reload();
+			}}>Logout</button>
+		</nav>
+	</footer>
 </main>
 
 <style>

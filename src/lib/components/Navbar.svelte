@@ -2,6 +2,7 @@
 	import { Notebook, House, Star } from 'lucide-svelte';
 	import { navBarEnter } from '$lib/anims/landingAnims';
 	import { onMount } from 'svelte';
+	import { pb } from '$lib/pocketbase';
 	let navbar: HTMLElement;
 
 	onMount(() => {
@@ -29,7 +30,11 @@
 			>
 		</div>
 		<div class="navbar-end">
+			{#if !pb.authStore.isValid}
             <p class="text-xl font-inter tracking-wide font-light">ESTD. 2021</p>
+			{:else}
+			<p class="text-xl font-inter tracking-wide font-light">Welcome {pb.authStore.model?.username}</p>
+			{/if}
         </div>
 	</div>
 </nav>
