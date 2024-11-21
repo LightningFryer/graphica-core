@@ -1,6 +1,6 @@
 <script lang="ts">
     import { onMount } from 'svelte';
-	import { gts1, gts2, gts2Bob, gts3, sec1Bob, sec1MarqueeEnter } from '../anims/landingAnims';
+	import { gts1, gts2, gts2Bob, gts3, sec1Bob, sec1MarqueeEnter } from '../../anims/landingAnims';
 	let p1: HTMLElement, p2: HTMLElement, p3: HTMLElement, sec1: SVGElement, sec1Marquee: HTMLDivElement;
 	import gsap from 'gsap';
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
