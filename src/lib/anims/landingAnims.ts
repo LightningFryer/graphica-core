@@ -1,4 +1,5 @@
 import { gsap } from 'gsap';
+import SplitType from 'split-type';
 
 export const gts2Bob = (p2: HTMLElement) => {
 	return gsap.fromTo(p2,
@@ -44,12 +45,14 @@ export const gts1 = (p1: HTMLElement) => {
 };
 
 export const gts2 = (p2: HTMLElement) => {
-	return gsap.from(p2, {
+	const gts2Chars = SplitType.create(p2);
+	return gsap.from(gts2Chars.chars, {
 		opacity: 0,
-		yPercent: 100,
-		duration: 1,
+		yPercent: 20,
+		duration: 2,
+		stagger: 0.1,
 		// scale: 0,
-		ease: 'power1.inOut'
+		ease: 'elastic.out'
 	});
 };
 

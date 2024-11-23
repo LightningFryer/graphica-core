@@ -32,6 +32,7 @@
 		"@vercel/flags": "^2.6.3",
 		"graphica-core": "file:",
 		"gsap": "^3.12.5",
+		"split-type": "^0.3.4",
 		"svelte-fast-marquee": "^0.8.0"
 	}
 }
