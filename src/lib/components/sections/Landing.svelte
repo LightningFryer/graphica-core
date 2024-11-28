@@ -8,19 +8,6 @@
 
 	onMount(() => {
 		gsap.registerPlugin(ScrollTrigger);
-		gsap.from('.this', {
-			scrollTrigger: {
-				trigger: '.this',
-				// markers: true,
-				start: "top 80%",
-				end: "center 50%",
-				scrub: 0.8,
-				
-			},
-			// duration: 2,
-			opacity: 0,
-			scale: '4'
-		});
 		gts1(p1);
 		gts2(p2).then(() => {
 			gts2Bob(p2);
@@ -70,14 +57,21 @@
 	}
 
 	@keyframes moveBg{
-		from{
-			background-position-y: 0%;
-			background-position-x: 0%;
+		0%{
+			background-position: 0% 0%;
 		}
 
-		to{
-			background-position-y: 100%;
-			background-position-x: -100%;
+		50%{
+			background-position: -50% 50%;
+		}
+
+		99%{
+			background-position: -100% 100%;
+
+		}
+
+		100%{
+			background-position: 0% 0%;
 		}
 	}
 </style>
