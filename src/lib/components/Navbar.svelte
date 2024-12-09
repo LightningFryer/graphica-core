@@ -21,7 +21,7 @@
 			>
 			<a
 				class="btn btn-ghost rounded-none font-inter font-light tracking-wide text-xl hover:border-b-2 hover:border-b-accent"
-				href="/"><Notebook size="22" />Blog</a
+				href="/blog"><Notebook size="22" />Blog</a
 			>
 			<a
 				class="btn btn-ghost rounded-none font-inter font-light tracking-wide text-xl hover:border-b-2 hover:border-b-accent"

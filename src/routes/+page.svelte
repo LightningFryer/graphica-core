@@ -1,125 +1,100 @@
 <script lang="ts">
 	import Navbar from '$lib/components/Navbar.svelte';
-	import Landing from "$lib/components/sections/Landing.svelte"
+	import Landing from "$lib/components/sections/Landing.svelte";
 	import ClubIntro from '$lib/components/sections/ClubIntro.svelte';
-	import { fade } from 'svelte/transition';
+	import DepartmentsTemp from '$lib/components/sections/DepartmentsTemp.svelte';
+
 	import gsap from 'gsap';
 	import { onMount } from 'svelte';
-	// import TextPlugin from 'gsap/dist/TextPlugin';
+	import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 
-	let dep1 = false;
-	let dep2 = false;
-	let dep3 = false;
-	let dep4 = false;
-	let showText = false;
-	let text = "Graphic Design";
+	onMount(() => {
+		gsap.registerPlugin(ScrollTrigger);
 
-	const changeText = () => {
-		if (showText){
-			gsap.to(".this", {
-				opacity: 1,
-				duration: 0.5,
-			});
-		}	
-	}
+		let resourceCards = gsap.utils.toArray(".resource-card");
+
+		gsap.from(".resources-text", {
+			duration: 1,
+			opacity: 0,
+			xPercent: -100,
+			ease: "power2.out",
+
+			scrollTrigger: {
+				trigger: ".resources-sec",
+				start: "top center",
+			}
+		})
+
+		gsap.from(resourceCards, {
+			duration: 0.6, 
+			stagger: 0.2,
+			opacity: 0,
+			yPercent: 50,
+			ease: "power2.out",
+
+			scrollTrigger: {
+				trigger: ".resources-sec",
+				start: "top center",
+				// markers: true,
+			}
+		})
 
 
+	})
+	
 </script>
 
-<main class="flex flex-col overflow-x-hidden bg-base-100" id="smooth-wrapper">	
+<main class="flex flex-col overflow-hidden bg-base-100">	
 	<Navbar />
 	<Landing />
 	<ClubIntro />
+	<DepartmentsTemp />
 	
-	
-	<section class="flex h-screen flex-row items-center justify-evenly">
-		<!-- svelte-ignore a11y_click_events_have_key_events -->
-		<!-- svelte-ignore a11y_no_static_element_interactions -->
-		<div class={`border-2 flex flex-col grow h-full duration-1000 cursor-pointer`} 
-		style="width: {dep1 ? '50%' : '10%'}"
-		onmouseenter={() => {
-			dep1 = true;
-			dep2 = false;
-			dep3 = false;
-			dep4 = false;
-		}}>
-			<div class="border-2 h-[80%]">
-				{#if dep1}
-				<div in:fade={{duration: 1000}} onintroend={() => {
-					showText = true
-					changeText();
-					}}>
-					<p class={`this text-xl text-wrap`}>{text}</p>
+	<section class="resources-sec h-screen flex flex-col  justify-center items-center">
+		<div class=" h-[90%] w-[85%]">
+			<h1 class="resources-text font-bebas text-7xl">Resources</h1>
+			<div class="flex flex-row m-8 h-[80%] justify-evenly">
+				<div class="resource-card bg-accent rounded-lg p-8 text-center">
+					<p class="font-bebas text-3xl underline">Graphic Design</p>
 				</div>
-				{:else}
-				<div in:fade={{duration: 1000}} onintrostart={() => showText = false}>
-					<p>Graphic Design</p>
+
+				<div class="resource-card bg-accent rounded-lg p-8 text-center">
+					<p class="font-bebas text-3xl underline">UI/UX</p>
 				</div>
-				{/if}
-			</div>
 
-			<div class="bg-black flex flex-col h-[20%] text-8xl w-full text-end">
-				1
-			</div>
-		</div>
-
-		<!-- svelte-ignore a11y_click_events_have_key_events -->
-		<!-- svelte-ignore a11y_no_static_element_interactions -->
-		<div class={`border-2 grow h-full transition-[width] duration-1000 cursor-pointer`} 
-		style="width: {dep2 ? '50%' : '10%'}"
-		onmouseenter={() => {
-			dep1 = false;
-			dep2 = true;
-			dep3 = false;
-			dep4 = false;
-		}}>
-			<div class="border-2 h-[80%]">
-
-			</div>
-
-			<div class="bg-black flex flex-col h-[20%] text-8xl w-full text-end ">
-				2
+				<div class="resource-card bg-accent rounded-lg p-8 text-center">
+					<p class="font-bebas text-3xl underline">Web Development</p>
+				</div>
 			</div>
 		</div>
-
-		<!-- svelte-ignore a11y_click_events_have_key_events -->
-		<!-- svelte-ignore a11y_no_static_element_interactions -->
-		<div class={`border-2 grow h-full transition-[width] duration-1000 cursor-pointer`}
-		style="width: {dep3 ? '50%' : '10%'}"
-		onmouseenter={() => {
-			dep1 = false;
-			dep2 = false;
-			dep3 = true;
-			dep4 = false;
-		}}>
-			<div class="border-2 h-[80%]">
-
-			</div>
-
-			<div class="bg-black flex flex-col h-[20%] text-8xl w-full text-end">
-				3
-			</div>
-		</div>
-
-		<!-- svelte-ignore a11y_click_events_have_key_events -->
-		<!-- svelte-ignore a11y_no_static_element_interactions -->
-		<div class={`border-2 grow h-full transition-[width] duration-1000 cursor-pointer`} 
-		style="width: {dep4 ? '50%' : '10%'}"
-		onmouseenter={() => {
-			dep1 = false;
-			dep2 = false;
-			dep3 = false;
-			dep4 = true;
-		}}>
-			<div class="border-2 h-[80%]">
-
-			</div>
-
-			<div class="bg-black flex flex-col h-[20%] text-8xl w-full text-end ">
-				4
-			</div>
-		</div>
-		
-		
 	</section>
 </main>
+
+
+<style>
+	.resources-sec {
+		background-image: url("$lib/images/DotGrid.png");
+		background-size: auto;
+		background-repeat: repeat;
+		animation: moveBg 40s linear infinite;
+	}
+
+	@keyframes moveBg{
+		0%{
+			background-position: 0% 0%;
+		}
+
+		50%{
+			background-position: -50% 50%;
+		}
+
+		99%{
+			background-position: -100% 100%;
+
+		}
+
+		100%{
+			background-position: 0% 0%;
+		}
+	}
+</style>

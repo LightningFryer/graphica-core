@@ -6,25 +6,39 @@
 	onMount(() => {
 		gsap.registerPlugin(ScrollTrigger);
 
+		gsap.from(".club-image", {
+			scrollTrigger: {
+				trigger: ".card",
+				// markers: true,
+				start: "top center",
+				// end: "center 65%", 
+				// scrub: 1.5
+			},
+			duration: 1,
+			xPercent: -100,
+			opacity: 0,
+			ease: "power2.inOut"
+		})
+
 		gsap.from(".card", {
 			scrollTrigger: {
 				trigger: ".card",
 				// markers: true,
 				start: "top center",
-				end: "center 65%", 
-				scrub: 1.5
+				// end: "center 65%", 
+				// scrub: 1.5
 			},
-			xPercent: 150,
+			duration: 1,
+			xPercent: 100,
 			opacity: 0,
-			// scale: 0,
-			// duration: 1.1,
+			ease: "power2.inOut"
 		})
 	})
 </script>
 
 <main>
     <section class="sec2 flex h-screen flex-row items-center justify-evenly">
-		<div class="h-[80%] w-[40%] border-4">
+		<div class="club-image h-[80%] w-[40%] border-4">
 
 		</div>
 		
