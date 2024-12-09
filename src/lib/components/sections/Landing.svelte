@@ -54,6 +54,7 @@
 		background-size: auto;
 		background-repeat: repeat;
 		animation: moveBg 40s linear infinite;
+		width: 100%;
 	}
 
 	@keyframes moveBg{
