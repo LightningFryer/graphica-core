@@ -4,15 +4,20 @@
 	import { onMount } from 'svelte';
 	let navbar: HTMLElement;
 
+	import graphicaLogo from "$lib/images/logo/Logo_Alpha.png";
+	import { goto } from '$app/navigation';
+
 	onMount(() => {
 		navBarEnter(navbar);
 	});
 </script>
 
-<nav class="absolute z-10 w-full p-2" bind:this={navbar}>
+<nav class="absolute z-10 w-screen p-2" bind:this={navbar}>
 	<div class="navbar bg-transparent">
 		<div class="navbar-start">
-			<button class="btn btn-primary font-inter text-xl">*Logo*</button>
+			<button class="btn btn-primary bg-opacity-70 flex flex-col justify-center items-center font-inter text-xl" onclick={() => {goto("/")}}>
+				<img src={graphicaLogo} alt="graphica_alpha_logo" class="h-12 w-12"/>
+			</button>
 		</div>
 		<div class="navbar-center flex flex-row gap-3">
 			<a
