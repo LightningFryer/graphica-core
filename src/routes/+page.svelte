@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>Graphica | Home</title>
+</svelte:head>
+
 <script lang="ts">
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Landing from "$lib/components/sections/Landing.svelte";

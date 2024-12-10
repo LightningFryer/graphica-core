@@ -1,7 +1,9 @@
+<svelte:head>
+	<title>Graphica | Team</title>
+</svelte:head>
+
 <script lang="ts">
 	import Navbar from "$lib/components/Navbar.svelte";
-
-    
 </script>
 
 <main class="flex flex-col overflow-hidden">
