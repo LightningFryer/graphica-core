@@ -57,28 +57,20 @@ import gsap from 'gsap';
 
 <style>
 	.resources-sec {
-		background-image: url("$lib/images/DotGrid.png");
-		background-size: auto;
-		background-repeat: repeat;
-		animation: moveBg 40s linear infinite;
+		position: relative;
+		width: 100%;
+		height: 100vh; /* Full viewport height */
+		background: radial-gradient(circle, #c39f61 1px, transparent 1px);
+		background-size: 20px 20px; /* Spacing between dots */
+		animation: moveDots 3s linear infinite;
 	}
 
-	@keyframes moveBg{
-		0%{
-			background-position: 0% 0%;
+	@keyframes moveDots {
+		0% {
+		background-position: 0 0;
 		}
-
-		50%{
-			background-position: -50% 50%;
-		}
-
-		99%{
-			background-position: -100% 100%;
-
-		}
-
-		100%{
-			background-position: 0% 0%;
+		100% {
+		background-position: 20px -20px;
 		}
 	}
 </style>

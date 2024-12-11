@@ -22,8 +22,8 @@
             yPercent: 50,
             scrollTrigger: {
                 trigger: ".departmentSec",
-                start: "top center",
-            }
+                start: "top 80%",
+            },
         })
     })
 </script>

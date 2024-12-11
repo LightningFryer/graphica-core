@@ -18,21 +18,21 @@
 	});
 </script>
 
-<section class="dotted-background flex h-screen flex-col items-center justify-between">
+<section class="sec-1 flex h-screen flex-col items-center justify-between">
 		
     <div class="md:h-20">
         <!-- Empty div to justify between -->
     </div>
 
     <div class="flex flex-col">
-        <p class="flex justify-center md:justify-start font-pixelify text-3xl md:text-5xl text-accent" bind:this={p1}>Welcome to</p>
+        <p class="flex justify-start md:justify-start font-pixelify text-xl md:text-5xl text-accent" bind:this={p1}>Welcome to</p>
         <h1
             class="md:mt-4 flex md:h-[19rem] w-full text-[6.5rem] md:text-[22rem] text-center items-center justify-center font-bebas font-bold"
             bind:this={p2}
         >
             Graphica
         </h1>
-        <p class="p3 flex justify-center md:justify-end font-pixelify text-2xl text-center md:text-5xl mr-2 md:mr-0 ml-2 md:ml-0 text-accent" bind:this={p3}>
+        <p class="p3 flex justify-end md:justify-end font-pixelify text-lg text-center md:text-5xl mr-2 md:mr-0 ml-2 md:ml-0 text-accent" bind:this={p3}>
             The graphic designing club!
         </p>
     </div>
@@ -49,7 +49,7 @@
 
 
 <style>
-	.dotted-background {
+	.sec-1 {
 		position: relative;
 		width: 100%;
 		height: 100vh; /* Full viewport height */

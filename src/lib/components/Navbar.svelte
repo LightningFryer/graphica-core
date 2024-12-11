@@ -6,9 +6,12 @@
 
 	import graphicaLogo from "$lib/images/logo/Logo_Alpha.png";
 	import { goto } from '$app/navigation';
+	import { page } from '$app/stores';
 
 	onMount(() => {
-		navBarEnter(navbar);
+		if ($page.url.pathname == "/"){
+			navBarEnter(navbar);
+		}
 	});
 </script>
 

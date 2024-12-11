@@ -15,7 +15,7 @@
 	<Landing />
 	<ClubIntro />
 	<DepartmentsTemp />
-	<!-- <Resources /> -->
+	<Resources />
 	
 </main>
 
