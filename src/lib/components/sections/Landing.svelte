@@ -5,7 +5,6 @@
 	import gsap from 'gsap';
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	import Marquee from 'svelte-fast-marquee';
-	import Marqueeck from '@arisbh/marqueeck';
 
 	onMount(() => {
 		gsap.registerPlugin(ScrollTrigger);
@@ -50,33 +49,6 @@
 
 
 <style>
-	.sec1 {
-		background-image: url("$lib/images/DotGrid.png");
-		background-size: auto;
-		background-repeat: repeat;
-		animation: moveBg 40s linear infinite;
-		width: 100%;
-	}
-
-	@keyframes moveBg{
-		0%{
-			background-position: 0% 0%;
-		}
-
-		50%{
-			background-position: -50% 50%;
-		}
-
-		99%{
-			background-position: -100% 100%;
-
-		}
-
-		100%{
-			background-position: 0% 0%;
-		}
-	}
-
 	.dotted-background {
 		position: relative;
 		width: 100%;
