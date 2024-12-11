@@ -5,6 +5,7 @@
 	import gsap from 'gsap';
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	import Marquee from 'svelte-fast-marquee';
+	import Marqueeck from '@arisbh/marqueeck';
 
 	onMount(() => {
 		gsap.registerPlugin(ScrollTrigger);
@@ -18,7 +19,7 @@
 	});
 </script>
 
-<section class="sec1 flex h-screen flex-col items-center justify-between">
+<section class="dotted-background flex h-screen flex-col items-center justify-between">
 		
     <div class="md:h-20">
         <!-- Empty div to justify between -->
@@ -37,8 +38,8 @@
         </p>
     </div>
 
-    <div class="flex w-full p-6" bind:this={sec1Marquee}>
-        <Marquee gradient={true} class="border-t-4 border-b-4 border-accent p-2" gap="20%" style="--gradientColor: #18140e">
+    <div class="flex w-full" bind:this={sec1Marquee}>
+        <Marquee gradient={true} direction="right" class="border-t-4 border-b-4 border-accent p-2" gap="20%" style="--gradientColor: #18140e">
             <p class="font-pixelify text-nowrap text-xl font-bold">Graphic Design</p>
             <p class="font-pixelify text-nowrap text-xl font-bold">UI/UX</p>
             <p class="font-pixelify text-nowrap text-xl font-bold">Figma</p>
@@ -73,6 +74,24 @@
 
 		100%{
 			background-position: 0% 0%;
+		}
+	}
+
+	.dotted-background {
+		position: relative;
+		width: 100%;
+		height: 100vh; /* Full viewport height */
+		background: radial-gradient(circle, #c39f61 1px, transparent 1px);
+		background-size: 20px 20px; /* Spacing between dots */
+		animation: moveDots 3s linear infinite;
+	}
+
+	@keyframes moveDots {
+		0% {
+		background-position: 0 0;
+		}
+		100% {
+		background-position: 20px -20px;
 		}
 	}
 </style>
