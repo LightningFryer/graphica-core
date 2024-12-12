@@ -6,7 +6,7 @@
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Landing from "$lib/components/sections/Landing.svelte";
 	import ClubIntro from '$lib/components/sections/ClubIntro.svelte';
-	import DepartmentsTemp from '$lib/components/sections/DepartmentsTemp.svelte';
+	import Departments from '$lib/components/sections/Departments.svelte';
 	import Resources from '$lib/components/sections/Resources.svelte';
 </script>
 
@@ -14,9 +14,10 @@
 	<Navbar />
 	<Landing />
 	<ClubIntro />
-	<DepartmentsTemp />
+	<Departments />
 	<Resources />
 	
 </main>
+
 
 

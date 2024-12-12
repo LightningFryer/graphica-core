@@ -66,4 +66,5 @@
 		background-position: 20px -20px;
 		}
 	}
+
 </style>
