@@ -31,8 +31,8 @@
 <section class="departmentSec flex h-screen flex-row items-center justify-evenly">
     <!-- svelte-ignore a11y_click_events_have_key_events -->
     <!-- svelte-ignore a11y_no_static_element_interactions -->
-    <div class={`dep dep-1 grow h-full transition-[width] duration-1000 cursor-pointer ${dep1 ? "grayscale-0" : "grayscale"}`} 
-    style="width: {dep1 ? '50%' : '10%'}"
+    <div class={`dep dep-1 grow h-full ${dep1 ? 'w-[50%]' : 'w-[10%]'} transition-[width] duration-1000 cursor-pointer ${dep1 ? "grayscale-0" : "grayscale"}`} 
+
     onclick={() => {
         dep1 = true
         dep2 = false;
@@ -55,8 +55,8 @@
 
     <!-- svelte-ignore a11y_click_events_have_key_events -->
     <!-- svelte-ignore a11y_no_static_element_interactions -->
-    <div class={`dep dep-2 grow h-full transition-[width] duration-1000 cursor-pointer ${dep2 ? "grayscale-0" : "grayscale"}`}
-    style="width: {dep2 ? '50%' : '10%'}"
+    <div class={`dep dep-2 grow h-full ${dep2 ? 'w-[50%]' : 'w-[10%]'} transition-[width] duration-1000 cursor-pointer ${dep2 ? "grayscale-0" : "grayscale"}`}
+
     onclick={() => {
         dep1 = false;
         dep2 = true;
@@ -79,8 +79,8 @@
 
     <!-- svelte-ignore a11y_click_events_have_key_events -->
     <!-- svelte-ignore a11y_no_static_element_interactions -->
-    <div class={`dep dep-3 grow h-full transition-[width] duration-1000 cursor-pointer ${dep3 ? "grayscale-0" : "grayscale"}`} 
-    style="width: {dep3 ? '50%' : '10%'}"
+    <div class={`dep dep-3 grow h-full ${dep3 ? 'w-[50%]' : 'w-[10%]'} transition-[width] duration-1000 cursor-pointer ${dep3 ? "grayscale-0" : "grayscale"}`} 
+
     onclick={() => {
         dep1 = false;
         dep2 = false;

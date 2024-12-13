@@ -12,7 +12,7 @@
 			opacity: 0,
 			duration: 1,
 			stagger: -0.1,
-			yPercent: 100,
+			yPercent: 40,
 			ease: "back.inOut",
 		});
 
@@ -27,105 +27,105 @@
 <main class="flex flex-col overflow-hidden">
     <Navbar />
 
-    <section class="team-sec h-screen w-screen flex flex-col justify-center items-center">
-        <div class="flex flex-col mt-9 h-[80%] w-[90%] p-7 gap-y-4">
-			<h1 class="team-text text-7xl font-bebas">Meet The Team</h1>
+    <section class="team-sec h-screen w-screen flex flex-col justify-center items-center ">
+        <div class="flex flex-col mt-9 h-[90%] md:h-[80%] w-full md:w-[90%] p-7 gap-y-4">
+			<h1 class="team-text text-5xl md:text-7xl font-bebas">Meet The Team</h1>
             
-			<div class="flex flex-row gap-5">
-				<div class="card flex max-h-fit w-[12rem] bg-base-300 p-7 backdrop-blur-sm bg-opacity-20 backdrop-opacity-90 border-2 border-accent">
+			<div class="flex flex-row flex-wrap md:flex-nowrap gap-3 md:gap-5 ">
+				<div class="card flex w-[9rem] md:w-[12rem] bg-base-300 p-4 md:p-7 backdrop-blur-sm bg-opacity-20 backdrop-opacity-90 border-2 border-accent">
 					<div class="flex flex-col gap-3 items-center">
-						<h1 class="text-3xl font-pixelify">Title</h1>
+						<h1 class="text-lg md:text-3xl font-pixelify">Title</h1>
 						
 						<div class="avatar">
-							<div class="rounded-full w-22">
+							<div class="rounded-full size-[5rem] md:size-20">
 								<img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" alt="photo"/>
 							</div>
 						</div>
 	
-						<p class="text-xl font-poppins">Name</p>
+						<p class="text-md md:text-xl font-poppins">Name</p>
 					</div>
 				</div>
 	
-				<div class="card flex max-h-fit w-[12rem] bg-base-300 p-7 backdrop-blur-sm bg-opacity-20 backdrop-opacity-90 border-2 border-accent">
+				<div class="card flex w-[9rem] md:w-[12rem] bg-base-300 p-4 md:p-7 backdrop-blur-sm bg-opacity-20 backdrop-opacity-90 border-2 border-accent">
 					<div class="flex flex-col gap-3 items-center">
-						<h1 class="text-3xl font-pixelify">Title</h1>
+						<h1 class="text-lg md:text-3xl font-pixelify">Title</h1>
 						
 						<div class="avatar">
-							<div class="rounded-full w-22">
+							<div class="rounded-full size-[5rem] md:size-20">
 								<img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" alt="photo"/>
 							</div>
 						</div>
 	
-						<p class="text-xl font-poppins">Name</p>
+						<p class="text-md md:text-xl font-poppins">Name</p>
 					</div>
 				</div>
 	
-				<div class="card flex max-h-fit w-[12rem] bg-base-300 p-7 backdrop-blur-sm bg-opacity-20 backdrop-opacity-90 border-2 border-accent">
+				<div class="card flex w-[9rem] md:w-[12rem] bg-base-300 p-4 md:p-7 backdrop-blur-sm bg-opacity-20 backdrop-opacity-90 border-2 border-accent">
 					<div class="flex flex-col gap-3 items-center">
-						<h1 class="text-3xl font-pixelify">Title</h1>
+						<h1 class="text-lg md:text-3xl font-pixelify">Title</h1>
 						
 						<div class="avatar">
-							<div class="rounded-full w-22">
+							<div class="rounded-full size-[5rem] md:size-20">
 								<img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" alt="photo"/>
 							</div>
 						</div>
 	
-						<p class="text-xl font-poppins">Name</p>
+						<p class="text-md md:text-xl font-poppins">Name</p>
 					</div>
 				</div>
 	
-				<div class="card flex max-h-fit w-[12rem] bg-base-300 p-7 backdrop-blur-sm bg-opacity-20 backdrop-opacity-90 border-2 border-accent">
+				<div class="card flex w-[9rem] md:w-[12rem] bg-base-300 p-4 md:p-7 backdrop-blur-sm bg-opacity-20 backdrop-opacity-90 border-2 border-accent">
 					<div class="flex flex-col gap-3 items-center">
-						<h1 class="text-3xl font-pixelify">Title</h1>
+						<h1 class="text-lg md:text-3xl font-pixelify">Title</h1>
 						
 						<div class="avatar">
-							<div class="rounded-full w-22">
+							<div class="rounded-full size-[5rem] md:size-20">
 								<img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" alt="photo"/>
 							</div>
 						</div>
 	
-						<p class="text-xl font-poppins">Name</p>
+						<p class="text-md md:text-xl font-poppins">Name</p>
 					</div>
 				</div>
 	
-				<div class="card flex max-h-fit w-[12rem] bg-base-300 p-7 backdrop-blur-sm bg-opacity-20 backdrop-opacity-90 border-2 border-accent">
+				<div class="card flex w-[9rem] md:w-[12rem] bg-base-300 p-4 md:p-7 backdrop-blur-sm bg-opacity-20 backdrop-opacity-90 border-2 border-accent">
 					<div class="flex flex-col gap-3 items-center">
-						<h1 class="text-3xl font-pixelify">Title</h1>
+						<h1 class="text-lg md:text-3xl font-pixelify">Title</h1>
 						
 						<div class="avatar">
-							<div class="rounded-full w-22">
+							<div class="rounded-full size-[5rem] md:size-20">
 								<img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" alt="photo"/>
 							</div>
 						</div>
 	
-						<p class="text-xl font-poppins">Name</p>
+						<p class="text-md md:text-xl font-poppins">Name</p>
 					</div>
 				</div>
 	
-				<div class="card flex max-h-fit w-[12rem] bg-base-300 p-7 backdrop-blur-sm bg-opacity-20 backdrop-opacity-90 border-2 border-accent">
+				<div class="card flex w-[9rem] md:w-[12rem] bg-base-300 p-4 md:p-7 backdrop-blur-sm bg-opacity-20 backdrop-opacity-90 border-2 border-accent">
 					<div class="flex flex-col gap-3 items-center">
-						<h1 class="text-3xl font-pixelify">Title</h1>
+						<h1 class="text-lg md:text-3xl font-pixelify">Title</h1>
 						
 						<div class="avatar">
-							<div class="rounded-full w-22">
+							<div class="rounded-full size-[5rem] md:size-20">
 								<img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" alt="photo"/>
 							</div>
 						</div>
 	
-						<p class="text-xl font-poppins">Name</p>
+						<p class="text-md md:text-xl font-poppins">Name</p>
 					</div>
 				</div>
-				<div class="card flex max-h-fit w-[12rem] bg-base-300 p-7 backdrop-blur-sm bg-opacity-20 backdrop-opacity-90 border-2 border-accent">
+				<div class="card flex w-[9rem] md:w-[12rem] bg-base-300 p-4 md:p-7 backdrop-blur-sm bg-opacity-20 backdrop-opacity-90 border-2 border-accent">
 					<div class="flex flex-col gap-3 items-center">
-						<h1 class="text-3xl font-pixelify">Title</h1>
+						<h1 class="text-lg md:text-3xl font-pixelify">Title</h1>
 						
 						<div class="avatar">
-							<div class="rounded-full w-22">
+							<div class="rounded-full size-[5rem] md:size-20">
 								<img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" alt="photo"/>
 							</div>
 						</div>
 	
-						<p class="text-xl font-poppins">Name</p>
+						<p class="text-md md:text-xl font-poppins">Name</p>
 					</div>
 				</div>
 			</div>
