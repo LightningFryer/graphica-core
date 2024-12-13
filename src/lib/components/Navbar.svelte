@@ -39,7 +39,7 @@
 		</div>
 
 		<div class="navbar-end font-inter font-light hidden md:flex md:text-xl">
-			<h1>ESTD. 2021</h1>
+			<h1>ESTD. 2023</h1>
 		</div>
 	</div>
 </nav>
