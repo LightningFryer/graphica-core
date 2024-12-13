@@ -15,7 +15,7 @@
 	});
 </script>
 
-<nav class="absolute z-10 md:max-w-full md:w-full md:p-2" bind:this={navbar}>
+<nav class="absolute z-10 w-fit overflow-hidden md:max-w-full md:w-full md:p-2" bind:this={navbar}>
 	<div class="navbar bg-transparent">
 		<div class="navbar-start">
 			<button class="btn btn-primary bg-opacity-50 w-16 flex flex-col justify-center items-center" onclick={() => {goto("/")}}>
@@ -43,3 +43,5 @@
 		</div>
 	</div>
 </nav>
+
+
