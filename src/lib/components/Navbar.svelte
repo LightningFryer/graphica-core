@@ -18,8 +18,8 @@
 <nav class="absolute z-10 w-fit overflow-hidden md:max-w-full md:w-full md:p-2" bind:this={navbar}>
 	<div class="navbar bg-transparent">
 		<div class="navbar-start">
-			<button class="btn btn-primary bg-opacity-50 w-16 flex flex-col justify-center items-center" onclick={() => {goto("/")}}>
-				<img src={graphicaLogo} alt="graphica_alpha_logo" class=""/>
+			<button class="btn btn-primary bg-opacity-50 w-20 flex flex-col justify-center items-center" onclick={() => {goto("/")}}>
+				<img src={graphicaLogo} alt="graphica_alpha_logo"/>
 			</button>
 		</div>
 		

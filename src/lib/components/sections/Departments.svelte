@@ -1,8 +1,8 @@
 <script lang="ts">
     import { fade } from 'svelte/transition';
-	// import gsap from 'gsap';
-	// import { onMount } from 'svelte';
-	// import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+	import gsap from 'gsap';
+	import { onMount } from 'svelte';
+	import ScrollTrigger from 'gsap/dist/ScrollTrigger';
     
 	let dep1 = false;
 	let dep2 = false;
@@ -11,21 +11,18 @@
     let dep2Text = "UI/UX";
     let dep3Text = "Web Development";
 
-    // onMount(() => {
-    //     gsap.registerPlugin(ScrollTrigger);
-    //     let departmentDivs = gsap.utils.toArray(".dep");
+    onMount(() => {
+        gsap.registerPlugin(ScrollTrigger);
 
-    //     gsap.from(departmentDivs, {
-    //         duration: 1,
-    //         stagger: 0.1,
-    //         opacity: 0,
-    //         yPercent: 50,
-    //         scrollTrigger: {
-    //             trigger: ".departmentSec",
-    //             start: "top 80%",
-    //         },
-    //     })
-    // })
+        gsap.from(".departmentSec", {
+            duration: 1.5,
+            opacity: 0,
+            scrollTrigger: {
+                trigger: ".departmentSec",
+                start: "top 80%",
+            },
+        })
+    })
 </script>
 
 <section class="departmentSec flex h-screen flex-col md:flex-row md:items-center md:justify-evenly">

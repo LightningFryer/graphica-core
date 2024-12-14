@@ -10,7 +10,7 @@
     <Navbar />
 
     <section class="h-screen flex flex-col justify-center items-center">
-        <h1 class="text-3xl md:text-8xl font-bebas p-4 backdrop-blur-sm border-4 border-accent rounded-xl backdrop-brightness-95">No posts yet! Stay tuned.</h1>
+        <h1 class="text-3xl md:text-8xl font-bebas p-4 backdrop-blur-[0.1rem] border-4 border-accent rounded-xl">No posts yet! Stay tuned.</h1>
     </section>
 </main>
 
