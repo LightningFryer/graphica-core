@@ -9,6 +9,7 @@
 	import gsap from 'gsap';
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	import Marquee from 'svelte-fast-marquee';
+	import Device from "svelte-device-info"
 
 	onMount(() => {
 		gsap.registerPlugin(ScrollTrigger);
