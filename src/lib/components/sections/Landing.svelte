@@ -38,7 +38,7 @@
 			Welcome to
 		</p>
 		<h1
-			class={`main-text flex w-full items-center justify-center text-center font-bebas text-[6.5rem] font-bold md:mt-4 md:h-[19rem] md:text-[22rem]`}
+			class={`border-2 main-text flex w-full items-center justify-center text-center font-bebas text-[6.5rem] font-bold md:mt-4 md:h-[19rem] md:text-[22rem]`}
 			bind:this={p2}
 		>
 			Graphica
