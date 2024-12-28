@@ -9,16 +9,36 @@
 	import gsap from 'gsap';
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	import Marquee from 'svelte-fast-marquee';
-	import Device from "svelte-device-info"
+	import graphicaLogo from '$lib/images/logo/Logo_Alpha.png';
+	import Device from 'svelte-device-info';
 
 	onMount(() => {
 		gsap.registerPlugin(ScrollTrigger);
 		gts1(p1);
 
-		gts2(p2).then(() => {
-			gts2Bob(p2);
-			sec1Bob(sec1);
-		});
+		gts2(p2)
+			.then(() => {
+				gts2Bob(p2);
+				sec1Bob(sec1);
+			})
+			.then(() => {
+				gsap
+					.to('.logo-rotate', {
+						scale: 0.6,
+						opacity: 1,
+						duration: 0.4,
+						ease: 'power2'
+					})
+					.then(() => {
+						gsap.to('.logo-rotate', {
+							rotation: 360,
+							duration: 10,
+							ease: 'none',
+							delay: 0,
+							repeat: -1
+						});
+					});
+			});
 
 		gts3(p3);
 		sec1MarqueeEnter(sec1Marquee);
@@ -37,12 +57,19 @@
 		>
 			Welcome to
 		</p>
-		<h1
-			class={`border-2 main-text flex w-full items-center justify-center text-center font-bebas text-[6.5rem] font-bold md:mt-4 md:h-[19rem] md:text-[22rem]`}
-			bind:this={p2}
-		>
-			Graphica
-		</h1>
+		<div class="relative">
+			<div
+				class="logo-rotate btn btn-circle btn-accent absolute right-[-2rem] md:right-[-4rem] top-[-1rem] md:top-[-6rem] z-10 size-[5rem] md:size-[12rem] scale-150 opacity-0"
+			>
+				<img src={graphicaLogo} alt="graphica_alpha_logo" />
+			</div>
+			<h1
+				class={`main-text flex w-full items-center justify-center text-center font-bebas text-[6.5rem] font-bold md:mt-4 md:h-[19rem] md:text-[22rem]`}
+				bind:this={p2}
+			>
+				Graphica
+			</h1>
+		</div>
 		<p
 			class="p3 ml-2 mr-2 flex justify-end text-center font-pixelify text-lg text-accent md:ml-0 md:mr-0 md:justify-end md:text-5xl"
 			bind:this={p3}

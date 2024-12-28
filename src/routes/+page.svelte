@@ -13,7 +13,7 @@
 </script>
 
 <main class="overflow-hidden bg-base-100">	
-	<Navbar />
+	<!-- <Navbar /> -->
 	<Landing />
 	<ClubIntroRework />
 	<DepartmentsRework />
