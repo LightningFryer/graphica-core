@@ -84,7 +84,7 @@
 			class="department-sec department-gd-sec flex h-screen min-w-[100%] flex-col items-center justify-center"
 		>
 			<div class="flex justify-center items-center">
-				<img src={dept_sec_bg} class="w-[100%] max-h-[80%] rounded-xl" alt="gd_sec"/>
+				<img src={dept_sec_bg} class="scale-[0.35] h-[90%] rounded-xl" alt="gd_sec"/>
 			</div>
 		</section>
 		<section class="department-sec h-screen min-w-[100%] bg-red-500">
@@ -110,6 +110,7 @@
 		width: 100%;
 		height: 100vh; /* Full viewport height */
 
+		background-color: black;
 		background-image: linear-gradient(to right, #ffffff7f 1px, transparent 1px),
 			linear-gradient(to bottom, #ffffff7f 1px, transparent 1px);
 		background-size: 70px 70px; /* Set grid cell size */
