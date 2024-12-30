@@ -15,7 +15,7 @@
 	});
 </script>
 
-<nav class="fixed z-10 w-fit overflow-hidden md:max-w-full md:w-full md:p-2 backdrop-blur-[0.1rem] backdrop-brightness-95" bind:this={navbar}>
+<nav class="fixed z-10 w-fit overflow-hidden md:max-w-full md:w-full md:p-1 backdrop-blur-[0.1rem]" bind:this={navbar}>
 	<div class="navbar bg-transparent">
 		<div class="navbar-start">
 			<button class="btn btn-primary bg-opacity-50 w-20 flex flex-col justify-center items-center" onclick={() => {goto("/")}}>
