@@ -7,8 +7,10 @@
 	// import gd_sec1 from '$lib/svgs/gd_sec1.svg';
 	// import gd_sec2 from '$lib/svgs/gd_sec2.svg';
 	// import gd_sec3 from '$lib/svgs/gd_sec3.svg';
-	import dept_gd_sec_bg from '$lib/images/gd_sec_test.jpg';
-	import dept_3d_sec_bg from '$lib/images/3d_sec_test.jpg';
+	import dept_gd_sec_card from '$lib/images/gd_sec_card.jpg';
+	import dept_3d_sec_card from '$lib/images/3d_sec_card.jpg';
+	import dept_ui_ux_sec_card from '$lib/images/ui_ux_sec_card.jpg';
+	import dept_web_dev_ux_sec_card from '$lib/images/web_dev_sec_card.jpg';
 	import TextPlugin from 'gsap/TextPlugin';
 
 	onMount(() => {
@@ -84,17 +86,27 @@
 		<section
 			class="department-sec department-gd-sec flex h-screen min-w-[100%] flex-col items-center justify-center"
 		>
-			<div class="flex flex-row items-center justify-center ">
+			<div class="flex flex-row items-center justify-center">
 				<div>
-					<img src={dept_gd_sec_bg} class=" scale-[0.7] rounded-xl" alt="gd_sec" />
+					<img src={dept_gd_sec_card} class=" scale-[0.7] rounded-xl" alt="gd_sec" />
 				</div>
 				<div>
-					<img src={dept_3d_sec_bg} class=" scale-[0.7] rounded-xl" alt="gd_sec" /></div>
-
+					<img src={dept_3d_sec_card} class=" scale-[0.7] rounded-xl" alt="gd_sec" />
+				</div>
 			</div>
 		</section>
-		<section class="department-sec h-screen min-w-[100%] bg-red-500">
-			<h1>Section</h1>
+
+		<section
+			class="department-sec department-gd-sec flex h-screen min-w-[100%] flex-col items-center justify-center"
+		>
+			<div class="flex flex-row items-center justify-center">
+				<div>
+					<img src={dept_ui_ux_sec_card} class=" scale-[0.7] rounded-xl" alt="gd_sec" />
+				</div>
+				<div>
+					<img src={dept_web_dev_ux_sec_card} class=" scale-[0.7] rounded-xl" alt="gd_sec" />
+				</div>
+			</div>
 		</section>
 	</div>
 </main>

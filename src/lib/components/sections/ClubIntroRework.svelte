@@ -4,7 +4,7 @@
 	import TextPlugin from 'gsap/TextPlugin';
 	import { onMount } from 'svelte';
 	import SplitType from 'split-type';
-	import club_intro_blob from "$lib/images/club_intro_blob.png"
+	import club_intro_blob from '$lib/images/club_intro_blob.png';
 
 	async function getImage() {
 		const image = await fetch('https://picsum.photos/400');
@@ -30,7 +30,7 @@
 </script>
 
 <main class="club-intro-sec relative h-screen flex-col items-center justify-center">
-	<img src={club_intro_blob} alt="club_intro" class="absolute bg-transparent"/>
+	<img src={club_intro_blob} alt="club_intro" class="absolute bg-transparent" />
 </main>
 
 <style>
