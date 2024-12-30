@@ -4,9 +4,10 @@
 	import { onMount } from 'svelte';
 	let containerOffsetWidth: Number;
 
-	import gd_sec1 from '$lib/svgs/gd_sec1.svg';
-	import gd_sec2 from '$lib/svgs/gd_sec2.svg';
-	import gd_sec3 from '$lib/svgs/gd_sec3.svg';
+	// import gd_sec1 from '$lib/svgs/gd_sec1.svg';
+	// import gd_sec2 from '$lib/svgs/gd_sec2.svg';
+	// import gd_sec3 from '$lib/svgs/gd_sec3.svg';
+	import dept_sec_bg from "$lib/images/gd_sec_test.jpg";
 	import TextPlugin from 'gsap/TextPlugin';
 
 	onMount(() => {
@@ -82,32 +83,8 @@
 		<section
 			class="department-sec department-gd-sec flex h-screen min-w-[100%] flex-col items-center justify-center"
 		>
-			<div class="relative h-full w-full ">
-				<div class="flex h-full w-full flex-col items-center justify-center">
-					<div
-						class="gd-desc flex h-[80%] w-[40%] flex-row gap-7 rounded-lg bg-yellow-100 p-2 text-black"
-					>
-						<div class="flex h-full w-[15%] -rotate-180 items-center justify-center border-2">
-							<h1 class="font-cinzel text-6xl font-bold [writing-mode:vertical-lr]">
-								Graphic Design
-							</h1>
-						</div>
-
-						<div class="flex w-[85%] flex-col">
-							<div class="flex grow"></div>
-							<div class="divider"></div>
-							<div class="flex grow"></div>
-						</div>
-					</div>
-				</div>
-
-				<!-- <div class="gd-stamp-anim absolute right-[12rem] top-[8rem] z-10 size-32 rotate-[30deg]">
-					<img src={gd_sec1} alt="gd_sec1" />
-				</div>
-
-				<div class="gd-stamp-anim absolute right-[55rem] top-[17rem] z-20 size-32 -rotate-[27deg]">
-					<img src={gd_sec2} alt="gd_sec1" />
-				</div> -->
+			<div class="flex justify-center items-center">
+				<img src={dept_sec_bg} class="w-[100%] max-h-[80%] rounded-xl" alt="gd_sec"/>
 			</div>
 		</section>
 		<section class="department-sec h-screen min-w-[100%] bg-red-500">
