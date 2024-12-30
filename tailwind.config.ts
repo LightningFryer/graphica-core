@@ -12,7 +12,7 @@ export default {
 				pixelify: ['Pixelify Sans', 'sans-serif'],
 				poppins: ["Poppins", "sans-serif"],
 				inter: ["Inter", "sans-serif"],
-				oxanium: ["Oxanium", "sans-serif"],
+				cinzel: ["Cinzel", "sans-serif"],
 			}
 		}
 	},
