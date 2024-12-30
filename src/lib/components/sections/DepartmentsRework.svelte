@@ -7,7 +7,8 @@
 	// import gd_sec1 from '$lib/svgs/gd_sec1.svg';
 	// import gd_sec2 from '$lib/svgs/gd_sec2.svg';
 	// import gd_sec3 from '$lib/svgs/gd_sec3.svg';
-	import dept_sec_bg from "$lib/images/gd_sec_test.jpg";
+	import dept_gd_sec_bg from '$lib/images/gd_sec_test.jpg';
+	import dept_3d_sec_bg from '$lib/images/3d_sec_test.jpg';
 	import TextPlugin from 'gsap/TextPlugin';
 
 	onMount(() => {
@@ -83,8 +84,13 @@
 		<section
 			class="department-sec department-gd-sec flex h-screen min-w-[100%] flex-col items-center justify-center"
 		>
-			<div class="flex justify-center items-center">
-				<img src={dept_sec_bg} class="scale-[0.35] h-[90%] rounded-xl" alt="gd_sec"/>
+			<div class="flex flex-row items-center justify-center ">
+				<div>
+					<img src={dept_gd_sec_bg} class=" scale-[0.7] rounded-xl" alt="gd_sec" />
+				</div>
+				<div>
+					<img src={dept_3d_sec_bg} class=" scale-[0.7] rounded-xl" alt="gd_sec" /></div>
+
 			</div>
 		</section>
 		<section class="department-sec h-screen min-w-[100%] bg-red-500">
