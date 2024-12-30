@@ -84,19 +84,19 @@
 		>
 			<div class="relative h-full w-full border-2">
 				<div class="flex h-full w-full flex-col items-center justify-center">
-					<div class="gd-desc flex flex-row gap-7 w-[40%] h-[80%] border-2 p-2 text-black rounded-lg">
-						<div class="-rotate-180 flex justify-center items-center border-2 w-[15%] h-full">
-							<h1 class="[writing-mode:vertical-lr] font-cinzel font-bold text-6xl">Graphic Design</h1>
+					<div
+						class="gd-desc flex h-[80%] w-[40%] flex-row gap-7 rounded-lg border-2 bg-yellow-100 p-2 text-black"
+					>
+						<div class="flex h-full w-[15%] -rotate-180 items-center justify-center border-2">
+							<h1 class="font-cinzel text-6xl font-bold [writing-mode:vertical-lr]">
+								Graphic Design
+							</h1>
 						</div>
 
-						<div class="flex flex-col w-[85%]">
-							<div class="flex grow">
-								
-							</div>
+						<div class="flex w-[85%] flex-col">
+							<div class="flex grow"></div>
 							<div class="divider"></div>
-							<div class="flex grow">
-
-							</div>
+							<div class="flex grow"></div>
 						</div>
 					</div>
 				</div>
@@ -128,8 +128,8 @@
 		animation: moveLeft 2s linear infinite;
 	}
 
-	.gd-desc{
-		background-image: url("$lib/svgs/dept_sec_bg.svg");
+	.gd-desc {
+		/* background-image: url("$lib/svgs/dept_sec_bg.svg"); */
 		/* background-size: cover; */
 	}
 
