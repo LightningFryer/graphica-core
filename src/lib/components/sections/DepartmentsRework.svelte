@@ -82,10 +82,10 @@
 		<section
 			class="department-sec department-gd-sec flex h-screen min-w-[100%] flex-col items-center justify-center"
 		>
-			<div class="relative h-full w-full border-2">
+			<div class="relative h-full w-full ">
 				<div class="flex h-full w-full flex-col items-center justify-center">
 					<div
-						class="gd-desc flex h-[80%] w-[40%] flex-row gap-7 rounded-lg border-2 bg-yellow-100 p-2 text-black"
+						class="gd-desc flex h-[80%] w-[40%] flex-row gap-7 rounded-lg bg-yellow-100 p-2 text-black"
 					>
 						<div class="flex h-full w-[15%] -rotate-180 items-center justify-center border-2">
 							<h1 class="font-cinzel text-6xl font-bold [writing-mode:vertical-lr]">
@@ -128,9 +128,15 @@
 		animation: moveLeft 2s linear infinite;
 	}
 
-	.gd-desc {
-		/* background-image: url("$lib/svgs/dept_sec_bg.svg"); */
-		/* background-size: cover; */
+	.department-gd-sec {
+		position: relative;
+		width: 100%;
+		height: 100vh; /* Full viewport height */
+
+		background-image: linear-gradient(to right, #ffffff7f 1px, transparent 1px),
+			linear-gradient(to bottom, #ffffff7f 1px, transparent 1px);
+		background-size: 70px 70px; /* Set grid cell size */
+		animation: moveLeft 2s linear infinite;
 	}
 
 	@keyframes moveLeft {
