@@ -8,12 +8,12 @@
 	import dept_3d_sec_card from '$lib/images/3d_sec_card.jpg';
 	import dept_ui_ux_sec_card from '$lib/images/ui_ux_sec_card.jpg';
 	import dept_web_dev_ux_sec_card from '$lib/images/web_dev_sec_card.jpg';
-	import TextPlugin from 'gsap/TextPlugin';
+	import dept_intro_blob from '$lib/images/department-intro-blob.png';
+	import { Star } from 'lucide-svelte';
 
 	onMount(() => {
 		let sections = gsap.utils.toArray('.department-sec');
 		gsap.registerPlugin(ScrollTrigger);
-		gsap.registerPlugin(TextPlugin);
 
 		gsap.to(sections, {
 			xPercent: -100 * (sections.length - 1),
@@ -61,8 +61,39 @@
 				});
 			},
 			scrollTrigger: {
-				trigger: '.department-gd-sec',
+				trigger: '.department-gd-3d-sec',
 				start: 'right center'
+			}
+		});
+
+		gsap.from('.dept-card-sec-1', {
+			opacity: 0,
+			yPercent: 50,
+			xPercent: -50,
+			duration: 2,
+			ease: 'power4.out',
+			stagger: 0.4,
+			rotate: 45,
+
+			scrollTrigger: {
+				trigger: '.department-gd-3d-sec',
+				start: 'right right'
+			}
+		});
+
+		gsap.from('.dept-card-sec-2', {
+			opacity: 0,
+			yPercent: 50,
+			xPercent: -50,
+			duration: 2,
+			ease: 'power4.out',
+			stagger: 0.4,
+			rotate: 45,
+
+			scrollTrigger: {
+				trigger: '.department-ui-web-sec',
+				start: 'right left',
+				markers: true
 			}
 		});
 	});
@@ -73,34 +104,37 @@
 		<section
 			class="department-intro-sec department-sec flex h-screen min-w-[100%] flex-col items-center justify-center bg-accent text-base-200"
 		>
-			<h1 class="intro-text font-bebas text-7xl">
-				What about our <span class="text-white">various departments</span> you ask?
+			<div class="absolute z-0 scale-[1.3]">
+				<img src={dept_intro_blob} alt="dept_intro_blob" />
+			</div>
+			<h1 class="intro-text font-bebas text-7xl text-white">
+				What about our <span class="text-[#ffda45]">various departments</span> you ask?
 			</h1>
-			<h1 class="intro-text font-bebas text-5xl">
+			<h1 class="intro-text font-bebas text-5xl text-white">
 				Scroll on to see what <span class="text-7xl">we</span> have to offer!
 			</h1>
 		</section>
 		<section
-			class="department-sec department-gd-sec flex h-screen min-w-[100%] flex-col items-center justify-center"
+			class="department-sec department-gd-3d-sec flex h-screen min-w-[100%] flex-col items-center justify-center"
 		>
 			<div class="flex flex-row items-center justify-center">
-				<div class="dept-card">
+				<div class="dept-card-sec-1">
 					<img src={dept_gd_sec_card} class=" scale-[0.7] rounded-xl" alt="gd_sec" />
 				</div>
-				<div>
+				<div class="dept-card-sec-1">
 					<img src={dept_3d_sec_card} class=" scale-[0.7] rounded-xl" alt="gd_sec" />
 				</div>
 			</div>
 		</section>
 
 		<section
-			class="department-sec department-gd-sec flex h-screen min-w-[100%] flex-col items-center justify-center"
+			class="department-sec department-ui-web-sec flex h-screen min-w-[100%] flex-col items-center justify-center"
 		>
 			<div class="flex flex-row items-center justify-center">
-				<div>
+				<div class="dept-card-sec-2">
 					<img src={dept_ui_ux_sec_card} class=" scale-[0.7] rounded-xl" alt="gd_sec" />
 				</div>
-				<div>
+				<div class="dept-card-sec-2">
 					<img src={dept_web_dev_ux_sec_card} class=" scale-[0.7] rounded-xl" alt="gd_sec" />
 				</div>
 			</div>
@@ -117,10 +151,23 @@
 		background-image: linear-gradient(to right, #ffffff7f 1px, transparent 1px),
 			linear-gradient(to bottom, #ffffff7f 1px, transparent 1px);
 		background-size: 70px 70px; /* Set grid cell size */
+		background-color: black;
 		animation: moveLeft 2s linear infinite;
 	}
 
-	.department-gd-sec {
+	.department-gd-3d-sec {
+		position: relative;
+		width: 100%;
+		height: 100vh; /* Full viewport height */
+
+		background-color: black;
+		background-image: linear-gradient(to right, #ffffff7f 1px, transparent 1px),
+			linear-gradient(to bottom, #ffffff7f 1px, transparent 1px);
+		background-size: 70px 70px; /* Set grid cell size */
+		animation: moveLeft 2s linear infinite;
+	}
+
+	.department-ui-web-sec {
 		position: relative;
 		width: 100%;
 		height: 100vh; /* Full viewport height */

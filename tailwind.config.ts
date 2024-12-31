@@ -14,6 +14,8 @@ export default {
 				inter: ["Inter", "sans-serif"],
 				cinzel: ["Cinzel", "sans-serif"],
 				jost: ["Jost", "sans-serif"],
+				michroma: ["Michroma", "sans-serif"],
+				futura: ["futura", "monospace"]
 			}
 		}
 	},
