@@ -121,17 +121,17 @@
 
 <style>
 	.dep-1 {
-		background: url('$lib/images/graphic_design_dep.jpg');
+		/* background: url('$lib/images/graphic_design_dep.jpg'); */
 		background-size: cover;
 	}
 
 	.dep-2 {
-		background-image: url('$lib/images/web-dev-dep.jpg');
+		/* background-image: url('$lib/images/web-dev-dep.jpg'); */
 		background-size: cover;
 	}
 
 	.dep-3 {
-		background-image: url('$lib/images/ui-ux-dep.jpeg');
+		/* background-image: url('$lib/images/ui-ux-dep.jpeg'); */
 		background-size: cover;
 	}
 </style>
