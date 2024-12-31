@@ -13,6 +13,7 @@ export default {
 				poppins: ["Poppins", "sans-serif"],
 				inter: ["Inter", "sans-serif"],
 				cinzel: ["Cinzel", "sans-serif"],
+				jost: ["Jost", "sans-serif"],
 			}
 		}
 	},

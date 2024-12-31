@@ -4,9 +4,6 @@
 	import { onMount } from 'svelte';
 	let containerOffsetWidth: Number;
 
-	// import gd_sec1 from '$lib/svgs/gd_sec1.svg';
-	// import gd_sec2 from '$lib/svgs/gd_sec2.svg';
-	// import gd_sec3 from '$lib/svgs/gd_sec3.svg';
 	import dept_gd_sec_card from '$lib/images/gd_sec_card.jpg';
 	import dept_3d_sec_card from '$lib/images/3d_sec_card.jpg';
 	import dept_ui_ux_sec_card from '$lib/images/ui_ux_sec_card.jpg';
@@ -87,7 +84,7 @@
 			class="department-sec department-gd-sec flex h-screen min-w-[100%] flex-col items-center justify-center"
 		>
 			<div class="flex flex-row items-center justify-center">
-				<div>
+				<div class="dept-card">
 					<img src={dept_gd_sec_card} class=" scale-[0.7] rounded-xl" alt="gd_sec" />
 				</div>
 				<div>

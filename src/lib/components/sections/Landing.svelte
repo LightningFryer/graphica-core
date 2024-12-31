@@ -59,7 +59,7 @@
 		</p>
 		<div class="relative">
 			<div
-				class="logo-rotate btn btn-circle btn-accent absolute right-[-2rem] md:right-[-4rem] top-[-1rem] md:top-[-6rem] z-10 size-[5rem] md:size-[12rem] scale-150 opacity-0"
+				class="logo-rotate btn btn-circle btn-accent absolute right-[-2rem] top-[-1rem] z-10 size-[5rem] scale-150 opacity-0 md:right-[-4rem] md:top-[-6rem] md:size-[12rem]"
 			>
 				<img src={graphicaLogo} alt="graphica_alpha_logo" />
 			</div>
@@ -95,24 +95,6 @@
 </section>
 
 <style>
-	.nope {
-		position: relative;
-		width: 100%;
-		height: 100vh; /* Full viewport height */
-		background: radial-gradient(circle, #c39f61 1px, transparent 1px);
-		background-size: 20px 20px; /* Spacing between dots */
-		animation: moveDots 3s linear infinite;
-	}
-
-	@keyframes moveDots {
-		0% {
-			background-position: 0 0;
-		}
-		100% {
-			background-position: 20px -20px;
-		}
-	}
-
 	.sec-1 {
 		position: relative;
 		width: 100%;
@@ -120,6 +102,7 @@
 		background: linear-gradient(to right, #c39f617f 1px, transparent 1px),
 			linear-gradient(to bottom, #c39f617f 1px, transparent 1px);
 		background-size: 70px 70px; /* Set grid cell size */
+		background-color: black;
 		animation: moveLeft 2s linear infinite;
 	}
 

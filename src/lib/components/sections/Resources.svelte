@@ -112,17 +112,19 @@ import gsap from 'gsap';
 		position: relative;
 		width: 100%;
 		height: 100vh; /* Full viewport height */
-		background: radial-gradient(circle, #c39f61 1px, transparent 1px);
-		background-size: 20px 20px; /* Spacing between dots */
-		animation: moveDots 3s linear infinite;
+
+		background-image: linear-gradient(to right, #c39f61 1px, transparent 1px),
+			linear-gradient(to bottom, #c39f61 1px, transparent 1px);
+		background-size: 70px 70px; /* Set grid cell size */
+		animation: moveLeft 2s linear infinite;
 	}
 
-	@keyframes moveDots {
+	@keyframes moveLeft {
 		0% {
-		background-position: 0 0;
+			background-position: 0 0;
 		}
 		100% {
-		background-position: 20px -20px;
+			background-position: 70px 0; /* Moves by exactly one grid cell size */
 		}
 	}
 </style>

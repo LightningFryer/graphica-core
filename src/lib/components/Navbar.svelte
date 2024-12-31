@@ -4,44 +4,50 @@
 	import { onMount } from 'svelte';
 	let navbar: HTMLElement;
 
-	import graphicaLogo from "$lib/images/logo/Logo_Alpha.png";
+	import graphicaLogo from '$lib/images/logo/Logo_Alpha.png';
 	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
 
 	onMount(() => {
-		if ($page.url.pathname == "/"){
+		if ($page.url.pathname == '/') {
 			navBarEnter(navbar);
 		}
 	});
 </script>
 
-<nav class="fixed z-10 w-fit overflow-hidden md:max-w-full md:w-full md:p-1 backdrop-blur-[0.1rem]" bind:this={navbar}>
+<nav
+	class="fixed z-10 w-fit overflow-hidden backdrop-blur-[0.1rem] md:w-full md:max-w-full"
+	bind:this={navbar}
+>
 	<div class="navbar bg-transparent">
-		<div class="navbar-start">
+		<!-- <div class="navbar-start">
 			<button class="btn btn-primary bg-opacity-50 w-20 flex flex-col justify-center items-center" onclick={() => {goto("/")}}>
 				<img src={graphicaLogo} alt="graphica_alpha_logo"/>
 			</button>
-		</div>
-		
-		<div class="navbar-center flex flex-row gap-0 md:gap-3">
+		</div> -->
+
+		<div class="font-jost navbar-start flex flex-row gap-0 md:gap-1">
 			<a
-				class="btn btn-ghost rounded-none font-inter font-light md:tracking-wide text-base md:text-xl hover:border-b-2 hover:border-b-accent"
-				href="/"><House size="18" />Home</a
+				class="btn btn-ghost rounded-none text-base font-light hover:border-b-2 hover:border-b-accent md:text-xl md:tracking-wide"
+				href="/">Home</a
 			>
 			<a
-				class="btn btn-ghost rounded-none font-inter font-light md:tracking-wide text-base md:text-xl hover:border-b-2 hover:border-b-accent"
-				href="/blog"><Notebook size="18" />Blog</a
+				class="btn btn-ghost rounded-none text-base font-light hover:border-b-2 hover:border-b-accent md:text-xl md:tracking-wide"
+				href="/blog">Blog</a
 			>
 			<a
-				class="btn btn-ghost rounded-none font-inter font-light md:tracking-wide text-base md:text-xl hover:border-b-2 hover:border-b-accent"
-				href="/team"><Star size="18"/>Team</a
+				class="btn btn-ghost rounded-none text-base font-light hover:border-b-2 hover:border-b-accent md:text-xl md:tracking-wide"
+				href="/team">Team</a
 			>
 		</div>
 
-		<div class="navbar-end font-inter font-light hidden md:flex md:text-xl">
-			<h1>ESTD. 2023</h1>
+		<div class="font-jost navbar-end hidden font-light md:flex md:text-xl">
+			<button onclick={() => goto('')} class="btn btn-primary rounded-full">Contact Us!</button>
+		</div>
+	</div>
+	<div class="flex flex-row border-b-2 border-accent">
+		<div class="">
+
 		</div>
 	</div>
 </nav>
-
-
