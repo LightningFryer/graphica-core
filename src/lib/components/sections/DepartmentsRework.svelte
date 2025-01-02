@@ -96,7 +96,7 @@
 				scrollTrigger: {
 					trigger: '.department-ui-web-sec',
 					start: 'bottom left',
-					markers: true
+					// markers: true
 				}
 			});
 		} else {
@@ -112,7 +112,7 @@
 				scrollTrigger: {
 					trigger: '.department-ui-web-sec',
 					start: 'right center',
-					markers: true
+					// markers: true
 				}
 			});
 		}
@@ -121,7 +121,7 @@
 </script>
 
 <main class="container flex flex-row flex-nowrap">
-	<div class="flex flex-row flex-nowrap" bind:offsetWidth={containerOffsetWidth}>
+	<div class="flex flex-row flex-nowrap w-screen" bind:offsetWidth={containerOffsetWidth}>
 		<section
 			class="department-intro-sec department-sec flex h-screen min-w-[100%] flex-col items-center justify-center bg-accent text-base-200"
 		>
