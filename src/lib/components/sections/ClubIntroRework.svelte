@@ -51,14 +51,15 @@
 		<img src={blob} alt="blob" class="absolute left-[-7rem] right-0 top-7 z-10 scale-[1.1]" />
 	</div>
 
-	<div class="absolute bottom-9 left-[19rem] right-0 z-10">
+	<!-- <div class="absolute bottom-9 left-[19rem] right-0 z-10">
 		<h1 class="font-jost text-3xl">
 			This is Graphica<span class="font-bold">!</span> We love Graphica<span class="font-bold"
 				>!</span
 			>
 			I love Graphica<span class="font-bold">!</span> You should too<span class="font-bold">!</span>
+			
 		</h1>
-	</div>
+	</div> -->
 </main>
 
 <style>

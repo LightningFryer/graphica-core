@@ -104,9 +104,9 @@
 		<section
 			class="department-intro-sec department-sec flex h-screen min-w-[100%] flex-col items-center justify-center bg-accent text-base-200"
 		>
-			<div class="absolute z-0 scale-[1.3]">
+			<!-- <div class="absolute z-0 scale-[1.3]">
 				<img src={dept_intro_blob} alt="dept_intro_blob" />
-			</div>
+			</div> -->
 			<h1 class="intro-text font-bebas text-7xl text-white">
 				What about our <span class="text-[#ffda45]">various departments</span> you ask?
 			</h1>
