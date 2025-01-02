@@ -121,9 +121,9 @@
 </script>
 
 <main class="container flex flex-row flex-nowrap">
-	<div class="flex flex-row flex-nowrap w-screen" bind:offsetWidth={containerOffsetWidth}>
+	<div class="overscroll-avoid flex flex-row flex-nowrap w-screen" bind:offsetWidth={containerOffsetWidth}>
 		<section
-			class="department-intro-sec department-sec flex h-screen min-w-[100%] flex-col items-center justify-center bg-accent text-base-200"
+			class="department-intro-sec department-sec flex h-screen min-w-full flex-col items-center justify-center bg-accent text-base-200"
 		>
 			<!-- This is the background image that looks like the exploding thingy. DO NOT DELETE -->
 			<!-- <div class="absolute z-0 scale-[1.3]">
@@ -138,7 +138,7 @@
 		</section>
 
 		<section
-			class="department-sec department-gd-3d-sec flex h-screen min-w-[100%] flex-col items-center justify-center"
+			class="department-sec department-gd-3d-sec flex h-screen min-w-full flex-col items-center justify-center"
 		>
 			<div class="flex flex-col items-center justify-center md:flex-row md:gap-0">
 				<div class="dept-card-sec-1">
@@ -151,7 +151,7 @@
 		</section>
 
 		<section
-			class="department-sec department-ui-web-sec flex h-screen min-w-[100%] flex-col items-center justify-center"
+			class="department-sec department-ui-web-sec flex h-screen min-w-full flex-col items-center justify-center"
 		>
 			<div class="flex flex-col items-center justify-center md:flex-row md:gap-0">
 				<div class="dept-card-sec-2">
@@ -166,6 +166,10 @@
 </main>
 
 <style>
+	.overscroll-avoid{
+		overscroll-behavior: none;
+	}
+
 	.department-intro-sec {
 		position: relative;
 		width: 100%;
