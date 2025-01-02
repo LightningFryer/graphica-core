@@ -9,7 +9,8 @@
 	import dept_ui_ux_sec_card from '$lib/images/ui_ux_sec_card.jpg';
 	import dept_web_dev_ux_sec_card from '$lib/images/web_dev_sec_card.jpg';
 	import dept_intro_blob from '$lib/images/department-intro-blob.png';
-	import { Star } from 'lucide-svelte';
+	import Device from 'svelte-device-info';
+	// import { Star } from 'lucide-svelte';
 
 	onMount(() => {
 		let sections = gsap.utils.toArray('.department-sec');
@@ -42,29 +43,29 @@
 			}
 		});
 
-		gsap.from('.gd-stamp-anim', {
-			opacity: 0,
-			yPercent: -100,
-			duration: 1,
-			scale: 2,
-			stagger: 0.3,
-			ease: 'power4.inOut',
-			onComplete: () => {
-				gsap.to('.thisText', {
-					opacity: 1,
-					yPercent: 0,
-					startAt: {
-						yPercent: 50
-					},
-					text: 'Because our club is all about this!',
-					duration: 1.5
-				});
-			},
-			scrollTrigger: {
-				trigger: '.department-gd-3d-sec',
-				start: 'right center'
-			}
-		});
+		// gsap.from('.gd-stamp-anim', {
+		// 	opacity: 0,
+		// 	yPercent: -100,
+		// 	duration: 1,
+		// 	scale: 2,
+		// 	stagger: 0.3,
+		// 	ease: 'power4.inOut',
+		// 	onComplete: () => {
+		// 		gsap.to('.thisText', {
+		// 			opacity: 1,
+		// 			yPercent: 0,
+		// 			startAt: {
+		// 				yPercent: 50
+		// 			},
+		// 			text: 'Because our club is all about this!',
+		// 			duration: 1.5
+		// 		});
+		// 	},
+		// 	scrollTrigger: {
+		// 		trigger: '.department-gd-3d-sec',
+		// 		start: 'right center'
+		// 	}
+		// });
 
 		gsap.from('.dept-card-sec-1', {
 			opacity: 0,
@@ -77,47 +78,69 @@
 
 			scrollTrigger: {
 				trigger: '.department-gd-3d-sec',
-				start: 'right right'
+				start: 'bottom right'
+				// markers: true,
 			}
 		});
 
-		gsap.from('.dept-card-sec-2', {
-			opacity: 0,
-			yPercent: 50,
-			xPercent: -50,
-			duration: 2,
-			ease: 'power4.out',
-			stagger: 0.4,
-			rotate: 45,
+		if (!Device.isMobile) {
+			gsap.from('.dept-card-sec-2', {
+				opacity: 0,
+				yPercent: 50,
+				xPercent: -50,
+				duration: 2,
+				ease: 'power4.out',
+				stagger: 0.4,
+				rotate: 45,
 
-			scrollTrigger: {
-				trigger: '.department-ui-web-sec',
-				start: 'right left',
-				markers: true
-			}
-		});
+				scrollTrigger: {
+					trigger: '.department-ui-web-sec',
+					start: 'bottom left',
+					markers: true
+				}
+			});
+		} else {
+			gsap.from('.dept-card-sec-2', {
+				opacity: 0,
+				yPercent: 50,
+				xPercent: -50,
+				duration: 2,
+				ease: 'power4.out',
+				stagger: 0.4,
+				rotate: 45,
+
+				scrollTrigger: {
+					trigger: '.department-ui-web-sec',
+					start: 'right center',
+					markers: true
+				}
+			});
+		}
 	});
+	// right center for phones
 </script>
 
 <main class="container flex flex-row flex-nowrap">
-	<div class="container flex flex-row flex-nowrap" bind:offsetWidth={containerOffsetWidth}>
+	<div class="flex flex-row flex-nowrap" bind:offsetWidth={containerOffsetWidth}>
 		<section
 			class="department-intro-sec department-sec flex h-screen min-w-[100%] flex-col items-center justify-center bg-accent text-base-200"
 		>
+			<!-- This is the background image that looks like the exploding thingy. DO NOT DELETE -->
 			<!-- <div class="absolute z-0 scale-[1.3]">
 				<img src={dept_intro_blob} alt="dept_intro_blob" />
 			</div> -->
-			<h1 class="intro-text font-bebas text-7xl text-white">
+			<h1 class="intro-text text-center font-bebas text-3xl text-white md:text-7xl">
 				What about our <span class="text-[#ffda45]">various departments</span> you ask?
 			</h1>
-			<h1 class="intro-text font-bebas text-5xl text-white">
+			<h1 class="intro-text text-center font-bebas text-3xl text-white md:text-5xl">
 				Scroll on to see what <span class="text-7xl">we</span> have to offer!
 			</h1>
 		</section>
+
 		<section
 			class="department-sec department-gd-3d-sec flex h-screen min-w-[100%] flex-col items-center justify-center"
 		>
-			<div class="flex flex-row items-center justify-center">
+			<div class="flex flex-col items-center justify-center md:flex-row md:gap-0">
 				<div class="dept-card-sec-1">
 					<img src={dept_gd_sec_card} class=" scale-[0.7] rounded-xl" alt="gd_sec" />
 				</div>
@@ -130,7 +153,7 @@
 		<section
 			class="department-sec department-ui-web-sec flex h-screen min-w-[100%] flex-col items-center justify-center"
 		>
-			<div class="flex flex-row items-center justify-center">
+			<div class="flex flex-col items-center justify-center md:flex-row md:gap-0">
 				<div class="dept-card-sec-2">
 					<img src={dept_ui_ux_sec_card} class=" scale-[0.7] rounded-xl" alt="gd_sec" />
 				</div>

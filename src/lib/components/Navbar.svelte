@@ -16,7 +16,7 @@
 </script>
 
 <nav
-	class="fixed z-20 w-fit overflow-hidden backdrop-blur-[0.1rem] md:w-full md:max-w-full"
+	class="fixed z-20 w-full overflow-hidden backdrop-blur-[0.1rem] md:w-full md:max-w-full"
 	bind:this={navbar}
 >
 	<div class="navbar bg-transparent">
@@ -26,7 +26,7 @@
 			</button>
 		</div> -->
 
-		<div class="font-jost navbar-start flex flex-row gap-0 md:gap-1">
+		<div class="navbar-start flex flex-row gap-0 font-jost md:gap-1">
 			<a
 				class="btn btn-ghost rounded-none text-base font-light hover:border-b-2 hover:border-b-accent md:text-xl md:tracking-wide"
 				href="/">Home</a
@@ -41,13 +41,11 @@
 			>
 		</div>
 
-		<div class="font-jost navbar-end hidden font-light md:flex md:text-xl">
+		<div class="navbar-end font-jost font-light md:flex md:text-xl">
 			<button onclick={() => goto('')} class="btn btn-primary rounded-full">Contact Us!</button>
 		</div>
 	</div>
 	<div class="flex flex-row border-b-2 border-accent">
-		<div class="">
-
-		</div>
+		<div class=""></div>
 	</div>
 </nav>
