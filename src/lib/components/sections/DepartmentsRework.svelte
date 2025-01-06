@@ -15,16 +15,17 @@
 	onMount(() => {
 		let sections = gsap.utils.toArray('.department-sec');
 		gsap.registerPlugin(ScrollTrigger);
+		// ScrollTrigger.normalizeScroll(true);
 
 		gsap.to(sections, {
 			xPercent: -100 * (sections.length - 1),
 			ease: 'none',
-			duration: 2,
+			// duration: 2,
 			scrollTrigger: {
 				trigger: '.container',
 				pin: true,
 				scrub: 1,
-				// snap: 1 / (sections.length - 1),
+				snap: 1 / (sections.length - 1),
 				end: () => '+=' + containerOffsetWidth
 			}
 		});
@@ -121,7 +122,7 @@
 </script>
 
 <main class="container flex flex-row flex-nowrap">
-	<div class="overscroll-avoid flex flex-row flex-nowrap w-screen" bind:offsetWidth={containerOffsetWidth}>
+	<div class="container flex flex-row flex-nowrap w-screen" bind:offsetWidth={containerOffsetWidth}>
 		<section
 			class="department-intro-sec department-sec flex h-screen min-w-full flex-col items-center justify-center bg-accent text-base-200"
 		>
