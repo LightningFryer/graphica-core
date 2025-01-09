@@ -7,6 +7,7 @@
 	import graphicaLogo from '$lib/images/logo/Logo_Alpha.png';
 	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
+	import status_bar from '$lib/images/status_bar.png';
 
 	onMount(() => {
 		if ($page.url.pathname == '/') {
@@ -45,7 +46,10 @@
 			<button onclick={() => goto('')} class="btn btn-primary rounded-full">Contact Us!</button>
 		</div>
 	</div>
-	<div class="flex flex-row border-b-2 border-accent">
-		<div class=""></div>
+	<div class="">
+		<img src={status_bar} alt="status_bar" />
 	</div>
+	<!-- <div class="flex flex-row border-b-2 border-accent">
+		<div class=""></div>
+	</div> -->
 </nav>

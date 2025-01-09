@@ -13,7 +13,7 @@
 	import Events from '$lib/components/sections/Events.svelte';
 </script>
 
-<main class="overflow-hidden bg-base-100">	
+<main class="overflow-hidden bg-blue-500">	
 	<Navbar />
 	<Landing />
 	<!-- <ClubIntro /> -->
