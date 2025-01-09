@@ -1,10 +1,6 @@
-<svelte:head>
-	<title>Graphica | Home</title>
-</svelte:head>
-
 <script lang="ts">
 	import Navbar from '$lib/components/Navbar.svelte';
-	import Landing from "$lib/components/sections/Landing.svelte";
+	import Landing from '$lib/components/sections/Landing.svelte';
 	import ClubIntro from '$lib/components/sections/ClubIntro.svelte';
 	import ClubIntroRework from '$lib/components/sections/ClubIntroRework.svelte';
 	import DepartmentsRework from '$lib/components/sections/DepartmentsRework.svelte';
@@ -13,7 +9,11 @@
 	import Events from '$lib/components/sections/Events.svelte';
 </script>
 
-<main class="overflow-hidden bg-blue-500">	
+<svelte:head>
+	<title>Graphica | Home</title>
+</svelte:head>
+
+<main class="main-sec overflow-hidden">
 	<Navbar />
 	<Landing />
 	<!-- <ClubIntro /> -->
@@ -22,10 +22,27 @@
 	<DepartmentsRework />
 	<Resources />
 	<Events />
-	
 </main>
 
+<style>
+	.main-sec {
+		/* position: relative; */
+		/* width: 100%; */
+		/* height: 100vh; Full viewport height */
 
+		background-color: black;
+		background-image: linear-gradient(to right, #ffffff7f 1px, transparent 1px),
+			linear-gradient(to bottom, #ffffff7f 1px, transparent 1px);
+		background-size: 70px 70px; /* Set grid cell size */
+		animation: moveLeft 2s linear infinite;
+	}
 
-
-
+	@keyframes moveLeft {
+		0% {
+			background-position: 0 0;
+		}
+		100% {
+			background-position: 70px 0; /* Moves by exactly one grid cell size */
+		}
+	}
+</style>
