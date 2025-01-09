@@ -20,7 +20,7 @@
 	<!-- <Departments /> -->
 	<ClubIntroRework />
 	<DepartmentsRework />
-	<Resources />
+	<!-- <Resources /> -->
 	<Events />
 </main>
 

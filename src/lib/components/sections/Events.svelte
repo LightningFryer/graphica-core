@@ -1,48 +1,22 @@
-<script></script>
+<script>
+	import past_events_png from "$lib/images/past_events_full.png"
+</script>
 
-<main class="flex h-screen flex-col items-center justify-center">
-	<div class="carousel h-[80%] w-[70%]">
-		<div id="slide1" class="carousel-item relative w-full">
-			<img
-				src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
-				class="w-full"
-			/>
-			<div
-				class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between transition-transform"
-			>
-				<a href="#slide4" class="btn btn-circle">❮</a>
-				<a href="#slide2" class="btn btn-circle">❯</a>
-			</div>
-		</div>
-		<div id="slide2" class="carousel-item relative w-full">
-			<img
-				src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
-				class="w-full"
-			/>
-			<div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-				<a href="#slide1" class="btn btn-circle">❮</a>
-				<a href="#slide3" class="btn btn-circle">❯</a>
-			</div>
-		</div>
-		<div id="slide3" class="carousel-item relative w-full">
-			<img
-				src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
-				class="w-full"
-			/>
-			<div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-				<a href="#slide2" class="btn btn-circle">❮</a>
-				<a href="#slide4" class="btn btn-circle">❯</a>
-			</div>
-		</div>
-		<div id="slide4" class="carousel-item relative w-full">
-			<img
-				src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
-				class="w-full"
-			/>
-			<div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-				<a href="#slide3" class="btn btn-circle">❮</a>
-				<a href="#slide1" class="btn btn-circle">❯</a>
-			</div>
-		</div>
+<main class="flex h-fit flex-col items-center justify-center">
+	<div class="h-full w-full p-28 border-2">
+		<p class="text-justify font-poppins text-3xl font-extralight">
+			As a design club, we immerse ourselves in the vibrant world of creativity and innovation. We
+			focus on design not just as a discipline, but as a way of thinking that shapes the spaces,
+			products, and experiences around us. Our scope of work includes graphic design, web
+			development, animation, and 3D modelling, allowing us to tackle a diverse range of projects
+			that challenge conventional ideas. Through collaborative workshops and hands-on challenges, we
+			cultivate a supportive environment where every idea is valued.
+		</p>
+	</div>
+	<div class="">
+		<h1 class="font-bebas text-8xl">Our Past Events</h1>
+	</div>
+	<div class="relative">
+		<img class="" src={past_events_png} alt="the_full_image" />
 	</div>
 </main>
