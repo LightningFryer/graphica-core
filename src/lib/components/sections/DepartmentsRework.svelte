@@ -126,7 +126,7 @@
 <main class="container flex flex-row flex-nowrap" id="container-wrap">
 	<div class="container flex w-screen flex-row flex-nowrap" bind:offsetWidth={containerOffsetWidth}>
 		<section
-			class="department-intro-sec department-sec flex h-screen min-w-full flex-col items-center justify-center border-4 border-blue-500 bg-accent text-base-200"
+			class="department-intro-sec department-sec flex h-screen min-w-full grow flex-col items-center justify-center border-4 border-blue-500 bg-accent text-base-200"
 		>
 			<!-- This is the background image that looks like the exploding thingy. DO NOT DELETE -->
 			<!-- <div class="absolute z-0 scale-[1.3]">
@@ -143,7 +143,7 @@
 		</section>
 
 		<section
-			class="department-sec department-gd-3d-sec flex h-screen min-w-full flex-col items-center justify-center border-4 border-orange-500"
+			class="department-sec department-gd-3d-sec flex h-screen min-w-full grow flex-col items-center justify-center border-4 border-orange-500"
 		>
 			<!-- <div class="flex flex-col items-center justify-center md:flex-row md:gap-0">
 				<div class="dept-card-sec-1">
@@ -156,7 +156,7 @@
 		</section>
 
 		<section
-			class="department-sec department-ui-web-sec flex h-screen min-w-full flex-col items-center justify-center border-4 border-green-600"
+			class="department-sec department-ui-web-sec flex h-screen min-w-full grow flex-col items-center justify-center border-4 border-green-600"
 		>
 			<!-- <div class="flex flex-col items-center justify-center md:flex-row md:gap-0">
 				<div class="dept-card-sec-2">
