@@ -175,7 +175,7 @@
 
 	.department-intro-sec {
 		position: relative;
-		width: 100%;
+		width: 100vw !important;
 		height: 100vh; /* Full viewport height */
 
 		background-image: linear-gradient(to right, #ffffff7f 1px, transparent 1px),
@@ -187,7 +187,7 @@
 
 	.department-gd-3d-sec {
 		position: relative;
-		width: 100%;
+		width: 100vw !important;
 		height: 100vh; /* Full viewport height */
 
 		background-color: black;
@@ -199,7 +199,7 @@
 
 	.department-ui-web-sec {
 		position: relative;
-		width: 100%;
+		width: 100vw !important;
 		height: 100vh; /* Full viewport height */
 
 		background-color: black;

@@ -19,7 +19,7 @@
 	<ClubIntroRework />
 	<DepartmentsRework />
 	<Events />
-	<Resources />
+	<!-- <Resources /> -->
 </main>
 
 <style>
