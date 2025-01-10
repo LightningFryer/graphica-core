@@ -16,12 +16,10 @@
 <main class="main-sec overflow-hidden">
 	<Navbar />
 	<Landing />
-	<!-- <ClubIntro /> -->
-	<!-- <Departments /> -->
 	<ClubIntroRework />
 	<DepartmentsRework />
-	<!-- <Resources /> -->
 	<Events />
+	<Resources />
 </main>
 
 <style>

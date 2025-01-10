@@ -96,7 +96,7 @@
 
 				scrollTrigger: {
 					trigger: '.department-ui-web-sec',
-					start: 'bottom left',
+					start: 'bottom left'
 					// markers: true
 				}
 			});
@@ -112,7 +112,7 @@
 
 				scrollTrigger: {
 					trigger: '.department-ui-web-sec',
-					start: 'right center',
+					start: 'right center'
 					// markers: true
 				}
 			});
@@ -122,7 +122,7 @@
 </script>
 
 <main class="container flex flex-row flex-nowrap">
-	<div class="container flex flex-row flex-nowrap w-screen" bind:offsetWidth={containerOffsetWidth}>
+	<div class="container flex w-screen flex-row flex-nowrap" bind:offsetWidth={containerOffsetWidth}>
 		<section
 			class="department-intro-sec department-sec flex h-screen min-w-full flex-col items-center justify-center bg-accent text-base-200"
 		>
@@ -130,12 +130,14 @@
 			<!-- <div class="absolute z-0 scale-[1.3]">
 				<img src={dept_intro_blob} alt="dept_intro_blob" />
 			</div> -->
-			<h1 class="intro-text text-center font-bebas text-3xl text-white md:text-7xl">
-				What about our <span class="text-[#ffda45]">various departments</span> you ask?
-			</h1>
-			<h1 class="intro-text text-center font-bebas text-3xl text-white md:text-5xl">
-				Scroll on to see what <span class="text-7xl">we</span> have to offer!
-			</h1>
+			<div class="flex flex-col items-center justify-center">
+				<h1 class="intro-text text-center font-bebas text-3xl text-white md:text-7xl">
+					What about our <span class="text-[#ffda45]">various departments</span> you ask?
+				</h1>
+				<h1 class="intro-text text-center font-bebas text-3xl text-white md:text-5xl">
+					Scroll on to see what <span class="text-7xl">we</span> have to offer!
+				</h1>
+			</div>
 		</section>
 
 		<section
@@ -167,7 +169,7 @@
 </main>
 
 <style>
-	.overscroll-avoid{
+	.overscroll-avoid {
 		overscroll-behavior: none;
 	}
 

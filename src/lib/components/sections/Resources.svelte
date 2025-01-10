@@ -2,6 +2,7 @@
 	import gsap from 'gsap';
 	import { onMount } from 'svelte';
 	import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+	import { horizontalLoop } from '$lib/anims/helperFuncs';
 
 	onMount(() => {
 		gsap.registerPlugin(ScrollTrigger);
@@ -32,6 +33,9 @@
 				start: 'top center'
 			}
 		});
+		const boxes = gsap.utils.toArray(".resource-card")
+		// const loop = horizontalLoop(boxes, {repeat: -1});
+
 	});
 </script>
 
