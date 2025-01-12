@@ -7,6 +7,7 @@
 	import Departments from '$lib/components/sections/Departments.svelte';
 	import Resources from '$lib/components/sections/Resources.svelte';
 	import Events from '$lib/components/sections/Events.svelte';
+	import BlogIntro from '$lib/components/sections/BlogIntro.svelte';
 </script>
 
 <svelte:head>
@@ -19,6 +20,7 @@
 	<ClubIntroRework />
 	<DepartmentsRework />
 	<Events />
+	<BlogIntro />
 	<!-- <Resources /> -->
 </main>
 

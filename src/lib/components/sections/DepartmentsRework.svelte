@@ -123,8 +123,8 @@
 	// right center for phones
 </script>
 
-<main class="container flex flex-row flex-nowrap" id="container-wrap">
-	<div class="container flex w-screen flex-row flex-nowrap" bind:offsetWidth={containerOffsetWidth}>
+<main class="container flex flex-col flex-nowrap" id="container-wrap">
+	<div class="container flex flex-row flex-nowrap" bind:offsetWidth={containerOffsetWidth}>
 		<section
 			class="department-intro-sec department-sec flex h-screen min-w-full grow flex-col items-center justify-center border-4 border-blue-500 bg-accent text-base-200"
 		>
@@ -132,40 +132,40 @@
 			<!-- <div class="absolute z-0 scale-[1.3]">
 				<img src={dept_intro_blob} alt="dept_intro_blob" />
 			</div> -->
-			<!-- <div class="flex flex-col items-center justify-center">
+			<div class="flex flex-col items-center justify-center">
 				<h1 class="intro-text text-center font-bebas text-3xl text-white md:text-7xl">
 					What about our <span class="text-[#ffda45]">various departments</span> you ask?
 				</h1>
 				<h1 class="intro-text text-center font-bebas text-3xl text-white md:text-5xl">
 					Scroll on to see what <span class="text-7xl">we</span> have to offer!
 				</h1>
-			</div> -->
+			</div>
 		</section>
 
 		<section
 			class="department-sec department-gd-3d-sec flex h-screen min-w-full grow flex-col items-center justify-center border-4 border-orange-500"
 		>
-			<!-- <div class="flex flex-col items-center justify-center md:flex-row md:gap-0">
+			<div class="flex flex-col items-center justify-center md:flex-row md:gap-0">
 				<div class="dept-card-sec-1">
 					<img src={dept_gd_sec_card} class=" scale-[0.7] rounded-xl" alt="gd_sec" />
 				</div>
 				<div class="dept-card-sec-1">
 					<img src={dept_3d_sec_card} class=" scale-[0.7] rounded-xl" alt="gd_sec" />
 				</div>
-			</div> -->
+			</div>
 		</section>
 
 		<section
 			class="department-sec department-ui-web-sec flex h-screen min-w-full grow flex-col items-center justify-center border-4 border-green-600"
 		>
-			<!-- <div class="flex flex-col items-center justify-center md:flex-row md:gap-0">
+			<div class="flex flex-col items-center justify-center md:flex-row md:gap-0">
 				<div class="dept-card-sec-2">
 					<img src={dept_ui_ux_sec_card} class=" scale-[0.7] rounded-xl" alt="gd_sec" />
 				</div>
 				<div class="dept-card-sec-2">
 					<img src={dept_web_dev_ux_sec_card} class=" scale-[0.7] rounded-xl" alt="gd_sec" />
 				</div>
-			</div> -->
+			</div>
 		</section>
 	</div>
 </main>
