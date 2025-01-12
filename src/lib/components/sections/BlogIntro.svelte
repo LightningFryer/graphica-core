@@ -1,7 +1,7 @@
 <script>
 </script>
 
-<main class="flex h-screen flex-col items-center justify-center">
+<main class="blog-intro-sec flex h-screen flex-col items-center justify-center">
 	<div class="flex h-[80%] w-[90%] flex-col items-center gap-4">
 		<h1 class="font-bebas text-8xl">BLOG POSTS</h1>
 
@@ -11,9 +11,7 @@
 		</p>
 
 		<div class="flex flex-row gap-28">
-			<div
-				class="relative h-[22rem] w-[18rem] justify-end"
-			>
+			<div class="relative h-[22rem] w-[18rem] justify-end">
 				<div class="flex h-full w-full flex-row">
 					<div class="h-full w-[50%] bg-[#F5F3E4]"></div>
 					<div class="h-full w-[50%] bg-[#C39F61]"></div>
@@ -34,9 +32,7 @@
 				<!-- </div> -->
 			</div>
 
-			<div
-				class="relative h-[22rem] w-[18rem] justify-end"
-			>
+			<div class="relative h-[22rem] w-[18rem] justify-end">
 				<div class="flex h-full w-full flex-row">
 					<div class="h-full w-[50%] bg-[#F5F3E4]"></div>
 					<div class="h-full w-[50%] bg-[#C39F61]"></div>
@@ -57,9 +53,7 @@
 				<!-- </div> -->
 			</div>
 
-			<div
-				class="relative h-[22rem] w-[18rem] justify-end"
-			>
+			<div class="relative h-[22rem] w-[18rem] justify-end">
 				<div class="flex h-full w-full flex-row">
 					<div class="h-full w-[50%] bg-[#F5F3E4]"></div>
 					<div class="h-full w-[50%] bg-[#C39F61]"></div>
@@ -82,3 +76,27 @@
 		</div>
 	</div>
 </main>
+
+
+<style>
+	.blog-intro-sec {
+		position: relative;
+		/* width: 100vw !important; */
+		height: 100vh;
+
+		background-color: black;
+		background-image: linear-gradient(to right, #ffffff7f 1px, transparent 1px),
+			linear-gradient(to bottom, #ffffff7f 1px, transparent 1px);
+		background-size: 70px 70px; /* Set grid cell size */
+		animation: moveLeft 2s linear infinite;
+	}
+	
+	@keyframes moveLeft {
+		0% {
+			background-position: 0 0;
+		}
+		100% {
+			background-position: 70px 0; /* Moves by exactly one grid cell size */
+		}
+	}
+</style>
