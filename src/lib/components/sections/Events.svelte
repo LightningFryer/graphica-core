@@ -14,7 +14,7 @@
 		</p>
 	</div> -->
 	<div class="">
-		<h1 class="font-bebas text-8xl flex flex-row gap-4 items-center">Take a look at our <span class="text-9xl">past events!</span></h1>
+		<h1 class="mt-10 font-bebas text-6xl flex flex-row gap-4 items-center opacity-75">Take a look at our <span class="text-8xl text-accent">past events!</span></h1>
 	</div>
 	<div class="relative">
 		<img class="" src={past_events_png} alt="the_full_image" />
