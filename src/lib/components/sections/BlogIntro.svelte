@@ -1,7 +1,7 @@
 <script>
 </script>
 
-<main class="blog-intro-sec flex h-screen flex-col items-center justify-center">
+<main id="blog-intro-sec" class="blog-intro-sec flex h-screen flex-col items-center justify-center">
 	<div class="flex h-[80%] w-[90%] flex-col items-center gap-4">
 		<h1 class="font-bebas text-8xl">BLOG POSTS</h1>
 
