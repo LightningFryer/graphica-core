@@ -18,7 +18,7 @@
 </svelte:head>
 
 <main class="main-sec overflow-hidden">
-	<Navbar />
+	<!-- <Navbar /> -->
 	<Landing />
 	<ClubIntroRework />
 	<DepartmentsRework />

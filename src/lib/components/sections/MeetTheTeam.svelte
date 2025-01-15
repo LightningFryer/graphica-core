@@ -14,12 +14,12 @@
 </script>
 
 <main class="meet-the-team-sec flex h-screen flex-col flex-nowrap" use:scrollRef={'team'}>
-	<div class="flex w-full flex-row">
-		<div class="h-fit w-[50%] p-5">
-			<h1 class="font-poppins text-9xl">MEET OUR <span class="font-bold italic">TEAM</span></h1>
+	<div class="flex w-full flex-col md:flex-row">
+		<div class="h-fit md:w-[50%] p-4 md:p-5">
+			<h1 class="font-poppins text-5xl md:text-9xl">MEET OUR <span class="font-bold italic text-accent">TEAM</span></h1>
 		</div>
-		<div class="h-fit w-[50%] p-5">
-			<p class="text-justify font-poppins text-2xl font-extralight">
+		<div class="h-fit md:w-[50%] p-5">
+			<p class="text-justify font-poppins md:text-2xl font-extralight">
 				The design team that’s half pixel perfection, half organized chaos, and 100% fueled by
 				coffee and creativity! Our idea of a balanced layout is somewhere between bold and
 				bonkers—but it works. We’re here to blend aesthetics with functionality, making things
@@ -30,7 +30,7 @@
 	</div>
 	<div class="relative flex min-w-fit grow flex-row flex-nowrap items-end overflow-hidden">
 		<div
-			class="team-card flex h-[95%] min-w-[20%] items-end rounded-tl-full rounded-tr-full bg-[url('$lib/images/team_card_images/ishita_team_card_test.jpg')] bg-cover bg-clip-border bg-center"
+			class="team-card flex h-[99%] md:h-[95%]  min-w-[20%] items-end rounded-tl-full rounded-tr-full bg-[url('$lib/images/team_card_images/ishita_team_card_test.jpg')] bg-cover bg-clip-border [background-position:calc(50%+20px)_center]"
 		>
 			<div
 				class="flex h-full rotate-180 flex-col justify-end p-4 backdrop-blur-[0.1rem] backdrop-brightness-95 [writing-mode:vertical-lr]"
@@ -51,27 +51,27 @@
 		</div>
 
 		<div
-			class="team-card flex h-[95%] min-w-[20%] items-end rounded-tl-full rounded-tr-full bg-[url('$lib/images/team_card_images/shristi_team_card.jpg')] bg-cover bg-clip-border bg-center"
+			class="team-card flex h-[99%] md:h-[95%] min-w-[20%] items-end rounded-tl-full rounded-tr-full bg-[url('$lib/images/team_card_images/shristi_team_card.jpg')] bg-cover bg-clip-border bg-center"
 		>
 			<div
-				class="ml-2 mt-2 flex h-full rotate-180 flex-col justify-end p-4 backdrop-blur-[0.1rem] backdrop-brightness-95 [writing-mode:vertical-lr]"
+				class="flex h-full rotate-180 flex-col justify-end p-4 backdrop-blur-[0.1rem] backdrop-brightness-95 [writing-mode:vertical-lr]"
 			>
 				<p class="font-poppins text-2xl font-extralight italic">Treasurer</p>
-				<p class="font-poppins text-4xl font-bold italic">Shristi Shree Sahoo</p>
+				<p class="font-poppins text-3xl font-bold italic">Shristi Shree Sahoo</p>
 			</div>
 		</div>
 		<div
 			class="team-card flex h-[90%] min-w-[20%] items-end rounded-tl-full rounded-tr-full bg-[url('$lib/images/team_card_images/mahadev_team_card.jpg')] bg-cover bg-clip-border bg-right"
 		>
 			<div
-				class="ml-2 mt-2 flex h-full rotate-180 flex-col justify-end p-4 backdrop-blur-[0.1rem] backdrop-brightness-95 [writing-mode:vertical-lr]"
+				class="flex h-full rotate-180 flex-col justify-end p-4 backdrop-blur-[0.1rem] backdrop-brightness-90 [writing-mode:vertical-lr]"
 			>
 				<p class="font-poppins text-2xl font-extralight italic">Lead Web Dev</p>
-				<p class="font-poppins text-4xl font-bold italic">Mahadev R</p>
+				<p class="font-poppins text-4xl font-bold italic">Mahadev</p>
 			</div>
 		</div>
 		<div
-			class="team-card flex h-[95%] min-w-[20%] items-end rounded-tl-full rounded-tr-full bg-[url('$lib/images/team_card_images/joel_team_card.jpg')] bg-contain bg-clip-border bg-center"
+			class="team-card flex h-[99%] md:h-[95%] min-w-[20%] items-end rounded-tl-full rounded-tr-full bg-[url('$lib/images/team_card_images/joel_team_card.jpg')] bg-contain bg-clip-border bg-center"
 		>
 			<div
 				class="flex h-full rotate-180 flex-col justify-end p-4 backdrop-blur-[0.1rem] backdrop-brightness-95 [writing-mode:vertical-lr]"
@@ -91,7 +91,7 @@
 			</div>
 		</div>
 		<div
-			class="team-card flex h-[95%] min-w-[20%] items-end rounded-tl-full rounded-tr-full bg-[url('$lib/images/team_card_images/riya_team_card.jpg')] bg-cover bg-clip-border bg-center"
+			class="team-card flex h-[99%] md:h-[95%] min-w-[20%] items-end rounded-tl-full rounded-tr-full bg-[url('$lib/images/team_card_images/riya_team_card.jpg')] bg-cover bg-clip-border bg-center"
 		>
 			<div
 				class="flex h-full rotate-180 flex-col justify-end p-4 backdrop-blur-[0.1rem] backdrop-brightness-95 [writing-mode:vertical-lr]"
@@ -111,7 +111,7 @@
 			</div>
 		</div>
 		<div
-			class="team-card flex h-[95%] min-w-[20%] items-end rounded-tl-full rounded-tr-full bg-white"
+			class="team-card flex h-[99%] md:h-[95%] min-w-[20%] items-end rounded-tl-full rounded-tr-full bg-white"
 		></div>
 		<div
 			class="team-card flex h-[90%] min-w-[20%] items-end rounded-tl-full rounded-tr-full bg-[url('$lib/images/team_card_images/aaditya_team_card.jpg')] bg-cover bg-clip-border bg-left"
@@ -124,7 +124,7 @@
 			</div>
 		</div>
 		<div
-			class="team-card flex h-[95%] min-w-[20%] items-end rounded-tl-full rounded-tr-full bg-[url('$lib/images/team_card_images/sohan_team_card.jpg')] bg-cover bg-clip-border bg-center"
+			class="team-card flex h-[99%] md:h-[95%] min-w-[20%] items-end rounded-tl-full rounded-tr-full bg-[url('$lib/images/team_card_images/sohan_team_card.jpg')] bg-cover bg-clip-border bg-center"
 		>
 			<div
 				class="flex h-full rotate-180 flex-col justify-end p-4 backdrop-blur-[0.1rem] backdrop-brightness-95 [writing-mode:vertical-lr]"
@@ -144,7 +144,7 @@
 			</div>
 		</div>
 		<div
-			class="team-card flex h-[95%] min-w-[20%] items-end rounded-tl-full rounded-tr-full bg-[url('$lib/images/team_card_images/vaisakh_team_card.jpg')] bg-cover bg-clip-border bg-center"
+			class="team-card flex h-[99%] md:h-[95%] min-w-[20%] items-end rounded-tl-full rounded-tr-full bg-[url('$lib/images/team_card_images/vaisakh_team_card.jpg')] bg-cover bg-clip-border bg-center"
 		>
 			<div
 				class="flex h-full rotate-180 flex-col justify-end p-4 backdrop-blur-[0.1rem] backdrop-brightness-95 [writing-mode:vertical-lr]"
@@ -157,7 +157,7 @@
 			class="team-card flex h-[90%] min-w-[20%] items-end rounded-tl-full rounded-tr-full bg-white"
 		></div>
 		<div
-			class="team-card flex h-[95%] min-w-[20%] items-end rounded-tl-full rounded-tr-full bg-[url('$lib/images/team_card_images/priyanka_team_card.jpg')] bg-cover bg-clip-border bg-center"
+			class="team-card flex h-[99%] md:h-[95%] min-w-[20%] items-end rounded-tl-full rounded-tr-full bg-[url('$lib/images/team_card_images/priyanka_team_card.jpg')] bg-cover bg-clip-border bg-center"
 		>
 			<div
 				class="flex h-full rotate-180 flex-col justify-end p-4 backdrop-blur-[0.1rem] backdrop-brightness-95 [writing-mode:vertical-lr]"
@@ -179,7 +179,7 @@
 			</div>
 		</div>
 		<div
-			class="team-card flex h-[95%] min-w-[20%] items-end rounded-tl-full rounded-tr-full bg-[url('$lib/images/team_card_images/tanav_team_card.jpg')] bg-cover bg-clip-border bg-center"
+			class="team-card flex h-[99%] md:h-[95%] min-w-[20%] items-end rounded-tl-full rounded-tr-full bg-[url('$lib/images/team_card_images/tanav_team_card.jpg')] bg-cover bg-clip-border bg-center"
 		>
 			<div
 				class="flex h-full rotate-180 flex-col justify-end p-4 backdrop-blur-[0.1rem] backdrop-brightness-95 [writing-mode:vertical-lr]"
