@@ -14,16 +14,16 @@
 		</p>
 	</div> -->
 	<div class="">
-		<h1 class="mt-10 font-bebas text-4xl md:text-6xl flex flex-row gap-2 md:gap-4 items-center opacity-75">Take a look at our <span class="md:text-8xl text-accent">past events!</span></h1>
+		<h1 class="md:mt-10 font-bebas text-3xl md:text-6xl flex flex-row gap-2 md:gap-4 items-center opacity-75">Take a look at our <span class="md:text-8xl text-accent">past events!</span></h1>
 	</div>
 	<div class="relative">
-		<img class="" src={past_events_png} alt="the_full_image" />
+		<img class="border-2" src={past_events_png} alt="the_full_image" />
 	</div>
 </main>
 
 <style>
 	.events-sec {
-		position: relative;
+		/* position: relative; */
 		/* width: 100vw !important; */
 		/* height: 100vh; Full viewport height */
 
