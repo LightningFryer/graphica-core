@@ -49,13 +49,19 @@
 </svelte:head>
 
 <main class="main-sec overflow-hidden">
-	<!-- <Navbar /> -->
-	<Landing />
-	<ClubIntroRework />
-	<DepartmentsRework />
-	<Events />
-	<BlogIntro />
-	<MeetTheTeam />
-	<Footer />
+	{#if loading === true}
+		<div class="flex h-screen flex-col items-center justify-center">
+			<p class="text-8xl">Loading</p>
+		</div>
+	{:else}
+		<Navbar />
+		<Landing />
+		<ClubIntroRework />
+		<DepartmentsRework />
+		<Events />
+		<BlogIntro />
+		<MeetTheTeam />
+		<Footer />
+	{/if}
 	<!-- <Resources /> -->
 </main>
