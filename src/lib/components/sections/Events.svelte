@@ -1,5 +1,5 @@
 <script>
-	import past_events_png from "$lib/images/past_events_mobile.png"
+	import past_events_png from "$lib/images/past_events_mobile.svg"
 </script>
 
 <main class="events-sec flex h-fit flex-col items-center justify-center">

@@ -11,6 +11,37 @@
 	import MeetTheTeam from '$lib/components/sections/MeetTheTeam.svelte';
 	import Footer from '$lib/components/sections/Footer.svelte';
 	import { onMount } from 'svelte';
+
+	let loading = true;
+
+	// Wait for all images in the DOM to load
+	async function waitForImagesToLoad() {
+		const images = Array.from(document.querySelectorAll('img'));
+		const imageLoadPromises = images.map(
+			(img) =>
+				new Promise((resolve) => {
+					if (img.complete && img.naturalWidth !== 0) {
+						// Already loaded
+						resolve();
+					} else {
+						// Wait for load
+						img.onload = img.onerror = resolve;
+					}
+				})
+		);
+		await Promise.all(imageLoadPromises);
+	}
+
+	onMount(async () => {
+		try {
+			await waitForImagesToLoad();
+			console.log(loading);
+		} catch (error) {
+			console.error('Error waiting for images to load:', error);
+		} finally {
+			loading = false;
+		}
+	});
 </script>
 
 <svelte:head>
