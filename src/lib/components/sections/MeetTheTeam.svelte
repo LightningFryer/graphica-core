@@ -2,14 +2,24 @@
 	import { horizontalLoop } from '$lib/anims/helperFuncs';
 	// import TeamBg from '$lib/images/meet_the_team.png';
 	import gsap from 'gsap';
+	import { ScrollTrigger } from 'gsap/ScrollTrigger';
 	import { onMount } from 'svelte';
 	import { scrollRef } from 'svelte-scrolling';
 
 	let loop;
 	onMount(() => {
 		const teamCards = gsap.utils.toArray('.team-card');
+		gsap.registerPlugin(ScrollTrigger);
+		loop = horizontalLoop(teamCards, { repeat: -1, speed: 1, paused: true });
 
-		loop = horizontalLoop(teamCards, { repeat: -1, speed: 1 });
+		gsap.to(".meet-team-sec", {
+			onStart: () => loop.resume(),
+			scrollTrigger: {
+				trigger: ".meet-team-sec",
+				start: "top 60%",
+			}
+
+		})
 	});
 </script>
 
@@ -42,7 +52,18 @@
 			</div>
 		</div>
 		<div
-			class="team-card flex h-[90%] min-w-[16%] items-end rounded-tl-full rounded-tr-full bg-[url('$lib/images/team_card_images/krissh_team_card.jpg')] bg-cover bg-clip-border bg-center md:min-w-[20%]"
+			class="team-card flex h-[90%] min-w-[16%] items-end rounded-tl-full rounded-tr-full bg-[url('$lib/images/team_card_images/joel_team_card.jpg')] bg-cover bg-clip-border bg-center md:min-w-[20%]"
+		>
+			<div
+				class="flex h-full rotate-180 flex-col justify-end p-2 backdrop-blur-[0.1rem] backdrop-brightness-95 [writing-mode:vertical-lr] md:p-4"
+			>
+				<p class="font-poppins text-xl font-extralight italic md:text-2xl">Vice President</p>
+				<p class="font-poppins text-2xl font-bold italic md:text-4xl">Joel Josy</p>
+			</div>
+		</div>
+
+		<div
+			class="team-card flex h-[99%] min-w-[16%] items-end rounded-tl-full rounded-tr-full bg-[url('$lib/images/team_card_images/krissh_team_card.jpg')] bg-cover bg-clip-border bg-center md:h-[95%] md:min-w-[20%]"
 		>
 			<div
 				class="flex h-full rotate-180 flex-col justify-end p-2 backdrop-blur-[0.1rem] backdrop-brightness-95 [writing-mode:vertical-lr] md:p-4"
@@ -51,35 +72,24 @@
 				<p class="font-poppins text-2xl font-bold italic md:text-4xl">Krissh Sachdeva</p>
 			</div>
 		</div>
-
 		<div
-			class="team-card flex h-[99%] min-w-[16%] items-end rounded-tl-full rounded-tr-full bg-[url('$lib/images/team_card_images/shristi_team_card.jpg')] bg-cover bg-clip-border bg-center md:h-[95%] md:min-w-[20%]"
+			class="team-card flex h-[90%] min-w-[16%] items-end rounded-tl-full rounded-tr-full bg-[url('$lib/images/team_card_images/shristi_team_card.jpg')] bg-cover bg-clip-border bg-right md:min-w-[20%]"
 		>
 			<div
-				class="flex h-full rotate-180 flex-col justify-end p-2 backdrop-blur-[0.1rem] backdrop-brightness-95 [writing-mode:vertical-lr] md:p-4"
+				class="flex h-full rotate-180 flex-col justify-end p-2 backdrop-blur-[0.1rem] backdrop-brightness-90 [writing-mode:vertical-lr] md:p-4"
 			>
 				<p class="font-poppins text-xl font-extralight italic md:text-2xl">Treasurer</p>
 				<p class="font-poppins text-2xl font-bold italic md:text-3xl">Shristi Shree Sahoo</p>
 			</div>
 		</div>
 		<div
-			class="team-card flex h-[90%] min-w-[16%] items-end rounded-tl-full rounded-tr-full bg-[url('$lib/images/team_card_images/mahadev_team_card.jpg')] bg-cover bg-clip-border bg-right md:min-w-[20%]"
-		>
-			<div
-				class="flex h-full rotate-180 flex-col justify-end p-2 backdrop-blur-[0.1rem] backdrop-brightness-90 [writing-mode:vertical-lr] md:p-4"
-			>
-				<p class="font-poppins text-xl font-extralight italic md:text-2xl">Lead Web Dev</p>
-				<p class="font-poppins text-2xl font-bold italic md:text-4xl">Mahadev</p>
-			</div>
-		</div>
-		<div
-			class="team-card flex h-[99%] min-w-[16%] items-end rounded-tl-full rounded-tr-full bg-[url('$lib/images/team_card_images/joel_team_card.jpg')] bg-cover bg-clip-border bg-center md:h-[95%] md:min-w-[20%]"
+			class="team-card flex h-[99%] min-w-[16%] items-end rounded-tl-full rounded-tr-full bg-[url('$lib/images/team_card_images/mahadev_team_card.jpg')] bg-cover bg-clip-border bg-center md:h-[95%] md:min-w-[20%]"
 		>
 			<div
 				class="flex h-full rotate-180 flex-col justify-end p-2 backdrop-blur-[0.1rem] backdrop-brightness-95 [writing-mode:vertical-lr] md:p-4"
 			>
-				<p class="font-poppins text-xl font-extralight italic md:text-2xl">Vice President</p>
-				<p class="font-poppins text-2xl font-bold italic md:text-4xl">Joel Josy</p>
+				<p class="font-poppins text-xl font-extralight italic md:text-2xl">Lead Web Dev</p>
+				<p class="font-poppins text-2xl font-bold italic md:text-4xl">Mahadev</p>
 			</div>
 		</div>
 		<div
@@ -169,7 +179,7 @@
 				class="flex h-full rotate-180 flex-col justify-end p-2 backdrop-blur-[0.1rem] backdrop-brightness-95 [writing-mode:vertical-lr] md:p-4"
 			>
 				<p class="font-poppins text-xl font-extralight italic md:text-2xl">3D Designer</p>
-				<p class="font-poppins text-2xl font-bold italic md:text-4xl">Alankryt Sharma</p>
+				<p class="font-poppins text-2xl font-bold italic md:text-3xl">Alankryt Sharma</p>
 			</div>
 		</div>
 		<div
@@ -178,7 +188,7 @@
 			<div
 				class="flex h-full rotate-180 flex-col justify-end p-2 backdrop-blur-[0.1rem] backdrop-brightness-95 [writing-mode:vertical-lr] md:p-4"
 			>
-				<p class="font-poppins text-lg font-extralight italic md:text-2xl">
+				<p class="font-poppins text-lg font-extralight italic md:text-xl">
 					Social Media & <span>Marketing Head</span>
 				</p>
 				<p class="font-poppins text-2xl font-bold italic md:text-4xl">Priyanka Sahoo</p>

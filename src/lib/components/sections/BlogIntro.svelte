@@ -95,15 +95,23 @@
 
 	{#key moreBlogsOpen}
 		<!-- {#if moreBlogsOpen} -->
-			<div class="{moreBlogsOpen ? "flex h-screen" : "invisible h-0"} flex-col items-center justify-center" in:slide={{ duration: 500 }} out:slide={{duration: 500}}>
-				<p class="text-9xl">Test. More blogs here.</p>
-				
-			</div>
-			<div class="{moreBlogsOpen ? "flex" : "invisible h-0"} w-full justify-center" out:fade={{duration: 100}}>
-				<button class="btn btn-accent" onclick={() => (moreBlogsOpen = false)}
-					>Show Less <ArrowUp /></button
-				>
-			</div>
+		<div
+			class="{moreBlogsOpen
+				? 'flex h-screen'
+				: 'invisible h-0'} flex-col items-center justify-center"
+			in:slide={{ duration: 500 }}
+			out:slide={{ duration: 500 }}
+		>
+			<p class="text-9xl">Test. More blogs here.</p>
+		</div>
+		<div
+			class="{moreBlogsOpen ? 'flex' : 'invisible h-0'} w-full justify-center"
+			out:fade={{ duration: 100 }}
+		>
+			<button class="btn btn-accent md:mb-7" onclick={() => (moreBlogsOpen = false)}
+				>Show Less <ArrowUp /></button
+			>
+		</div>
 		<!-- {/if} -->
 	{/key}
 </main>
