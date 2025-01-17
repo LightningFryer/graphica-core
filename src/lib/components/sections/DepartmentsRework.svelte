@@ -8,7 +8,6 @@
 	import dept_3d_sec_card from '$lib/images/3d_sec_card.jpg';
 	import dept_ui_ux_sec_card from '$lib/images/ui_ux_sec_card.jpg';
 	import dept_web_dev_ux_sec_card from '$lib/images/web_dev_sec_card.jpg';
-	import dept_intro_blob from '$lib/images/department-intro-blob.png';
 	import Device from 'svelte-device-info';
 	import { stopOverscroll } from '$lib/anims/helperFuncs';
 	// import { Star } from 'lucide-svelte';

@@ -1,8 +1,10 @@
 <script>
-	import past_events_png from "$lib/images/past_events_mobile.svg"
+	import past_events_png_mobile from '$lib/images/past_events_mobile.svg';
+	import past_events_png_desktop from '$lib/images/past_events.png';
+	import Device from 'svelte-device-info';
 </script>
 
-<main class="events-sec flex h-fit flex-col items-center justify-center">
+<main class="events-sec flex h-fit flex-col items-center justify-center gap-4">
 	<!-- <div class="h-full w-full p-28">
 		<p class="text-justify font-poppins text-3xl font-extralight">
 			As a design club, we immerse ourselves in the vibrant world of creativity and innovation. We
@@ -14,11 +16,21 @@
 		</p>
 	</div> -->
 	<div class="">
-		<h1 class="md:mt-10 font-bebas text-3xl md:text-6xl flex flex-row gap-2 md:gap-4 items-center opacity-75">Take a look at our <span class="md:text-8xl text-accent">past events!</span></h1>
+		<h1
+			class="flex flex-row items-center gap-2 font-bebas text-3xl opacity-85 md:mt-10 md:gap-4 md:text-6xl"
+		>
+			Take a look at our <span class="text-accent md:text-8xl">past events!</span>
+		</h1>
 	</div>
-	<div class="relative">
-		<img class="border-2" src={past_events_png} alt="the_full_image" />
-	</div>
+	{#if Device.isPhone}
+		<div class="relative">
+			<img src={past_events_png_mobile} alt="the_full_image" />
+		</div>
+	{:else}
+		<div class="relative">
+			<img src={past_events_png_desktop} alt="the_full_image" />
+		</div>
+	{/if}
 </main>
 
 <style>
@@ -33,7 +45,7 @@
 		background-size: 70px 70px; /* Set grid cell size */
 		animation: moveLeft 2s linear infinite;
 	}
-	
+
 	@keyframes moveLeft {
 		0% {
 			background-position: 0 0;

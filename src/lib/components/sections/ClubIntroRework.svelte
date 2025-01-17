@@ -8,12 +8,6 @@
 	import blob from '$lib/images/section2.png';
 	// import catto from "$lib/images/catto1.png"
 
-	async function getImage() {
-		const image = await fetch('https://picsum.photos/400');
-		// console.log(image.url);
-		return image.url;
-	}
-
 	onMount(() => {
 		// gsap.registerPlugin(ScrollTrigger);
 		// const words = SplitType.create('.textEffect');
