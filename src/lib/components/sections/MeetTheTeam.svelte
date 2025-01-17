@@ -113,13 +113,13 @@
 			</div>
 		</div>
 		<div
-			class="team-card flex h-[99%] min-w-[16%] items-end rounded-tl-full rounded-tr-full bg-[url('$lib/images/team_card_images/alankryt_team_card.jpg')] bg-cover bg-clip-border bg-center md:h-[95%] md:min-w-[20%]"
+			class="team-card flex h-[99%] min-w-[16%] items-end rounded-tl-full rounded-tr-full bg-[url('$lib/images/team_card_images/siddarth_team_card.jpg')] bg-cover bg-clip-border bg-center md:h-[95%] md:min-w-[20%]"
 		>
 			<div
 				class="flex h-full rotate-180 flex-col justify-end p-2 backdrop-blur-[0.1rem] backdrop-brightness-95 [writing-mode:vertical-lr] md:p-4"
 			>
 				<p class="font-poppins font-extralight italic md:text-2xl">3D Designer</p>
-				<p class="font-poppins text-2xl font-bold italic md:text-4xl">Alankryt</p>
+				<p class="font-poppins text-2xl font-bold italic md:text-4xl">Siddarth</p>
 			</div>
 		</div>
 		<div
@@ -163,8 +163,15 @@
 			</div>
 		</div>
 		<div
-			class="team-card flex h-[90%] min-w-[16%] items-end rounded-tl-full rounded-tr-full bg-white md:min-w-[20%]"
-		></div>
+			class="team-card flex h-[90%] min-w-[16%] items-end rounded-tl-full rounded-tr-full bg-[url('$lib/images/team_card_images/alankryt_team_card.jpg')] bg-cover bg-clip-border bg-center md:min-w-[20%]"
+		>
+			<div
+				class="flex h-full rotate-180 flex-col justify-end p-2 backdrop-blur-[0.1rem] backdrop-brightness-95 [writing-mode:vertical-lr] md:p-4"
+			>
+				<p class="font-poppins text-xl font-extralight italic md:text-2xl">3D Designer</p>
+				<p class="font-poppins text-2xl font-bold italic md:text-4xl">Alankryt Sharma</p>
+			</div>
+		</div>
 		<div
 			class="team-card flex h-[99%] min-w-[16%] items-end rounded-tl-full rounded-tr-full bg-[url('$lib/images/team_card_images/priyanka_team_card.jpg')] bg-cover bg-clip-border bg-center md:h-[95%] md:min-w-[20%]"
 		>

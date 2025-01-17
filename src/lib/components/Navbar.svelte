@@ -19,7 +19,7 @@
 </script>
 
 <nav
-	class="fixed z-20 w-full overflow-hidden backdrop-blur-[0.5rem] md:w-full md:max-w-full"
+	class="fixed z-20 w-full overflow-hidden backdrop-blur-[0.12rem] md:w-full md:max-w-full"
 	bind:this={navbar}
 >
 	<div class="navbar bg-transparent">
