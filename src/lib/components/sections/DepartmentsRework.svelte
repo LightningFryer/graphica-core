@@ -123,15 +123,18 @@
 </script>
 
 <main class="">
-	<div class="container flex flex-row" bind:offsetWidth={containerOffsetWidth}>
+	<div
+		class="container flex max-h-screen min-w-[300vw] flex-row"
+		bind:offsetWidth={containerOffsetWidth}
+	>
 		<section
-			class="department-intro-sec department-sec flex h-screen min-w-full flex-col items-center justify-center bg-accent text-base-200"
+			class="department-intro-sec department-sec flex h-full w-[100vw] flex-col items-center justify-center bg-accent text-base-200"
 		>
 			<!-- This is the background image that looks like the exploding thingy. DO NOT DELETE -->
 			<!-- <div class="absolute z-0 scale-[1.3]">
 				<img src={dept_intro_blob} alt="dept_intro_blob" />
 			</div> -->
-			<div class="h-full w-full flex justify-center items-center">
+			<div class="flex h-full w-full items-center justify-center">
 				<div class="flex flex-col items-center justify-center">
 					<h1 class="intro-text text-center font-bebas text-3xl text-white md:text-7xl">
 						What about our <span class="text-[#ffda45]">various departments</span> you ask?
@@ -144,7 +147,7 @@
 		</section>
 
 		<section
-			class="department-sec department-gd-3d-sec flex h-screen min-w-full flex-col items-center justify-center"
+			class="department-sec department-gd-3d-sec flex h-full w-[100vw] flex-col items-center justify-center"
 		>
 			<div class="h-full w-full">
 				<div class="flex flex-col items-center justify-center md:flex-row md:gap-0">
@@ -159,7 +162,7 @@
 		</section>
 
 		<section
-			class="department-sec department-ui-web-sec flex h-screen min-w-full flex-col items-center justify-center"
+			class="department-sec department-ui-web-sec flex h-full w-[100vw] flex-col items-center justify-center"
 		>
 			<div class="h-full w-full">
 				<div class="flex flex-col items-center justify-center md:flex-row md:gap-0">
@@ -176,10 +179,6 @@
 </main>
 
 <style>
-	.overscroll-avoid {
-		overscroll-behavior: none;
-	}
-
 	.department-intro-sec {
 		position: relative;
 		/* width: 100vw !important; */
@@ -228,6 +227,6 @@
 	main {
 		margin: 0;
 		-webkit-overflow-scrolling: touch;
-		overflow-scrolling: touch
+		overflow-scrolling: touch;
 	}
 </style>
