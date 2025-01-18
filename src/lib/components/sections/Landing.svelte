@@ -82,7 +82,7 @@
 			direction="right"
 			class="border-b-4 border-t-4 border-accent p-2"
 			gap="20%"
-			style="--gradientColor: #18140e"
+			style="--gradientColor: black"
 		>
 			<p class="text-nowrap font-pixelify text-xl font-bold">Graphic Design</p>
 			<p class="text-nowrap font-pixelify text-xl font-bold">UI/UX</p>
