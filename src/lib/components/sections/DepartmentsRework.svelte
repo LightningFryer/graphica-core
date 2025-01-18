@@ -25,98 +25,75 @@
 				trigger: '.container',
 				pin: true,
 				scrub: 1,
-				snap: 1 / (sections.length - 1),
+				// snap: 1 / (sections.length - 1),
 				end: () => '+=' + containerOffsetWidth || 0
 			}
 		});
 
-		gsap.from('.intro-text', {
-			opacity: 0,
-			yPercent: -100,
-			duration: 1,
-			scale: 2,
-			stagger: 0.3,
-			ease: 'power4.inOut',
-
-			scrollTrigger: {
-				trigger: '.department-intro-sec',
-				start: 'top 50%'
-			}
-		});
-
-		// gsap.from('.gd-stamp-anim', {
+		// gsap.from('.intro-text', {
 		// 	opacity: 0,
 		// 	yPercent: -100,
 		// 	duration: 1,
 		// 	scale: 2,
 		// 	stagger: 0.3,
 		// 	ease: 'power4.inOut',
-		// 	onComplete: () => {
-		// 		gsap.to('.thisText', {
-		// 			opacity: 1,
-		// 			yPercent: 0,
-		// 			startAt: {
-		// 				yPercent: 50
-		// 			},
-		// 			text: 'Because our club is all about this!',
-		// 			duration: 1.5
-		// 		});
-		// 	},
+
 		// 	scrollTrigger: {
-		// 		trigger: '.department-gd-3d-sec',
-		// 		start: 'right center'
+		// 		trigger: '.department-intro-sec',
+		// 		start: 'top 50%'
 		// 	}
 		// });
 
-		gsap.from('.dept-card-sec-1', {
-			opacity: 0,
-			yPercent: 50,
-			xPercent: -50,
-			duration: 2,
-			ease: 'power4.out',
-			stagger: 0.4,
-			rotate: 45,
 
-			scrollTrigger: {
-				trigger: '.department-gd-3d-sec',
-				start: 'bottom right'
-				// markers: true,
-			}
-		});
+		// gsap.from('.dept-card-sec-1', {
+		// 	opacity: 0,
+		// 	yPercent: 50,
+		// 	xPercent: -50,
+		// 	duration: 2,
+		// 	ease: 'power4.out',
+		// 	stagger: 0.4,
+		// 	rotate: 45,
 
-		if (!Device.isMobile) {
-			gsap.from('.dept-card-sec-2', {
-				opacity: 0,
-				yPercent: 50,
-				xPercent: -50,
-				duration: 2,
-				ease: 'power4.out',
-				stagger: 0.4,
-				rotate: 45,
+		// 	scrollTrigger: {
+		// 		trigger: '.department-gd-3d-sec',
+		// 		start: 'bottom right'
+		// 		// markers: true,
+		// 	}
+		// });
 
-				scrollTrigger: {
-					trigger: '.department-ui-web-sec',
-					start: 'bottom left'
-					// markers: true
-				}
-			});
-		} else {
-			gsap.from('.dept-card-sec-2', {
-				opacity: 0,
-				yPercent: 50,
-				xPercent: -50,
-				duration: 2,
-				ease: 'power4.out',
-				stagger: 0.4,
-				rotate: 45,
+		// if (!Device.isMobile) {
+		// 	gsap.from('.dept-card-sec-2', {
+		// 		opacity: 0,
+		// 		yPercent: 50,
+		// 		xPercent: -50,
+		// 		duration: 2,
+		// 		ease: 'power4.out',
+		// 		stagger: 0.4,
+		// 		rotate: 45,
 
-				scrollTrigger: {
-					trigger: '.department-ui-web-sec',
-					start: 'right center'
-					// markers: true
-				}
-			});
-		}
+		// 		scrollTrigger: {
+		// 			trigger: '.department-ui-web-sec',
+		// 			start: 'bottom left'
+		// 			// markers: true
+		// 		}
+		// 	});
+		// } else {
+		// 	gsap.from('.dept-card-sec-2', {
+		// 		opacity: 0,
+		// 		yPercent: 50,
+		// 		xPercent: -50,
+		// 		duration: 2,
+		// 		ease: 'power4.out',
+		// 		stagger: 0.4,
+		// 		rotate: 45,
+
+		// 		scrollTrigger: {
+		// 			trigger: '.department-ui-web-sec',
+		// 			start: 'right center'
+		// 			// markers: true
+		// 		}
+		// 	});
+		// }
 	});
 	// right center for phones
 </script>

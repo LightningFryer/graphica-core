@@ -5,7 +5,7 @@
 	import ClubIntroRework from '$lib/components/sections/ClubIntroRework.svelte';
 	import DepartmentsRework from '$lib/components/sections/DepartmentsRework.svelte';
 	// import Departments from '$lib/components/sections/DepartmentsDeprecated.svelte';
-	import Resources from '$lib/components/sections/Resources.svelte';
+	// import Resources from '$lib/components/sections/Resources.svelte';
 	import Events from '$lib/components/sections/Events.svelte';
 	import BlogIntro from '$lib/components/sections/BlogIntro.svelte';
 	import MeetTheTeam from '$lib/components/sections/MeetTheTeam.svelte';
@@ -19,7 +19,6 @@
 			websiteLoaded = true;
 			console.log(websiteLoaded);
 		})
-		
 	});
 	
 </script>
