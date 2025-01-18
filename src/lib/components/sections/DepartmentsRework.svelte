@@ -123,7 +123,7 @@
 </script>
 
 <main class="">
-	<div class="container max-w-[400%] flex flex-row" bind:offsetWidth={containerOffsetWidth}>
+	<div class="container flex flex-row" bind:offsetWidth={containerOffsetWidth}>
 		<section
 			class="department-intro-sec department-sec flex h-screen min-w-full flex-col items-center justify-center bg-accent text-base-200"
 		>
