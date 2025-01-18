@@ -1,6 +1,5 @@
 <script>
 	import { ArrowDown, ArrowUp } from 'lucide-svelte';
-	import { scrollRef } from 'svelte-scrolling';
 	import { fade, slide } from 'svelte/transition';
 
 	let moreBlogsOpen = false;
@@ -11,7 +10,6 @@
 	class="blog-intro-sec min-h-[{moreBlogsOpen
 		? '200vh'
 		: '100vh'}] flex flex-col items-center justify-center p-5 md:min-h-fit md:p-0"
-	use:scrollRef={'blog'}
 >
 	<div
 		class="flex w-[90%] flex-col items-center justify-start gap-5 md:h-screen md:justify-center md:gap-10"

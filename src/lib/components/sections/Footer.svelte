@@ -1,9 +1,8 @@
 <script>
-    import footer from "$lib/images/footer_background_modified.png"
-	import { scrollRef } from "svelte-scrolling";
+    // import footer from "$lib/images/footer_background_modified.png"
 </script>
 
-<main class="h-[35vh] w-full bg-[url('$lib/images/footer_background_modified.png')] bg-contain bg-no-repeat" use:scrollRef={'footer'}>
+<main class="h-[35vh] w-full bg-[url('$lib/images/footer_background_modified.png')] bg-contain bg-no-repeat" id="footer-sec">
     <!-- <div class="h-full w-full scale-100"> -->
         <!-- <img src={footer} alt="footer_img" class="h-full w-full" /> -->
     <!-- </div> -->

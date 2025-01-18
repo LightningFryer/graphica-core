@@ -4,7 +4,6 @@
 	import gsap from 'gsap';
 	import { ScrollTrigger } from 'gsap/ScrollTrigger';
 	import { onMount } from 'svelte';
-	import { scrollRef } from 'svelte-scrolling';
 
 	let loop;
 	onMount(() => {
@@ -23,7 +22,7 @@
 	});
 </script>
 
-<main class="meet-the-team-sec flex h-screen flex-col flex-nowrap" use:scrollRef={'team'}>
+<main class="meet-the-team-sec flex h-screen flex-col flex-nowrap" id="meet-the-team">
 	<div class="flex w-full flex-col md:flex-row">
 		<div class="h-fit p-4 md:w-[50%] md:p-5">
 			<h1 class="font-poppins text-5xl md:text-9xl">

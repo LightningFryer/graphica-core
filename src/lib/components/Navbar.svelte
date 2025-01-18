@@ -1,17 +1,46 @@
 <script lang="ts">
-	import { Notebook, House, Star } from 'lucide-svelte';
 	import { navBarEnter } from '$lib/anims/landingAnims';
 	import { onMount } from 'svelte';
 	let navbar: HTMLElement;
-
-	// import graphicaLogo from '$lib/images/logo/Logo_Alpha.png';
-	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
 	import status_bar from '$lib/images/status_bar.png';
+	import gsap from 'gsap';
+	import ScrollToPlugin from 'gsap/ScrollToPlugin';
 
-	import { scrollTo, scrollTop } from 'svelte-scrolling';
+	const scrollToHome = () => {
+		gsap.to(window, {
+			duration: 1.2,
+			scrollTo: '#landing-sec',
+			ease: 'power1.inOut'
+		});
+	};
+
+	const scrollToBlog = () => {
+		gsap.to(window, {
+			duration: 1.2,
+			scrollTo: '#blog-intro-sec',
+			ease: 'power1.inOut'
+		});
+	};
+
+	const scrollToTeam = () => {
+		gsap.to(window, {
+			duration: 1.2,
+			scrollTo: '#meet-the-team',
+			ease: 'power1.inOut'
+		});
+	};
+
+	const scrollToFooter = () => {
+		gsap.to(window, {
+			duration: 1.2,
+			scrollTo: '#footer-sec',
+			ease: 'power1.inOut'
+		});
+	};
 
 	onMount(() => {
+		gsap.registerPlugin(ScrollToPlugin);
 		if ($page.url.pathname == '/') {
 			navBarEnter(navbar);
 		}
@@ -30,23 +59,25 @@
 		</div> -->
 
 		<div class="navbar-start flex flex-row gap-0 font-jost md:gap-1">
-			<a onclick={() => scrollTop()}
+			<button
+				onclick={scrollToHome}
 				class="btn btn-ghost rounded-none text-base font-light hover:border-b-2 hover:border-b-accent md:text-xl md:tracking-wide"
-				href="/">Home</a
+				>Home</button
 			>
-			<a	use:scrollTo={'blog'}
+			<button
+				onclick={scrollToBlog}
 				class="btn btn-ghost rounded-none text-base font-light hover:border-b-2 hover:border-b-accent md:text-xl md:tracking-wide"
-				href="#blog-intro-sec" >Blog</a
+				>Blog</button
 			>
-			<a
-				use:scrollTo={'team'}
+			<button
+				onclick={scrollToTeam}
 				class="btn btn-ghost rounded-none text-base font-light hover:border-b-2 hover:border-b-accent md:text-xl md:tracking-wide"
-				href="/team">Team</a
+				>Team</button
 			>
 		</div>
 
 		<div class="navbar-end font-jost font-light md:flex md:text-xl">
-			<button use:scrollTo={'footer'} class="btn btn-primary rounded-full">Contact Us!</button>
+			<button onclick={scrollToFooter} class="btn btn-primary rounded-full">Contact Us!</button>
 		</div>
 	</div>
 	<div class="">

@@ -43,7 +43,7 @@
 	});
 </script>
 
-<section class="sec-1 flex h-screen flex-col items-center justify-between">
+<section class="sec-1 flex h-screen flex-col items-center justify-between" id="landing-sec">
 	<div class="md:h-20">
 		<!-- Empty div to justify between -->
 	</div>
