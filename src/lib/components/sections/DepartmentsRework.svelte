@@ -149,7 +149,7 @@
 			<div class="h-full w-full">
 				<div class="flex flex-col items-center justify-center md:flex-row md:gap-0">
 					<div class="dept-card-sec-1">
-						<img src={dept_gd_sec_card} class=" scale-[0.7] rounded-xl" alt="gd_sec" />
+						<img src={dept_gd_sec_card} loading="lazy" class=" scale-[0.7] rounded-xl" alt="gd_sec" />
 					</div>
 					<div class="dept-card-sec-1">
 						<img src={dept_3d_sec_card} class=" scale-[0.7] rounded-xl" alt="gd_sec" />
