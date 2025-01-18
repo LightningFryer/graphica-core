@@ -16,6 +16,7 @@
 		let sections = gsap.utils.toArray('.department-sec');
 		gsap.registerPlugin(ScrollTrigger);
 		// ScrollTrigger.normalizeScroll(true);
+		ScrollTrigger.refresh()
 
 		gsap.to(sections, {
 			xPercent: -100 * (sections.length - 1),
