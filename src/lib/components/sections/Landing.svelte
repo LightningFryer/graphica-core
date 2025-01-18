@@ -9,7 +9,7 @@
 	import gsap from 'gsap';
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	import Marquee from 'svelte-fast-marquee';
-	import graphicaLogo from '$lib/images/logo/Logo_Alpha.png';
+	import graphicaLogo from '$lib/images/logo/Logo_Alpha.webp';
 	import Device from 'svelte-device-info';
 
 	onMount(() => {
