@@ -24,7 +24,9 @@
 		</p>
 
 		<div class="flex flex-col flex-wrap gap-6 md:flex-row md:gap-28">
-			<div class="relative h-[15rem] w-[18rem] justify-end md:h-[22rem] md:w-[18rem]">
+			<div
+				class="relative h-[15rem] w-[18rem] justify-end transition-all duration-200 ease-linear hover:scale-[102%] hover:cursor-pointer md:h-[22rem] md:w-[18rem]"
+			>
 				<div class="flex h-full w-full flex-row">
 					<div class="h-full w-[50%] bg-[#F5F3E4]"></div>
 					<div class="h-full w-[50%] bg-[#C39F61]"></div>
@@ -43,7 +45,9 @@
 				</div>
 			</div>
 
-			<div class="relative h-[15rem] w-[18rem] justify-end md:h-[22rem] md:w-[18rem]">
+			<div
+				class="relative h-[15rem] w-[18rem] justify-end transition-all duration-200 ease-linear hover:scale-[102%] hover:cursor-pointer md:h-[22rem] md:w-[18rem]"
+			>
 				<div class="flex h-full w-full flex-row">
 					<div class="h-full w-[50%] bg-[#F5F3E4]"></div>
 					<div class="h-full w-[50%] bg-[#C39F61]"></div>
@@ -62,7 +66,9 @@
 				</div>
 			</div>
 
-			<div class="relative h-[15rem] w-[18rem] justify-end md:h-[22rem] md:w-[18rem]">
+			<div
+				class="relative h-[15rem] w-[18rem] justify-end transition-all duration-200 ease-linear hover:scale-[102%] hover:cursor-pointer md:h-[22rem] md:w-[18rem]"
+			>
 				<div class="flex h-full w-full flex-row">
 					<div class="h-full w-[50%] bg-[#F5F3E4]"></div>
 					<div class="h-full w-[50%] bg-[#C39F61]"></div>
