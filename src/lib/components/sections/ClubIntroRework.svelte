@@ -4,7 +4,7 @@
 	import Device from 'svelte-device-info';
 </script>
 
-<main class="club-intro-sec relative h-fit md:h-screen flex-col items-center justify-center">
+<main class="club-intro-sec relative h-fit flex-col items-center justify-center md:h-screen">
 	<!-- <div class="absolute md:left-4 md:top-[2rem]">
 		<h1 class="text-[9.5rem] font-futura">(We are good</h1>
 	</div>
@@ -19,22 +19,22 @@
 
 	{#if !Device.isPhone}
 		<div
-			class="absolute z-0 h-full w-full bg-gradient-to-b from-transparent from-10% via-black via-20% to-black to-90%"
+			class="absolute h-full w-full bg-gradient-to-b from-transparent from-10% via-black via-20% to-black to-90%"
 		></div>
 		<div class="">
 			<img
 				src={clubIntroImageDesktop}
 				alt="blob"
-				class="absolute left-[-7rem] right-0 top-7 z-10 scale-[1.1]"
+				class="absolute left-[-7rem] right-0 top-7 scale-[1.1]"
 			/>
 		</div>
 	{:else}
 		<div
-			class="absolute z-0 h-full w-full bg-gradient-to-b from-transparent from-10% via-black via-20% to-black to-90%"
+			class="absolute h-full w-full bg-gradient-to-b from-transparent from-10% via-black via-20% to-black to-90%"
 		></div>
 		<div>
 			<div class="">
-				<img src={clubIntroImageMobile} alt="blob" class="relative z-10" />
+				<img src={clubIntroImageMobile} alt="blob" class="relative" />
 			</div>
 		</div>
 	{/if}

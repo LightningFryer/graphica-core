@@ -117,7 +117,6 @@
 				}
 			});
 		}
-		stopOverscroll('.container');
 	});
 	// right center for phones
 </script>
@@ -222,11 +221,5 @@
 		100% {
 			background-position: 70px 0; /* Moves by exactly one grid cell size */
 		}
-	}
-
-	main {
-		margin: 0;
-		-webkit-overflow-scrolling: touch;
-		overflow-scrolling: touch;
 	}
 </style>
