@@ -11,7 +11,6 @@
 	import Marquee from 'svelte-fast-marquee';
 	import graphicaLogo from '$lib/images/logo/Logo_Alpha.webp';
 	import Device from 'svelte-device-info';
-
 	onMount(() => {
 		gsap.registerPlugin(ScrollTrigger);
 		gts1(p1).then(() => {

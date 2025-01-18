@@ -34,7 +34,7 @@
 	<DepartmentsRework />
 	<Events />
 	<BlogIntro />
-	<MeetTheTeam />
+	<!-- <MeetTheTeam /> -->
 	<Footer />
 	<!-- <Resources /> -->
 </main>
