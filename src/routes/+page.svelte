@@ -53,10 +53,10 @@
 		}
 
 		// Update timeoutDone reactively
-		// setTimeout(() => {
-		// 	timeoutDone = true; // This triggers Svelte's reactivity
-		// 	console.log('Timeout finished');
-		// }, 1500);
+		setTimeout(() => {
+			timeoutDone = true; // This triggers Svelte's reactivity
+			console.log('Timeout finished');
+		}, 1500);
 
 		gsap.to('.splash-icon', {
 			rotation: 360,
@@ -72,7 +72,7 @@
 	<title>Graphica | Home</title>
 </svelte:head>
 
-{#if loading}
+{#if loading || !timeoutDone}
 	<!-- Splash screen -->
 
 	<div class="flex h-screen flex-col items-center justify-center">
