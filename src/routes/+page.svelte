@@ -12,15 +12,45 @@
 	import Footer from '$lib/components/sections/Footer.svelte';
 	import { onMount } from 'svelte';
 
-	let websiteLoaded = false;
+	let loading = true;
+
+	$: {
+		console.log(loading);
+	}
 
 	onMount(() => {
-		window.addEventListener('load', () => {
-			websiteLoaded = true;
-			console.log(websiteLoaded);
-		})
+		const images = document.querySelectorAll('img');
+		let loadedCount = 0;
+
+		// Helper function to check if all images are loaded
+		const checkAllImagesLoaded = () => {
+			if (loadedCount === images.length) {
+				loading = false;
+			}
+		};
+
+		// Add event listeners to all images
+		images.forEach((img) => {
+			if (img.complete) {
+				loadedCount++;
+				checkAllImagesLoaded();
+			} else {
+				img.addEventListener('load', () => {
+					loadedCount++;
+					checkAllImagesLoaded();
+				});
+				img.addEventListener('error', () => {
+					loadedCount++; // Count errors as loaded to prevent hanging
+					checkAllImagesLoaded();
+				});
+			}
+		});
+
+		// Fallback: If there are no images, set loading to false immediately
+		if (images.length === 0) {
+			loading = false;
+		}
 	});
-	
 </script>
 
 <svelte:head>

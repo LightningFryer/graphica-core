@@ -3,6 +3,8 @@
 	let { children } = $props();
 	import ViewTransition from "$lib/components/Navigation.svelte";
 
+	
+
 </script>
 
 <svelte:head>
