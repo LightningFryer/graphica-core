@@ -11,6 +11,7 @@
 	import gsap from 'gsap';
 	import SplashLogo from '$lib/images/logo/Logo_Alpha.webp';
 	import MeetTheTeam from '$lib/components/sections/MeetTheTeam.svelte';
+	import DepartmentsVertical from '$lib/components/sections/DepartmentsVertical.svelte';
 
 	let loading = true;
 	let timeoutDone = false;
@@ -75,7 +76,11 @@
 	<!-- Splash screen -->
 
 	<div class="flex h-screen flex-col items-center justify-center">
-		<img src={SplashLogo} alt="splash_logo" class="splash-icon btn-circle bg-opacity-50 size-48 bg-white" />
+		<img
+			src={SplashLogo}
+			alt="splash_logo"
+			class="splash-icon btn-circle size-48 bg-white bg-opacity-50"
+		/>
 		<!-- <h1 class="text-2xl font-poppins">Loading all images, please wait...</h1> -->
 	</div>
 
@@ -85,7 +90,8 @@
 		<Navbar />
 		<Landing />
 		<ClubIntroRework />
-		<DepartmentsRework />
+		<!-- <DepartmentsRework /> -->
+		<DepartmentsVertical />
 		<Events />
 		<BlogIntro />
 		<MeetTheTeam />

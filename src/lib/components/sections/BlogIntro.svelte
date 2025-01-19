@@ -1,6 +1,16 @@
 <script>
 	import { ArrowDown, ArrowUp } from 'lucide-svelte';
+	import { quadInOut, sineIn } from 'svelte/easing';
 	import { fade, slide } from 'svelte/transition';
+	import gsap from 'gsap';
+
+	const scrollToBlog = () => {
+		gsap.to(window, {
+			duration: 1.2,
+			scrollTo: '#blog-intro-sec',
+			ease: 'power1.inOut'
+		});
+	};
 
 	let moreBlogsOpen = false;
 </script>
@@ -103,7 +113,7 @@
 			class="{moreBlogsOpen
 				? 'flex h-screen'
 				: 'invisible h-0'} flex-col items-center justify-center"
-			in:slide={{ duration: 500 }}
+			in:slide={{ duration: 500, easing: quadInOut }}
 			out:slide={{ duration: 500 }}
 		>
 			<p class="text-9xl">Test. More blogs here.</p>
@@ -112,8 +122,12 @@
 			class="{moreBlogsOpen ? 'flex' : 'invisible h-0'} w-full justify-center"
 			out:fade={{ duration: 100 }}
 		>
-			<button class="btn btn-accent md:mb-7" onclick={() => (moreBlogsOpen = false)}
-				>Show Less <ArrowUp /></button
+			<button
+				class="btn btn-accent md:mb-7"
+				onclick={() => {
+					moreBlogsOpen = false;
+					scrollToBlog();
+				}}>Show Less <ArrowUp /></button
 			>
 		</div>
 		<!-- {/if} -->
