@@ -9,6 +9,7 @@
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
 	import SplashLogo from "$lib/images/logo/icon_footer.svg"
+	import MeetTheTeam from '$lib/components/sections/MeetTheTeam.svelte';
 
 	let loading = true;
 	let timeoutDone = false;
@@ -77,6 +78,7 @@
 		<ClubIntroRework />
 		<DepartmentsRework />
 		<Events />
+		<MeetTheTeam />
 		<BlogIntro />
 		<Footer />
 	</main>
