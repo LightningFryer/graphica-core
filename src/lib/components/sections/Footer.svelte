@@ -1,10 +1,13 @@
 <script>
 	// import footer from "$lib/images/footer_background_modified.png"
 
-	import { Instagram } from 'lucide-svelte';
+	import InstagramIconFooter from '$lib/images/logo/instagram_footer_logo.png';
+	import WhatsappIconFooter from '$lib/images/logo/whatsapp_footer_logo.png';
+	import LinkedInIconFooter from '$lib/images/logo/linkedin_footer_logo.png';
 	import iconFooter from '$lib/images/logo/icon_footer.svg';
 	import { onMount } from 'svelte';
-    import gsap from 'gsap';
+
+	import gsap from 'gsap';
 
 	onMount(() => {
 		gsap.to('.footer-icon', {
@@ -18,14 +21,36 @@
 </script>
 
 <main
-	class="flex h-[29vh] w-full items-end md:items-start md:justify-end bg-[url('$lib/images/footer_background_mobile.png')] bg-contain bg-no-repeat md:h-[30vh] md:bg-[url('$lib/images/footer_background_modified.png')]"
+	class="flex h-[29vh] w-full items-end bg-black bg-[url('$lib/images/footer_background_mobile.svg')] bg-contain bg-no-repeat md:h-[30vh] md:items-start md:justify-end md:bg-[url('$lib/images/footer_background_modified.svg')]"
 	id="footer-sec"
 >
-	<div class="relative flex h-full w-full md:w-[40%]  flex-row items-end md:items-center justify-center gap-4 p-4">
-		<button class="btn btn-circle btn-accent size-20"><Instagram size="48" /></button>
-		<button class="btn btn-circle btn-accent size-20"><Instagram size="48" /></button>
-		<button class="btn btn-circle btn-accent size-20"><Instagram size="48" /></button>
-		<img src={iconFooter} class="footer-icon absolute right-2 top-2 size-24" alt="" />
+	<div
+		class="relative flex h-full w-full flex-row items-end justify-end gap-4 p-4 md:w-[40%] md:items-end"
+	>
+		<a
+			class="btn btn-circle btn-ghost size-6 hover:bg-transparent"
+			href="https://www.instagram.com/graphica.club/"
+			target="_blank"
+		>
+			<img src={InstagramIconFooter} alt="instagram_icon" />
+		</a>
+
+		<a
+			class="btn btn-circle btn-ghost size-6 hover:bg-transparent"
+			href="https://chat.whatsapp.com/HQnfGg5nbtCIMxQlC3a0o9"
+			target="_blank"
+		>
+			<img src={WhatsappIconFooter} alt="instagram_icon" />
+		</a>
+
+		<a
+			class="btn btn-circle btn-ghost size-6 hover:bg-transparent mr-5"
+			href="https://www.linkedin.com/company/graphica-club/"
+			target="_blank"
+		>
+			<img src={LinkedInIconFooter} alt="instagram_icon" />
+		</a>
+		<img src={iconFooter} class="footer-icon absolute right-6 top-2 size-24" alt="" />
 	</div>
 </main>
 

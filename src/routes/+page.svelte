@@ -8,7 +8,8 @@
 	import Footer from '$lib/components/sections/Footer.svelte';
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
-	import SplashLogo from "$lib/images/logo/icon_footer.svg"
+	import gsap from 'gsap';
+	import SplashLogo from '$lib/images/logo/Logo_Alpha.webp';
 	import MeetTheTeam from '$lib/components/sections/MeetTheTeam.svelte';
 
 	let loading = true;
@@ -55,6 +56,14 @@
 			timeoutDone = true; // This triggers Svelte's reactivity
 			console.log('Timeout finished');
 		}, 3000);
+
+		gsap.to('.splash-icon', {
+			rotation: 360,
+			duration: 10,
+			ease: 'none',
+			delay: 0,
+			repeat: -1
+		});
 	});
 </script>
 
@@ -65,21 +74,21 @@
 {#if loading || !timeoutDone}
 	<!-- Splash screen -->
 
-	<div class="flex h-screen flex-col gap-2 items-center justify-center">
-		<img src={SplashLogo} alt="splash_logo" class="size-48"/>
-		<h1 class="text-2xl font-poppins">Loading all images, please wait...</h1>
+	<div class="flex h-screen flex-col items-center justify-center">
+		<img src={SplashLogo} alt="splash_logo" class="splash-icon btn-circle bg-opacity-50 size-48 bg-white" />
+		<!-- <h1 class="text-2xl font-poppins">Loading all images, please wait...</h1> -->
 	</div>
 
 	<!-- Main content -->
 {:else}
-	<main class="main-sec overflow-hidden" in:fade={{duration: 1000}}>
+	<main class="main-sec overflow-hidden" in:fade={{ duration: 1000 }}>
 		<Navbar />
 		<Landing />
 		<ClubIntroRework />
 		<DepartmentsRework />
 		<Events />
-		<MeetTheTeam />
 		<BlogIntro />
+		<MeetTheTeam />
 		<Footer />
 	</main>
 {/if}
