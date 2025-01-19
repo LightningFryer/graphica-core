@@ -1,21 +1,19 @@
 <script lang="ts">
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Landing from '$lib/components/sections/Landing.svelte';
-	// import ClubIntro from '$lib/components/sections/ClubIntroDeprecated.svelte';
 	import ClubIntroRework from '$lib/components/sections/ClubIntroRework.svelte';
 	import DepartmentsRework from '$lib/components/sections/DepartmentsRework.svelte';
-	// import Departments from '$lib/components/sections/DepartmentsDeprecated.svelte';
-	// import Resources from '$lib/components/sections/Resources.svelte';
 	import Events from '$lib/components/sections/Events.svelte';
 	import BlogIntro from '$lib/components/sections/BlogIntro.svelte';
-	import MeetTheTeam from '$lib/components/sections/MeetTheTeam.svelte';
 	import Footer from '$lib/components/sections/Footer.svelte';
 	import { onMount } from 'svelte';
+	import { fade } from 'svelte/transition';
 
 	let loading = true;
+	let timeoutDone = false;
 
 	$: {
-		console.log(`Log: Loading images: ${loading}`);
+		console.log(`Log: Loading images: ${loading}, Timeout Done: ${timeoutDone}`);
 	}
 
 	onMount(() => {
@@ -25,7 +23,7 @@
 		// Helper function to check if all images are loaded
 		const checkAllImagesLoaded = () => {
 			if (loadedCount === images.length) {
-				loading = false;
+				loading = false; // Trigger reactivity
 			}
 		};
 
@@ -45,9 +43,16 @@
 			}
 		});
 
+		// Handle case where there are no images
 		if (images.length === 0) {
 			loading = false;
 		}
+
+		// Update timeoutDone reactively
+		setTimeout(() => {
+			timeoutDone = true; // This triggers Svelte's reactivity
+			console.log('Timeout finished');
+		}, 3000);
 	});
 </script>
 
@@ -56,21 +61,21 @@
 </svelte:head>
 
 <main class="main-sec overflow-hidden">
-	{#key loading}
-		{#if loading}
-			<div class="flex h-screen items-center justify-center">
-				<h1 class="text-8xl">Loading all images please wait...</h1>
+	<!-- Splash screen -->
+	{#key timeoutDone}
+		{#if loading || !timeoutDone}
+			<div class="flex h-screen items-center justify-center" in:fade={{duration: 2000}} out:fade={{duration: 2000}}>
+				<h1 class="text-8xl">Loading all images, please wait...</h1>
 			</div>
 		{:else}
+			<!-- Main content -->
 			<Navbar />
 			<Landing />
 			<ClubIntroRework />
 			<DepartmentsRework />
 			<Events />
 			<BlogIntro />
-			<!-- <MeetTheTeam /> -->
 			<Footer />
-			<!-- <Resources /> -->
 		{/if}
 	{/key}
 </main>
