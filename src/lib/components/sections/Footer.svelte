@@ -50,7 +50,7 @@
 		>
 			<img src={LinkedInIconFooter} alt="instagram_icon" />
 		</a>
-		<img src={iconFooter} class="footer-icon absolute right-6 top-2 size-24" alt="" />
+		<img src={iconFooter} class="footer-icon absolute right-2 md:right-6 top-2 size-16 md:size-24" alt="" />
 	</div>
 </main>
 
