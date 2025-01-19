@@ -8,6 +8,7 @@
 	import Footer from '$lib/components/sections/Footer.svelte';
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
+	import SplashLogo from "$lib/images/logo/icon_footer.svg"
 
 	let loading = true;
 	let timeoutDone = false;
@@ -63,8 +64,9 @@
 {#if loading || !timeoutDone}
 	<!-- Splash screen -->
 
-	<div class="flex h-screen items-center justify-center">
-		<h1 class="text-8xl">Loading all images, please wait...</h1>
+	<div class="flex h-screen flex-col gap-2 items-center justify-center">
+		<img src={SplashLogo} alt="splash_logo" class="size-48"/>
+		<h1 class="text-2xl font-poppins">Loading all images, please wait...</h1>
 	</div>
 
 	<!-- Main content -->
