@@ -75,11 +75,11 @@
 {#if loading || !timeoutDone}
 	<!-- Splash screen -->
 
-	<div class="flex h-screen flex-col items-center justify-center">
+	<div class="flex h-screen flex-col items-center justify-center gap-4">
 		<img
 			src={SplashLogo}
 			alt="splash_logo"
-			class="splash-icon btn-circle size-48 bg-white bg-opacity-50"
+			class="splash-icon btn-circle size-32 bg-white bg-opacity-50"
 		/>
 		<h1 class="text-2xl font-poppins">Loading images, please wait...</h1>
 	</div>
