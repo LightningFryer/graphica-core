@@ -15,7 +15,7 @@
 	let loading = true;
 
 	$: {
-		console.log(`Log: Images loaded: ${loading}`);
+		console.log(`Log: Loading images: ${loading}`);
 	}
 
 	onMount(() => {
@@ -56,19 +56,21 @@
 </svelte:head>
 
 <main class="main-sec overflow-hidden">
-	{#if loading}
-		<div class="h-screen flex justify-center items-center">
-			<h1 class="text-8xl">Loading all images please wait...</h1>
-		</div>
-	{:else}
-		<Navbar />
-		<Landing />
-		<ClubIntroRework />
-		<DepartmentsRework />
-		<Events />
-		<BlogIntro />
-		<!-- <MeetTheTeam /> -->
-		<Footer />
-		<!-- <Resources /> -->
-	{/if}
+	{#key loading}
+		{#if loading}
+			<div class="flex h-screen items-center justify-center">
+				<h1 class="text-8xl">Loading all images please wait...</h1>
+			</div>
+		{:else}
+			<Navbar />
+			<Landing />
+			<ClubIntroRework />
+			<DepartmentsRework />
+			<Events />
+			<BlogIntro />
+			<!-- <MeetTheTeam /> -->
+			<Footer />
+			<!-- <Resources /> -->
+		{/if}
+	{/key}
 </main>

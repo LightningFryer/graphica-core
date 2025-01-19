@@ -4,7 +4,7 @@
 	import Device from 'svelte-device-info';
 </script>
 
-<main class="club-intro-sec relative h-fit flex-col items-center justify-center md:h-screen">
+<main class="club-intro-sec relative w-[100vh] h-fit flex-col items-center justify-center md:h-screen">
 	<!-- <div class="absolute md:left-4 md:top-[2rem]">
 		<h1 class="text-[9.5rem] font-futura">(We are good</h1>
 	</div>
