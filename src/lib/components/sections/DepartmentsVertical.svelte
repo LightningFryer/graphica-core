@@ -51,7 +51,7 @@
 			scrollTrigger: {
 				trigger: '.department-gd-3d-sec',
 				start: 'top center',
-				markers: true
+				// markers: true
 			}
 		});
 
@@ -95,7 +95,7 @@
 <main class="">
 	<div class="container flex min-h-screen flex-col">
 		<section
-			class="department-intro-sec department-sec flex h-[70vh] flex-col items-center justify-center bg-accent text-base-200"
+			class="department-intro-sec department-sec flex h-[70vh] w-screen flex-col items-center justify-center bg-accent text-base-200"
 		>
 			<!-- This is the background image that looks like the exploding thingy. DO NOT DELETE -->
 			<!-- <div class="absolute z-0 scale-[1.3]">
@@ -114,7 +114,7 @@
 		</section>
 
 		<section
-			class="department-sec department-gd-3d-sec flex h-full flex-col items-center justify-center"
+			class="department-sec department-gd-3d-sec flex h-full w-screen flex-col items-center justify-center"
 		>
 			<div class="h-full w-full">
 				<div class="flex flex-col items-center justify-center md:flex-row md:gap-0">
@@ -129,7 +129,7 @@
 		</section>
 
 		<section
-			class="department-sec department-ui-web-sec flex h-full flex-col items-center justify-center"
+			class="department-sec department-ui-web-sec flex h-full w-screen flex-col items-center justify-center"
 		>
 			<div class="h-full w-full">
 				<div class="flex flex-col items-center justify-center md:flex-row md:gap-0">
