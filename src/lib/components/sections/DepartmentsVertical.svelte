@@ -3,10 +3,10 @@
 	import ScrollTrigger from 'gsap/ScrollTrigger';
 	import { onMount } from 'svelte';
 
-	import dept_gd_sec_card from '$lib/images/gd_sec_card.webp';
-	import dept_3d_sec_card from '$lib/images/3d_sec_card.webp';
-	import dept_ui_ux_sec_card from '$lib/images/ui_ux_sec_card.webp';
-	import dept_web_dev_ux_sec_card from '$lib/images/web_dev_sec_card.webp';
+	import dept_gd_sec_card from '$lib/images/gd_sec_card.jpg';
+	import dept_3d_sec_card from '$lib/images/3d_sec_card.jpg';
+	import dept_ui_ux_sec_card from '$lib/images/ui_ux_sec_card.jpg';
+	import dept_web_dev_ux_sec_card from '$lib/images/web_dev_sec_card.jpg';
 	import Device from 'svelte-device-info';
 
 	onMount(() => {
