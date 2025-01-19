@@ -15,7 +15,7 @@
 	let loading = true;
 
 	$: {
-		console.log(loading);
+		console.log(`Log: Images loaded: ${loading}`);
 	}
 
 	onMount(() => {
@@ -29,7 +29,6 @@
 			}
 		};
 
-		// Add event listeners to all images
 		images.forEach((img) => {
 			if (img.complete) {
 				loadedCount++;
@@ -40,13 +39,12 @@
 					checkAllImagesLoaded();
 				});
 				img.addEventListener('error', () => {
-					loadedCount++; // Count errors as loaded to prevent hanging
+					loadedCount++;
 					checkAllImagesLoaded();
 				});
 			}
 		});
 
-		// Fallback: If there are no images, set loading to false immediately
 		if (images.length === 0) {
 			loading = false;
 		}
@@ -58,13 +56,19 @@
 </svelte:head>
 
 <main class="main-sec overflow-hidden">
-	<Navbar />
-	<Landing />
-	<ClubIntroRework />
-	<DepartmentsRework />
-	<Events />
-	<BlogIntro />
-	<!-- <MeetTheTeam /> -->
-	<Footer />
-	<!-- <Resources /> -->
+	{#if loading}
+		<div class="h-screen flex justify-center items-center">
+			<h1 class="text-8xl">Loading all images please wait...</h1>
+		</div>
+	{:else}
+		<Navbar />
+		<Landing />
+		<ClubIntroRework />
+		<DepartmentsRework />
+		<Events />
+		<BlogIntro />
+		<!-- <MeetTheTeam /> -->
+		<Footer />
+		<!-- <Resources /> -->
+	{/if}
 </main>
