@@ -8,13 +8,12 @@
 	import Footer from '$lib/components/sections/Footer.svelte';
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
+	import MeetTheTeam from '$lib/components/sections/MeetTheTeam.svelte';
 
 	let loading = true;
 	let timeoutDone = false;
 
-	$: {
-		console.log(`Log: Loading images: ${loading}, Timeout Done: ${timeoutDone}`);
-	}
+	$: console.log(`Log: Loading images: ${loading}, Timeout Done: ${timeoutDone}`);
 
 	onMount(() => {
 		const images = document.querySelectorAll('img');
@@ -62,20 +61,21 @@
 
 <main class="main-sec overflow-hidden">
 	<!-- Splash screen -->
-	{#key timeoutDone}
-		{#if loading || !timeoutDone}
-			<div class="flex h-screen items-center justify-center" in:fade={{duration: 2000}} out:fade={{duration: 2000}}>
-				<h1 class="text-8xl">Loading all images, please wait...</h1>
-			</div>
-		{:else}
-			<!-- Main content -->
-			<Navbar />
-			<Landing />
-			<ClubIntroRework />
-			<DepartmentsRework />
-			<Events />
-			<BlogIntro />
-			<Footer />
-		{/if}
-	{/key}
+	{#if loading}
+		<div class="flex h-screen items-center justify-center" out:fade={{ duration: 700 }}>
+			<h1 class="text-8xl">Loading all images, please wait...</h1>
+		</div>
+	{/if}
+
+	<!-- Main content -->
+	{#if !loading}
+		<Navbar />
+		<Landing />
+		<ClubIntroRework />
+		<DepartmentsRework />
+		<Events />
+		<BlogIntro />
+		<MeetTheTeam />
+		<Footer />
+	{/if}
 </main>
