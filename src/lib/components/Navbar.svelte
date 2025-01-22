@@ -6,13 +6,18 @@
 	import status_bar from '$lib/images/status_bar.png';
 	import gsap from 'gsap';
 	import ScrollToPlugin from 'gsap/ScrollToPlugin';
+	import { goto } from '$app/navigation';
 
 	const scrollToHome = () => {
-		gsap.to(window, {
-			duration: 1.2,
-			scrollTo: '#landing-sec',
-			ease: 'power1.inOut'
-		});
+		if ($page.url.pathname.includes('blog')) {
+			goto('/');
+		} else {
+			gsap.to(window, {
+				duration: 1.2,
+				scrollTo: '#landing-sec',
+				ease: 'power1.inOut'
+			});
+		}
 	};
 
 	const scrollToBlog = () => {
@@ -58,27 +63,37 @@
 			</button>
 		</div> -->
 
-		<div class="navbar-start flex flex-row gap-0 font-jost md:gap-1">
-			<button
-				onclick={scrollToHome}
-				class="btn btn-ghost rounded-none text-base font-light hover:border-b-2 hover:border-b-accent md:text-xl md:tracking-wide"
-				>Home</button
-			>
-			<button
-				onclick={scrollToBlog}
-				class="btn btn-ghost rounded-none text-base font-light hover:border-b-2 hover:border-b-accent md:text-xl md:tracking-wide"
-				>Blog</button
-			>
-			<button
-				onclick={scrollToTeam}
-				class="btn btn-ghost rounded-none text-base font-light hover:border-b-2 hover:border-b-accent md:text-xl md:tracking-wide"
-				>Team</button
-			>
-		</div>
+		{#if $page.url.pathname.includes('blog')}
+			<div class="navbar-start flex flex-row gap-0 font-jost md:gap-1">
+				<button
+					onclick={scrollToHome}
+					class="btn btn-ghost rounded-none text-base font-light hover:border-b-2 hover:border-b-accent md:text-xl md:tracking-wide"
+					>Back To Home</button
+				>
+			</div>
+		{:else}
+			<div class="navbar-start flex flex-row gap-0 font-jost md:gap-1">
+				<button
+					onclick={scrollToHome}
+					class="btn btn-ghost rounded-none text-base font-light hover:border-b-2 hover:border-b-accent md:text-xl md:tracking-wide"
+					>Home</button
+				>
+				<button
+					onclick={scrollToBlog}
+					class="btn btn-ghost rounded-none text-base font-light hover:border-b-2 hover:border-b-accent md:text-xl md:tracking-wide"
+					>Blog</button
+				>
+				<button
+					onclick={scrollToTeam}
+					class="btn btn-ghost rounded-none text-base font-light hover:border-b-2 hover:border-b-accent md:text-xl md:tracking-wide"
+					>Team</button
+				>
+			</div>
 
-		<div class="navbar-end font-jost font-light md:flex md:text-xl">
-			<button onclick={scrollToFooter} class="btn btn-primary rounded-full">Contact Us!</button>
-		</div>
+			<div class="navbar-end font-jost font-light md:flex md:text-xl">
+				<button onclick={scrollToFooter} class="btn btn-primary rounded-full">Contact Us!</button>
+			</div>
+		{/if}
 	</div>
 	<div class="">
 		<img src={status_bar} alt="status_bar" />

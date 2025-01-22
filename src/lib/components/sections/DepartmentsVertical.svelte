@@ -12,19 +12,6 @@
 	onMount(() => {
 		gsap.registerPlugin(ScrollTrigger);
 
-		// gsap.to(sections, {
-		// 	xPercent: -100 * (sections.length - 1),
-		// 	ease: 'none',
-		// 	// duration: 2,
-		// 	scrollTrigger: {
-		// 		trigger: '.container',
-		// 		pin: true,
-		// 		scrub: 1,
-		// 		// snap: 1 / (sections.length - 1),
-		// 		end: () => '+=' + containerOffsetWidth || 0
-		// 	}
-		// });
-
 		gsap.from('.intro-text', {
 			opacity: 0,
 			yPercent: -100,
@@ -50,27 +37,27 @@
 
 			scrollTrigger: {
 				trigger: '.department-gd-3d-sec',
-				start: 'top center',
+				start: 'top center'
 				// markers: true
 			}
 		});
 
 		// if (!Device.isMobile) {
-			gsap.from('.dept-card-sec-2', {
-				opacity: 0,
-				yPercent: 50,
-				xPercent: -50,
-				duration: 2,
-				ease: 'power4.out',
-				stagger: 0.4,
-				rotate: 45,
+		gsap.from('.dept-card-sec-2', {
+			opacity: 0,
+			yPercent: 50,
+			xPercent: -50,
+			duration: 2,
+			ease: 'power4.out',
+			stagger: 0.4,
+			rotate: 45,
 
-				scrollTrigger: {
-					trigger: '.department-ui-web-sec',
-					start: 'top center',
-					// markers: true
-				}
-			});
+			scrollTrigger: {
+				trigger: '.department-ui-web-sec',
+				start: 'top center'
+				// markers: true
+			}
+		});
 		// } else {
 		// 	gsap.from('.dept-card-sec-2', {
 		// 		opacity: 0,

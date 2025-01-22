@@ -16,6 +16,7 @@
 			scrollTrigger: {
 				trigger: '.meet-team-sec',
 				start: 'bottom 20%',
+				end: 'top top',
 				// markers: true
 			}
 		});

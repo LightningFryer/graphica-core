@@ -2,16 +2,15 @@
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Landing from '$lib/components/sections/Landing.svelte';
 	import ClubIntroRework from '$lib/components/sections/ClubIntroRework.svelte';
-	import DepartmentsRework from '$lib/components/sections/DepartmentsRework.svelte';
 	import Events from '$lib/components/sections/Events.svelte';
 	import BlogIntro from '$lib/components/sections/BlogIntro.svelte';
 	import Footer from '$lib/components/sections/Footer.svelte';
-	import { onMount } from 'svelte';
-	import { fade } from 'svelte/transition';
-	import gsap from 'gsap';
 	import SplashLogo from '$lib/images/logo/Logo_Alpha.webp';
 	import MeetTheTeam from '$lib/components/sections/MeetTheTeam.svelte';
 	import DepartmentsVertical from '$lib/components/sections/DepartmentsVertical.svelte';
+	import { onMount } from 'svelte';
+	import { fade } from 'svelte/transition';
+	import gsap from 'gsap';
 
 	let loading = true;
 	let timeoutDone = false;
@@ -81,7 +80,7 @@
 			alt="splash_logo"
 			class="splash-icon btn-circle size-32 bg-white bg-opacity-50"
 		/>
-		<h1 class="text-2xl font-poppins">Loading images, please wait...</h1>
+		<h1 class="font-poppins text-2xl">Loading images, please wait...</h1>
 	</div>
 
 	<!-- Main content -->

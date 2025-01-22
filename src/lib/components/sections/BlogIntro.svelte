@@ -3,6 +3,7 @@
 	import { quadInOut, sineIn } from 'svelte/easing';
 	import { fade, slide } from 'svelte/transition';
 	import gsap from 'gsap';
+	import PsychOfColorsCardImage from "$lib/images/blog/psychology_of_colours/psych_of_colors_card.png"
 
 	const scrollToBlog = () => {
 		gsap.to(window, {
@@ -34,7 +35,7 @@
 		</p>
 
 		<div class="flex flex-col flex-wrap gap-6 md:flex-row md:gap-28">
-			<div
+			<a	href="/blog/PsychologyOfColors"
 				class="relative h-[15rem] w-[18rem] justify-end transition-all duration-200 ease-linear hover:scale-[102%] hover:cursor-pointer md:h-[22rem] md:w-[18rem]"
 			>
 				<div class="flex h-full w-full flex-row">
@@ -42,18 +43,20 @@
 					<div class="h-full w-[50%] bg-[#C39F61]"></div>
 				</div>
 				<!-- <div class="relative"> -->
-				<div class="absolute top-0 h-[60%] w-full rounded-br-[3rem] bg-[#F5F3E4]"></div>
+				<div class="absolute top-0 h-[60%] w-full rounded-br-[3rem] bg-[#F5F3E4] place-items-center place-content-center">
+					<img src={PsychOfColorsCardImage} alt="psych_of_colors_card" class="size-40" />
+				</div>
 				<div
 					class="absolute bottom-0 flex h-[40%] w-full items-center justify-center rounded-tl-[3rem] bg-[#C39F61]"
 				>
 					<div class="flex h-[70%] w-[80%] flex-col text-accent-content">
-						<p class="font-nunito">insight • date</p>
+						<p class="font-nunito text-sm">design • 20/01/2025</p>
 						<h2 class="text-md font-poppins font-semibold text-[#F5F3E4]">
-							MASTERING THE ART OF LOGO DESIGN
+							The Psychology of Colors: What Your Design Says About You
 						</h2>
 					</div>
 				</div>
-			</div>
+			</a>
 
 			<div
 				class="relative h-[15rem] w-[18rem] justify-end transition-all duration-200 ease-linear hover:scale-[102%] hover:cursor-pointer md:h-[22rem] md:w-[18rem]"
