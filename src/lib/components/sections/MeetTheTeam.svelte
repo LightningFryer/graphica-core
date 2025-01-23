@@ -15,9 +15,9 @@
 			onStart: () => loop.resume(),
 			scrollTrigger: {
 				trigger: '.meet-team-sec',
-				start: 'bottom 20%',
+				start: 'bottom 60%',
 				end: 'top top',
-				markers: true
+				// markers: true
 			}
 		});
 	});

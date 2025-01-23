@@ -13,7 +13,7 @@
 		});
 	};
 
-	let moreBlogsOpen = false;
+	let moreBlogsOpen = true;
 </script>
 
 <main
@@ -43,8 +43,8 @@
 					<div class="h-full w-[50%] bg-[#C39F61]"></div>
 				</div>
 				<!-- <div class="relative"> -->
-				<div class="absolute top-0 h-[60%] w-full rounded-br-[3rem] bg-[#F5F3E4] place-items-center place-content-center">
-					<img src={PsychOfColorsCardImage} alt="psych_of_colors_card" class="size-40" />
+				<div class="absolute flex justify-center items-center top-0 h-[60%] w-full rounded-br-[3rem] bg-[#F5F3E4]">
+					<img src={PsychOfColorsCardImage} alt="psych_of_colors_card" class="size-32 md:size-40" />
 				</div>
 				<div
 					class="absolute bottom-0 flex h-[40%] w-full items-center justify-center rounded-tl-[3rem] bg-[#C39F61]"
