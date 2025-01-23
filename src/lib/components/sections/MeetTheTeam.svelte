@@ -11,13 +11,13 @@
 		gsap.registerPlugin(ScrollTrigger);
 		loop = horizontalLoop(teamCards, { repeat: -1, speed: 1, paused: true });
 
-		gsap.from('.team-scroll-cards', {
+		gsap.from('.meet-the-team-sec', {
 			onStart: () => loop.resume(),
 			scrollTrigger: {
 				trigger: '.meet-team-sec',
 				start: 'bottom 20%',
 				end: 'top top',
-				// markers: true
+				markers: true
 			}
 		});
 	});
@@ -220,12 +220,7 @@
 </main>
 
 <style>
-	/* main {
-        background-image: url("$lib/images/meet_the_team.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    } */
+
 
 	.meet-the-team-sec {
 		/* position: relative; */
