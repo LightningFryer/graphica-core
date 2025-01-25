@@ -1,5 +1,5 @@
 <script lang="ts">
-	import clubIntroImageDesktop from '$lib/images/club_intro.webp';
+	import clubIntroImageDesktop from '$lib/images/club_intro.avif';
 	import clubIntroImageMobile from '$lib/images/club_intro_mobile.webp';
 	import Device from 'svelte-device-info';
 </script>
