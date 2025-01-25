@@ -20,7 +20,7 @@
 					trigger: '.meet-team-sec',
 					start: 'bottom center',
 					// end: 'top top',
-					markers: true
+					// markers: true
 				}
 			});
 		} else {
@@ -30,7 +30,7 @@
 					trigger: '.meet-team-sec',
 					start: 'bottom bottom',
 					// end: 'top top',
-					markers: true
+					// markers: true
 				}
 			});
 		}

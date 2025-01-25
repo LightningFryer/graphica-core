@@ -49,8 +49,8 @@
 					class="absolute bottom-0 flex h-[40%] w-full items-center justify-center rounded-tl-[3rem] bg-[#C39F61]"
 				>
 					<div class="flex h-[70%] w-[80%] flex-col text-accent-content">
-						<p class="font-nunito text-sm">design • 20/01/2025</p>
-						<h2 class="text-md font-poppins font-semibold text-[#F5F3E4]">
+						<p class="font-nunito text-sm">colour theory • 20/01/2025</p>
+						<h2 class="text-md font-poppins font-light text-[#F5F3E4]">
 							The Psychology of Colors: What Your Design Says About You
 						</h2>
 					</div>

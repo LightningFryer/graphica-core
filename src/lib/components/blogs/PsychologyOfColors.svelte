@@ -1,7 +1,12 @@
+<svelte:head>
+	<title>Blog | The Psychology of Colors: What Your Design Says About You</title>
+</svelte:head>
+
 <main class="flex h-fit flex-col items-center gap-4 pt-24 pb-4">
-	<h1 class="font-bebas text-6xl text-accent">
+	<h1 class="font-bebas text-[7rem] leading-tight w-[60vw] spacing text-accent">
 		The Psychology of Colors: What Your Design Says About You
 	</h1>
+	<p class="text-right w-[60vw] font-inter text-xl">Written by Aria Kanani</p>
 
 	<div class=" w-[60%] space-y-5">
 		<p class="text-justify font-poppins text-xl">

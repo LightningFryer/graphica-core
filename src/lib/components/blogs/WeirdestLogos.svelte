@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>Blog | The Weirdest Logos That Somehow Got Approved</title>
+</svelte:head>
+
 <script>
 	import Society27 from '$lib/images/blog/weirdest_logos/weirdest_logos_society_27.jpg';
 	import Metroplex from '$lib/images/blog/weirdest_logos/weirdest_logos_metroplex.jpg';
@@ -7,9 +11,13 @@
 </script>
 
 <main class="flex h-fit flex-col items-center gap-4 pb-4 pt-24">
-	<h1 class="mb-7 font-bebas text-6xl text-accent">The Weirdest Logos That Somehow Got Approved</h1>
+	<h1 class="font-bebas text-[7rem] leading-tight w-[60vw] spacing text-accent">
+		The Weirdest Logos That Somehow Got Approved
+	</h1>
+	<p class="text-right w-[60vw] font-inter text-bebas">Written by Shristi Shree Sahoo</p>
+	<!-- <h1 class="mb-7 font-bebas text-6xl text-accent"></h1> -->
 
-	<div class=" w-[60%] place-items-center space-y-10">
+	<div class=" w-[60%] place-items-center space-y-10 md:mt-20 md:pb-52">
 		<h2 class="w-full text-center font-bebas text-6xl">Society 27</h2>
 		<img src={Society27} alt="society_27" />
 		<p class="text-justify font-poppins text-xl">
