@@ -5,7 +5,7 @@
 	import Events from '$lib/components/sections/Events.svelte';
 	import BlogIntro from '$lib/components/sections/BlogIntro.svelte';
 	import Footer from '$lib/components/sections/Footer.svelte';
-	import SplashLogo from '$lib/images/logo/Logo_Alpha.webp';
+	import SplashLogo from '$lib/images/logo/Logo_Alpha.avif';
 	import MeetTheTeam from '$lib/components/sections/MeetTheTeam.svelte';
 	import DepartmentsVertical from '$lib/components/sections/DepartmentsVertical.svelte';
 	import { onMount } from 'svelte';

@@ -1,10 +1,10 @@
 <script>
 	// import footer from "$lib/images/footer_background_modified.png"
 
-	import InstagramIconFooter from '$lib/images/logo/instagram_footer_logo.png';
-	import WhatsappIconFooter from '$lib/images/logo/whatsapp_footer_logo.png';
-	import LinkedInIconFooter from '$lib/images/logo/linkedin_footer_logo.png';
-	import iconFooter from '$lib/images/logo/icon_footer.svg';
+	import InstagramIconFooter from '$lib/images/logo/instagram_footer_logo.avif';
+	import WhatsappIconFooter from '$lib/images/logo/whatsapp_footer_logo.avif';
+	import LinkedInIconFooter from '$lib/images/logo/linkedin_footer_logo.avif';
+	import iconFooter from '$lib/images/logo/icon_footer.avif';
 	import { onMount } from 'svelte';
 
 	import gsap from 'gsap';
@@ -21,7 +21,7 @@
 </script>
 
 <main
-	class="flex h-[29vh] w-full items-end bg-black bg-[url('$lib/images/footer_background_mobile.svg')] bg-contain bg-no-repeat md:h-[30vh] md:items-start md:justify-end md:bg-[url('$lib/images/footer_background_modified.svg')]"
+	class="flex h-[29vh] w-full items-end bg-black bg-[url('$lib/images/footer_background_mobile.avif')] bg-contain bg-no-repeat md:h-[30vh] md:items-start md:justify-end md:bg-[url('$lib/images/footer_background_modified.avif')]"
 	id="footer-sec"
 >
 	<div

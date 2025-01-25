@@ -1,10 +1,10 @@
 <script>
-	import Society27 from '$lib/images/blog/weirdest_logos/weirdest_logos_society_27.jpg';
-	import Metroplex from '$lib/images/blog/weirdest_logos/weirdest_logos_metroplex.jpg';
-	import Schizophrenic from '$lib/images/blog/weirdest_logos/weirdest_logos_schizophrenic.jpg';
-	import ModernNerd from '$lib/images/blog/weirdest_logos/weirdest_logos_modern_nerd.jpg';
+	import Society27 from '$lib/images/blog/weirdest_logos/weirdest_logos_society_27.avif';
+	import Metroplex from '$lib/images/blog/weirdest_logos/weirdest_logos_metroplex.avif';
+	import Schizophrenic from '$lib/images/blog/weirdest_logos/weirdest_logos_schizophrenic.avif';
+	import ModernNerd from '$lib/images/blog/weirdest_logos/weirdest_logos_modern_nerd.avif';
 	import Olympics from '$lib/images/blog/weirdest_logos/weirdest_logos_olympics.png';
-	import Gap from '$lib/images/blog/weirdest_logos/weirdest_logos_gap.jpg';
+	import Gap from '$lib/images/blog/weirdest_logos/weirdest_logos_gap.avif';
 </script>
 
 <svelte:head>

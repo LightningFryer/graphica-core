@@ -3,7 +3,7 @@
 	import { onMount } from 'svelte';
 	let navbar: HTMLElement;
 	import { page } from '$app/stores';
-	import status_bar from '$lib/images/status_bar.png';
+	import status_bar from '$lib/images/status_bar.avif';
 	import gsap from 'gsap';
 	import ScrollToPlugin from 'gsap/ScrollToPlugin';
 	import { goto } from '$app/navigation';
