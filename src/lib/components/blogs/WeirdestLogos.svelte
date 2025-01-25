@@ -3,7 +3,7 @@
 	import Metroplex from '$lib/images/blog/weirdest_logos/weirdest_logos_metroplex.avif';
 	import Schizophrenic from '$lib/images/blog/weirdest_logos/weirdest_logos_schizophrenic.avif';
 	import ModernNerd from '$lib/images/blog/weirdest_logos/weirdest_logos_modern_nerd.avif';
-	import Olympics from '$lib/images/blog/weirdest_logos/weirdest_logos_olympics.png';
+	import Olympics from '$lib/images/blog/weirdest_logos/weirdest_logos_olympics.avif';
 	import Gap from '$lib/images/blog/weirdest_logos/weirdest_logos_gap.avif';
 </script>
 
