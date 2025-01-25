@@ -4,22 +4,36 @@
 	import gsap from 'gsap';
 	import { ScrollTrigger } from 'gsap/ScrollTrigger';
 	import { onMount } from 'svelte';
+	import Device from 'svelte-device-info';
 
 	let loop;
 	onMount(() => {
 		const teamCards = gsap.utils.toArray('.team-card');
 		gsap.registerPlugin(ScrollTrigger);
 		loop = horizontalLoop(teamCards, { repeat: -1, speed: 1, paused: true });
-
-		gsap.from('.meet-the-team-sec', {
-			onStart: () => loop.resume(),
-			scrollTrigger: {
-				trigger: '.meet-team-sec',
-				start: 'bottom 60%',
-				end: 'top top',
-				// markers: true
-			}
-		});
+		console.log(Device.isMobile)
+		if (!Device.isMobile) {
+			
+			gsap.from('.meet-the-team-sec', {
+				onStart: () => loop.resume(),
+				scrollTrigger: {
+					trigger: '.meet-team-sec',
+					start: 'bottom center',
+					// end: 'top top',
+					markers: true
+				}
+			});
+		} else {
+			gsap.from('.meet-the-team-sec', {
+				onStart: () => loop.resume(),
+				scrollTrigger: {
+					trigger: '.meet-team-sec',
+					start: 'bottom bottom',
+					// end: 'top top',
+					markers: true
+				}
+			});
+		}
 	});
 </script>
 
@@ -220,8 +234,6 @@
 </main>
 
 <style>
-
-
 	.meet-the-team-sec {
 		/* position: relative; */
 		width: 100%;

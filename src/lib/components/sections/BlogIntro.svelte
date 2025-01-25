@@ -11,6 +11,7 @@
 			scrollTo: '#blog-intro-sec',
 			ease: 'power1.inOut'
 		});
+
 	};
 
 	let moreBlogsOpen = true;
@@ -18,9 +19,7 @@
 
 <main
 	id="blog-intro-sec"
-	class="blog-intro-sec min-h-[{moreBlogsOpen
-		? '200vh'
-		: '100vh'}] flex flex-col items-center justify-center p-5 md:min-h-fit md:p-0"
+	class="blog-intro-sec flex flex-col items-center justify-center p-5 md:min-h-fit md:p-0"
 >
 	<div
 		class="flex w-[90%] flex-col items-center justify-start gap-5 md:h-screen md:justify-center md:gap-10"
@@ -101,17 +100,17 @@
 			</div>
 		</div>
 
-		{#if !moreBlogsOpen}
+		<!-- {#if !moreBlogsOpen}
 			<div class="flex w-full justify-center">
 				<button class="btn btn-accent" onclick={() => (moreBlogsOpen = true)}
 					>More Blogs <ArrowDown /></button
 				>
 			</div>
-		{/if}
+		{/if} -->
 	</div>
 
-	{#key moreBlogsOpen}
-		<!-- {#if moreBlogsOpen} -->
+	<!-- {#key moreBlogsOpen}
+		{#if moreBlogsOpen}
 		<div
 			class="{moreBlogsOpen
 				? 'flex h-screen'
@@ -133,8 +132,8 @@
 				}}>Show Less <ArrowUp /></button
 			>
 		</div>
-		<!-- {/if} -->
-	{/key}
+		{/if}
+	{/key} -->
 </main>
 
 <style>

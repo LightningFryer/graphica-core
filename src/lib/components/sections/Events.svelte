@@ -4,7 +4,7 @@
 	import Device from 'svelte-device-info';
 </script>
 
-<main class="events-sec pt-16 md:pt-0 flex h-fit flex-col items-center justify-center gap-4">
+<main class="events-sec pt-16 md:pt-0 flex h-fit flex-col items-center min-h-screen justify-center gap-4">
 	<!-- <div class="h-full w-full p-28">
 		<p class="text-justify font-poppins text-3xl font-extralight">
 			As a design club, we immerse ourselves in the vibrant world of creativity and innovation. We

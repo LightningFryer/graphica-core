@@ -82,7 +82,7 @@
 <main class="">
 	<div class="container flex min-h-screen flex-col">
 		<section
-			class="department-intro-sec department-sec flex h-[50vh] w-screen flex-col items-center justify-center bg-accent text-base-200 md:h-[70vh]"
+			class="department-intro-sec department-sec flex h-[50vh] w-screen flex-col items-center justify-center text-base-200 md:h-[70vh]"
 		>
 			<!-- This is the background image that looks like the exploding thingy. DO NOT DELETE -->
 			<!-- <div class="absolute z-0 scale-[1.3]">
@@ -133,7 +133,7 @@
 </main>
 
 <style>
-	.department-intro-sec {
+	.container {
 		position: relative;
 
 		background-image: linear-gradient(to right, #ffffff7f 1px, transparent 1px),
@@ -143,27 +143,6 @@
 		animation: moveLeft 2s linear infinite;
 	}
 
-	.department-gd-3d-sec {
-		position: relative;
-		/* width: 100vw !important; */
-
-		background-color: black;
-		background-image: linear-gradient(to right, #ffffff7f 1px, transparent 1px),
-			linear-gradient(to bottom, #ffffff7f 1px, transparent 1px);
-		background-size: 70px 70px; /* Set grid cell size */
-		animation: moveLeft 2s linear infinite;
-	}
-
-	.department-ui-web-sec {
-		position: relative;
-		/* width: 100vw !important; */
-
-		background-color: black;
-		background-image: linear-gradient(to right, #ffffff7f 1px, transparent 1px),
-			linear-gradient(to bottom, #ffffff7f 1px, transparent 1px);
-		background-size: 70px 70px; /* Set grid cell size */
-		animation: moveLeft 2s linear infinite;
-	}
 
 	@keyframes moveLeft {
 		0% {
