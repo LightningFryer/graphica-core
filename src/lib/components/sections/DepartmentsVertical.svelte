@@ -82,7 +82,7 @@
 <main class="">
 	<div class="container flex min-h-screen flex-col">
 		<section
-			class="department-intro-sec department-sec flex h-[50vh] w-screen flex-col items-center justify-center text-base-200 md:h-[70vh]"
+			class="department-intro-sec department-sec min-w-screen flex h-[50vh] flex-col items-center justify-center text-base-200 md:h-[70vh]"
 		>
 			<!-- This is the background image that looks like the exploding thingy. DO NOT DELETE -->
 			<!-- <div class="absolute z-0 scale-[1.3]">
@@ -101,30 +101,46 @@
 		</section>
 
 		<section
-			class="department-sec department-gd-3d-sec flex h-[100vh] flex-col items-center justify-center md:h-full"
+			class="department-sec department-gd-3d-sec min-w-screen flex h-[100vh] flex-col items-center justify-center md:h-full"
 		>
 			<div class="h-full w-full">
 				<div class="flex flex-col items-center justify-center md:flex-row md:gap-0">
 					<div class="dept-card-sec-1">
-						<img src={dept_gd_sec_card} class=" scale-[0.9] md:scale-[0.7] rounded-xl" alt="gd_sec" />
+						<img
+							src={dept_gd_sec_card}
+							class=" scale-[0.9] rounded-xl md:scale-[0.7]"
+							alt="gd_sec"
+						/>
 					</div>
 					<div class="dept-card-sec-1">
-						<img src={dept_3d_sec_card} class=" scale-[0.9] md:scale-[0.7] rounded-xl" alt="gd_sec" />
+						<img
+							src={dept_3d_sec_card}
+							class=" scale-[0.9] rounded-xl md:scale-[0.7]"
+							alt="gd_sec"
+						/>
 					</div>
 				</div>
 			</div>
 		</section>
 
 		<section
-			class="department-sec department-ui-web-sec flex h-[100vh] flex-col items-center justify-center md:h-full"
+			class="department-sec department-ui-web-sec min-w-screen flex h-[100vh] flex-col items-center justify-center md:h-full"
 		>
 			<div class="h-full w-full">
 				<div class="flex flex-col items-center justify-center md:flex-row md:gap-0">
 					<div class="dept-card-sec-2">
-						<img src={dept_ui_ux_sec_card} class=" scale-[0.9] md:scale-[0.7] rounded-xl" alt="gd_sec" />
+						<img
+							src={dept_ui_ux_sec_card}
+							class=" scale-[0.9] rounded-xl md:scale-[0.7]"
+							alt="gd_sec"
+						/>
 					</div>
 					<div class="dept-card-sec-2">
-						<img src={dept_web_dev_ux_sec_card} class=" scale-[0.9] md:scale-[0.7] rounded-xl" alt="gd_sec" />
+						<img
+							src={dept_web_dev_ux_sec_card}
+							class=" scale-[0.9] rounded-xl md:scale-[0.7]"
+							alt="gd_sec"
+						/>
 					</div>
 				</div>
 			</div>
@@ -133,16 +149,38 @@
 </main>
 
 <style>
-	.container {
+	.department-intro-sec {
 		position: relative;
+		width: 100vw !important;
 
+		background-color: black;
 		background-image: linear-gradient(to right, #ffffff7f 1px, transparent 1px),
 			linear-gradient(to bottom, #ffffff7f 1px, transparent 1px);
 		background-size: 70px 70px; /* Set grid cell size */
-		background-color: black;
 		animation: moveLeft 2s linear infinite;
 	}
 
+	.department-gd-3d-sec {
+		position: relative;
+		width: 100vw !important;
+
+		background-color: black;
+		background-image: linear-gradient(to right, #ffffff7f 1px, transparent 1px),
+			linear-gradient(to bottom, #ffffff7f 1px, transparent 1px);
+		background-size: 70px 70px; /* Set grid cell size */
+		animation: moveLeft 2s linear infinite;
+	}
+
+	.department-ui-web-sec {
+		position: relative;
+		width: 100vw !important;
+
+		background-color: black;
+		background-image: linear-gradient(to right, #ffffff7f 1px, transparent 1px),
+			linear-gradient(to bottom, #ffffff7f 1px, transparent 1px);
+		background-size: 70px 70px; /* Set grid cell size */
+		animation: moveLeft 2s linear infinite;
+	}
 
 	@keyframes moveLeft {
 		0% {

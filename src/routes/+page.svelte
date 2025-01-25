@@ -55,7 +55,7 @@
 		setTimeout(() => {
 			timeoutDone = true; // This triggers Svelte's reactivity
 			console.log('Timeout finished');
-		}, 1500);
+		}, 4000);
 
 		gsap.to('.splash-icon', {
 			rotation: 360,
@@ -78,9 +78,9 @@
 		<img
 			src={SplashLogo}
 			alt="splash_logo"
-			class="splash-icon btn-circle size-32 bg-white bg-opacity-50"
+			class="splash-icon btn-circle size-28 md:size-32 bg-white bg-opacity-50"
 		/>
-		<h1 class="font-poppins text-2xl">Loading images, please wait...</h1>
+		<h1 class="font-poppins text-xl md:text-2xl">Loading images, please wait...</h1>
 	</div>
 
 	<!-- Main content -->

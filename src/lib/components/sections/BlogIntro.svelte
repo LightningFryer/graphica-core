@@ -3,7 +3,7 @@
 	import { quadInOut, sineIn } from 'svelte/easing';
 	import { fade, slide } from 'svelte/transition';
 	import gsap from 'gsap';
-	import PsychOfColorsCardImage from "$lib/images/blog/psychology_of_colours/psych_of_colors_card.png"
+	import PsychOfColorsCardImage from '$lib/images/blog/psychology_of_colours/psych_of_colors_card.png';
 
 	const scrollToBlog = () => {
 		gsap.to(window, {
@@ -11,7 +11,6 @@
 			scrollTo: '#blog-intro-sec',
 			ease: 'power1.inOut'
 		});
-
 	};
 
 	let moreBlogsOpen = true;
@@ -34,7 +33,8 @@
 		</p>
 
 		<div class="flex flex-col flex-wrap gap-6 md:flex-row md:gap-28">
-			<a	href="/blog/PsychologyOfColors"
+			<a
+				href="/blog/PsychologyOfColors"
 				class="relative h-[15rem] w-[18rem] justify-end transition-all duration-200 ease-linear hover:scale-[102%] hover:cursor-pointer md:h-[22rem] md:w-[18rem]"
 			>
 				<div class="flex h-full w-full flex-row">
@@ -42,22 +42,25 @@
 					<div class="h-full w-[50%] bg-[#C39F61]"></div>
 				</div>
 				<!-- <div class="relative"> -->
-				<div class="absolute flex justify-center items-center top-0 h-[60%] w-full rounded-br-[3rem] bg-[#F5F3E4]">
+				<div
+					class="absolute top-0 flex h-[60%] w-full items-center justify-center rounded-br-[3rem] bg-[#F5F3E4]"
+				>
 					<img src={PsychOfColorsCardImage} alt="psych_of_colors_card" class="size-32 md:size-40" />
 				</div>
 				<div
 					class="absolute bottom-0 flex h-[40%] w-full items-center justify-center rounded-tl-[3rem] bg-[#C39F61]"
 				>
 					<div class="flex h-[70%] w-[80%] flex-col text-accent-content">
-						<p class="font-nunito text-sm">colour theory • 20/01/2025</p>
-						<h2 class="text-md font-poppins font-light text-[#F5F3E4]">
+						<p class="font-nunito text-sm">Colour Theory • Aria Kanani</p>
+						<h2 class="text-sm font-poppins font-light text-[#F5F3E4]">
 							The Psychology of Colors: What Your Design Says About You
 						</h2>
 					</div>
 				</div>
 			</a>
 
-			<div
+			<a
+				href="/blog/WeirdestLogos"
 				class="relative h-[15rem] w-[18rem] justify-end transition-all duration-200 ease-linear hover:scale-[102%] hover:cursor-pointer md:h-[22rem] md:w-[18rem]"
 			>
 				<div class="flex h-full w-full flex-row">
@@ -65,20 +68,25 @@
 					<div class="h-full w-[50%] bg-[#C39F61]"></div>
 				</div>
 				<!-- <div class="relative"> -->
-				<div class="absolute top-0 h-[60%] w-full rounded-br-[3rem] bg-[#F5F3E4]"></div>
+				<div
+					class="absolute top-0 flex h-[60%] w-full items-center justify-center rounded-br-[3rem] bg-[#F5F3E4]"
+				>
+					<img src={PsychOfColorsCardImage} alt="psych_of_colors_card" class="size-32 md:size-40" />
+				</div>
 				<div
 					class="absolute bottom-0 flex h-[40%] w-full items-center justify-center rounded-tl-[3rem] bg-[#C39F61]"
 				>
 					<div class="flex h-[70%] w-[80%] flex-col text-accent-content">
-						<p class="font-nunito">insight • date</p>
-						<h2 class="text-md font-poppins font-semibold text-[#F5F3E4]">
-							MASTERING THE ART OF LOGO DESIGN
+						<p class="font-nunito text-sm">Logo Design • Shristi Shree Sahoo</p>
+						<h2 class="text-md font-poppins font-light text-[#F5F3E4]">
+							The Weirdest Logos That Somehow Got Approved
 						</h2>
 					</div>
 				</div>
-			</div>
+			</a>
 
-			<div
+			<a
+				href="/blog/MandelaEffectInLogos"
 				class="relative h-[15rem] w-[18rem] justify-end transition-all duration-200 ease-linear hover:scale-[102%] hover:cursor-pointer md:h-[22rem] md:w-[18rem]"
 			>
 				<div class="flex h-full w-full flex-row">
@@ -86,18 +94,22 @@
 					<div class="h-full w-[50%] bg-[#C39F61]"></div>
 				</div>
 				<!-- <div class="relative"> -->
-				<div class="absolute top-0 h-[60%] w-full rounded-br-[3rem] bg-[#F5F3E4]"></div>
+				<div
+					class="absolute top-0 flex h-[60%] w-full items-center justify-center rounded-br-[3rem] bg-[#F5F3E4]"
+				>
+					<img src={PsychOfColorsCardImage} alt="psych_of_colors_card" class="size-32 md:size-40" />
+				</div>
 				<div
 					class="absolute bottom-0 flex h-[40%] w-full items-center justify-center rounded-tl-[3rem] bg-[#C39F61]"
 				>
 					<div class="flex h-[70%] w-[80%] flex-col text-accent-content">
-						<p class="font-nunito">insight • date</p>
-						<h2 class="text-md font-poppins font-semibold text-[#F5F3E4]">
-							MASTERING THE ART OF LOGO DESIGN
+						<p class="font-nunito text-sm">Logo Facts • Tanav</p>
+						<h2 class="text-md font-poppins font-light text-[#F5F3E4]">
+							The Mandela Effect and Logos
 						</h2>
 					</div>
 				</div>
-			</div>
+			</a>
 		</div>
 
 		<!-- {#if !moreBlogsOpen}

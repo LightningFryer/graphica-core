@@ -3,13 +3,13 @@
 </svelte:head>
 
 <main class="flex h-fit flex-col items-center gap-4 pt-24 pb-4">
-	<h1 class="font-bebas text-[7rem] leading-tight w-[60vw] spacing text-accent">
+	<h1 class="font-bebas text-6xl md:text-[7rem] leading-tight w-[88vw] md:w-[60vw] spacing text-accent">
 		The Psychology of Colors: What Your Design Says About You
 	</h1>
-	<p class="text-right w-[60vw] font-inter text-xl">Written by Aria Kanani</p>
+	<p class="text-right w-[88vw] md:w-[60vw] font-inter text-sm md:text-2xl">Written by Aria Kanani</p>
 
-	<div class=" w-[60%] space-y-5">
-		<p class="text-justify font-poppins text-xl">
+	<div class="w-[85%] md:w-[60%] space-y-5">
+		<p class="text-justify font-poppins text-md md:text-xl">
 			Colors are the unsung heroes of the design world, silently working behind the scenes to evoke
 			emotions, convey messages, and establish brand identities. Have you ever considered what the
 			colors you choose might reveal about you as a designer? Ever wondered why certain colors make
@@ -19,7 +19,7 @@
 			creating designs that resonate with your audience.
 		</p>
 
-		<p class="text-justify font-poppins text-xl">
+		<p class="text-justify font-poppins text-md md:text-xl">
 			When referring to color, there are a few concepts that are key to understanding. Primary
 			colors are red, blue, and yellow. These are the three main colors you use to mix and create
 			other colors. When you mix two primary colors you get secondary colors which are green,
@@ -28,7 +28,7 @@
 			red-orange, red-purple, blue-purple, blue-green, and yellow-green.
 		</p>
 
-		<p class="text-justify font-poppins text-xl">
+		<p class="text-justify font-poppins text-md md:text-xl">
 			The warmth or coolness of a color is known as color temperature. You can use warm and cool
 			colors in your projects to achieve a certain mood. Warm colors include yellow, orange, red,
 			and pink while cool colors include green, blue, and purple.
@@ -39,7 +39,7 @@
 		</p>
 
 		<h2 class="w-full text-center font-bebas text-6xl text-red-500">RED</h2>
-		<p class="text-justify font-poppins text-xl">
+		<p class="text-justify font-poppins text-md md:text-xl">
 			Red is bold, energizing, and attention-grabbing. It can evoke strong emotions such as love,
 			passion, and excitement. In design, red can be used to create a sense of urgency or to
 			highlight important elements. However, it can also be overwhelming if overused, so it’s best
@@ -50,7 +50,7 @@
 		</p>
 
 		<h2 class="w-full text-center font-bebas text-6xl text-blue-500">BLUE</h2>
-		<p class="text-justify font-poppins text-xl">
+		<p class="text-justify font-poppins text-md md:text-xl">
 			Blue is often associated with tranquility, reliability, and professionalism. It is a color
 			that inspires trust and calmness, making it a popular choice for corporate designs and brands
 			that want to convey dependability. Light blue can evoke feelings of serenity, while dark blue
@@ -61,7 +61,7 @@
 		</p>
 
 		<h2 class="w-full text-center font-bebas text-6xl text-green-500">GREEN</h2>
-		<p class="text-justify font-poppins text-xl">
+		<p class="text-justify font-poppins text-md md:text-xl">
 			Blue is often associated with tranquility, reliability, and professionalism. It is a color
 			that inspires trust and calmness, making it a popular choice for corporate designs and brands
 			that want to convey dependability. Light blue can evoke feelings of serenity, while dark blue
@@ -72,7 +72,7 @@
 		</p>
 
 		<h2 class="w-full text-center font-poppins text-4xl">So where does that leave us?</h2>
-		<p class="text-justify font-poppins text-xl">
+		<p class="text-justify font-poppins text-md md:text-xl">
 			Understanding the psychology of colors can significantly enhance your graphic design projects.
 			By strategically using colors that align with the emotions and messages you want to convey,
 			you can create designs that not only look appealing but also resonate deeply with your

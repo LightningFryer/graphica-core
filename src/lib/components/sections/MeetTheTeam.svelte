@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { horizontalLoop } from '$lib/anims/helperFuncs';
 	// import TeamBg from '$lib/images/meet_the_team.png';
 	import gsap from 'gsap';
@@ -10,30 +10,30 @@
 	onMount(() => {
 		const teamCards = gsap.utils.toArray('.team-card');
 		gsap.registerPlugin(ScrollTrigger);
-		loop = horizontalLoop(teamCards, { repeat: -1, speed: 1, paused: true });
-		console.log(Device.isMobile)
-		if (!Device.isMobile) {
-			
-			gsap.from('.meet-the-team-sec', {
-				onStart: () => loop.resume(),
-				scrollTrigger: {
-					trigger: '.meet-team-sec',
-					start: 'bottom center',
-					// end: 'top top',
-					// markers: true
-				}
-			});
-		} else {
-			gsap.from('.meet-the-team-sec', {
-				onStart: () => loop.resume(),
-				scrollTrigger: {
-					trigger: '.meet-team-sec',
-					start: 'bottom bottom',
-					// end: 'top top',
-					// markers: true
-				}
-			});
-		}
+		loop = horizontalLoop(teamCards, { repeat: -1, speed: 1 });
+		// console.log(Device.isMobile)
+		// if (!Device.isMobile) {
+
+		// 	gsap.from('.meet-the-team-sec', {
+		// 		onStart: () => loop.resume(),
+		// 		scrollTrigger: {
+		// 			trigger: '.meet-team-sec',
+		// 			start: 'bottom center',
+		// 			// end: 'top top',
+		// 			// markers: true
+		// 		}
+		// 	});
+		// } else {
+		// 	gsap.from('.meet-the-team-sec', {
+		// 		onStart: () => loop.resume(),
+		// 		scrollTrigger: {
+		// 			trigger: '.meet-team-sec',
+		// 			start: 'bottom bottom',
+		// 			// end: 'top top',
+		// 			// markers: true
+		// 		}
+		// 	});
+		// }
 	});
 </script>
 
