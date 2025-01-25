@@ -5,7 +5,7 @@
 
 	import dept_gd_sec_card from '$lib/images/gd_sec_card.avif';
 	import dept_3d_sec_card from '$lib/images/3d_sec_card.avif';
-	import dept_ui_ux_sec_card from '$lib/images/club_intro.avif';
+	import dept_ui_ux_sec_card from '$lib/images/ui_ux_sec_card.avif';
 	import dept_web_dev_ux_sec_card from '$lib/images/web_dev_sec_card.avif';
 	import Device from 'svelte-device-info';
 
