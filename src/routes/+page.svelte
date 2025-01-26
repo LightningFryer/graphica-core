@@ -71,20 +71,20 @@
 	<title>Graphica | Home</title>
 </svelte:head>
 
-<!-- {#if loading || !timeoutDone} -->
+{#if loading || !timeoutDone}
 <!-- Splash screen -->
 
-<!-- <div class="flex h-screen flex-col items-center justify-center gap-4">
+<div class="flex h-screen flex-col items-center justify-center gap-4">
 	<img
 		src={SplashLogo}
 		alt="splash_logo"
 		class="splash-icon btn-circle size-28 bg-white bg-opacity-50 md:size-32"
 	/>
 	<h1 class="font-poppins text-xl md:text-2xl">Loading images, please wait...</h1>
-</div> -->
+</div>
 
 <!-- Main content -->
-<!-- {:else} -->
+{:else}
 <main class="main-sec overflow-hidden" in:fade={{ duration: 1000 }}>
 	<Navbar />
 	<Landing />
@@ -96,4 +96,4 @@
 	<MeetTheTeam />
 	<Footer />
 </main>
-<!-- {/if} -->
+{/if}
