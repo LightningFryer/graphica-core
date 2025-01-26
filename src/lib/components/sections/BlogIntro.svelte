@@ -1,9 +1,6 @@
 <script>
-	import { ArrowDown, ArrowUp } from 'lucide-svelte';
-	import { quadInOut, sineIn } from 'svelte/easing';
-	import { fade, slide } from 'svelte/transition';
 	import gsap from 'gsap';
-	import PsychOfColorsCardImage from '$lib/images/blog/psychology_of_colours/psych_of_colors_card.png';
+	// import PsychOfColorsCardImage from '$lib/images/blog/psychology_of_colours/psych_of_colors_card.png';
 
 	const scrollToBlog = () => {
 		gsap.to(window, {
@@ -13,7 +10,7 @@
 		});
 	};
 
-	let moreBlogsOpen = true;
+	// let moreBlogsOpen = true;
 </script>
 
 <main
@@ -45,14 +42,18 @@
 				<div
 					class="absolute top-0 flex h-[60%] w-full items-center justify-center rounded-br-[3rem] bg-[#F5F3E4]"
 				>
-					<img src={PsychOfColorsCardImage} alt="psych_of_colors_card" class="size-32 md:size-40" />
+					<img
+						src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/psychology_of_colours/psych_of_colors_card.png"
+						alt="psych_of_colors_card"
+						class="size-32 md:size-40"
+					/>
 				</div>
 				<div
 					class="absolute bottom-0 flex h-[40%] w-full items-center justify-center rounded-tl-[3rem] bg-[#C39F61]"
 				>
 					<div class="flex h-[70%] w-[80%] flex-col text-accent-content">
 						<p class="font-nunito text-sm">Colour Theory • Aria Kanani</p>
-						<h2 class="text-sm font-poppins font-light text-[#F5F3E4]">
+						<h2 class="font-poppins text-sm font-light text-[#F5F3E4]">
 							The Psychology of Colors: What Your Design Says About You
 						</h2>
 					</div>
@@ -71,7 +72,11 @@
 				<div
 					class="absolute top-0 flex h-[60%] w-full items-center justify-center rounded-br-[3rem] bg-[#F5F3E4]"
 				>
-					<img src={PsychOfColorsCardImage} alt="psych_of_colors_card" class="size-32 md:size-40" />
+					<img
+						src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/psychology_of_colours/psych_of_colors_card.png"
+						alt="psych_of_colors_card"
+						class="size-32 md:size-40"
+					/>
 				</div>
 				<div
 					class="absolute bottom-0 flex h-[40%] w-full items-center justify-center rounded-tl-[3rem] bg-[#C39F61]"
@@ -97,7 +102,11 @@
 				<div
 					class="absolute top-0 flex h-[60%] w-full items-center justify-center rounded-br-[3rem] bg-[#F5F3E4]"
 				>
-					<img src={PsychOfColorsCardImage} alt="psych_of_colors_card" class="size-32 md:size-40" />
+					<img
+						src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/psychology_of_colours/psych_of_colors_card.png"
+						alt="psych_of_colors_card"
+						class="size-32 md:size-40"
+					/>
 				</div>
 				<div
 					class="absolute bottom-0 flex h-[40%] w-full items-center justify-center rounded-tl-[3rem] bg-[#C39F61]"

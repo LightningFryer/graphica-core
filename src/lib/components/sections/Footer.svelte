@@ -1,10 +1,10 @@
 <script>
 	// import footer from "$lib/images/footer_background_modified.png"
 
-	import InstagramIconFooter from '$lib/images/logo/instagram_footer_logo.avif';
-	import WhatsappIconFooter from '$lib/images/logo/whatsapp_footer_logo.avif';
-	import LinkedInIconFooter from '$lib/images/logo/linkedin_footer_logo.avif';
-	import iconFooter from '$lib/images/logo/icon_footer.avif';
+	// import InstagramIconFooter from '$lib/images/logo/instagram_footer_logo.avif';
+	// import WhatsappIconFooter from '$lib/images/logo/whatsapp_footer_logo.avif';
+	// import LinkedInIconFooter from '$lib/images/logo/linkedin_footer_logo.avif';
+	// import iconFooter from '$lib/images/logo/icon_footer.avif';
 	import { onMount } from 'svelte';
 
 	import gsap from 'gsap';
@@ -21,7 +21,7 @@
 </script>
 
 <main
-	class="flex h-[29vh] w-full items-end bg-black bg-[url('$lib/images/footer_background_mobile.avif')] bg-contain bg-no-repeat md:h-[30vh] md:items-start md:justify-end md:bg-[url('$lib/images/footer_background_modified.avif')]"
+	class="flex h-[29vh] w-full items-end bg-black bg-[url('https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/footer_background_mobile.avif')] bg-contain bg-no-repeat md:h-[30vh] md:items-start md:justify-end md:bg-[url('https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/footer_background_modified.avif')]"
 	id="footer-sec"
 >
 	<div
@@ -32,7 +32,10 @@
 			href="https://www.instagram.com/graphica.club/"
 			target="_blank"
 		>
-			<img src={InstagramIconFooter} alt="instagram_icon" />
+			<img
+				src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/logo/instagram_footer_logo.avif"
+				alt="instagram_icon"
+			/>
 		</a>
 
 		<a
@@ -40,17 +43,27 @@
 			href="https://chat.whatsapp.com/HQnfGg5nbtCIMxQlC3a0o9"
 			target="_blank"
 		>
-			<img src={WhatsappIconFooter} alt="instagram_icon" />
+			<img
+				src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/logo/whatsapp_footer_logo.avif"
+				alt="instagram_icon"
+			/>
 		</a>
 
 		<a
-			class="btn btn-circle btn-ghost size-6 hover:bg-transparent mr-5"
+			class="btn btn-circle btn-ghost mr-5 size-6 hover:bg-transparent"
 			href="https://www.linkedin.com/company/graphica-club/"
 			target="_blank"
 		>
-			<img src={LinkedInIconFooter} alt="instagram_icon" />
+			<img
+				src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/logo/linkedin_footer_logo.avif"
+				alt="instagram_icon"
+			/>
 		</a>
-		<img src={iconFooter} class="footer-icon absolute right-2 md:right-6 top-2 size-16 md:size-24" alt="" />
+		<img
+			src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/logo/icon_footer.avif"
+			class="footer-icon absolute right-2 top-2 size-16 md:right-6 md:size-24"
+			alt=""
+		/>
 	</div>
 </main>
 

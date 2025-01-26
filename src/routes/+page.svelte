@@ -5,7 +5,7 @@
 	import Events from '$lib/components/sections/Events.svelte';
 	import BlogIntro from '$lib/components/sections/BlogIntro.svelte';
 	import Footer from '$lib/components/sections/Footer.svelte';
-	import SplashLogo from '$lib/images/logo/Logo_Alpha.avif';
+	// import SplashLogo from '$lib/images/logo/Logo_Alpha.avif';
 	import MeetTheTeam from '$lib/components/sections/MeetTheTeam.svelte';
 	import DepartmentsVertical from '$lib/components/sections/DepartmentsVertical.svelte';
 	import { onMount } from 'svelte';
@@ -77,7 +77,7 @@
 	class={`relative ${timeoutDone ? 'hidden' : 'visible'}  flex h-screen flex-col items-center justify-center gap-4`}
 >
 	<img
-		src={SplashLogo}
+		src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/logo/Logo_Alpha.avif"
 		alt="splash_logo"
 		class="splash-icon btn-circle size-28 bg-white bg-opacity-50 md:size-32"
 	/>

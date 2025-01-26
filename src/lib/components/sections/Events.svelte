@@ -1,6 +1,6 @@
 <script>
-	import past_events_png_mobile from '$lib/images/past_events_mobile.avif';
-	import past_events_png_desktop from '$lib/images/past_events.avif';
+	// import past_events_png_mobile from '$lib/images/past_events_mobile.avif';
+	// import past_events_png_desktop from '$lib/images/past_events.avif';
 	import Device from 'svelte-device-info';
 </script>
 

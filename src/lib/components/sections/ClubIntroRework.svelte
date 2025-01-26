@@ -1,6 +1,6 @@
 <script lang="ts">
 	// import clubIntroImageDesktop from '$lib/images/club_intro.avif';
-	import clubIntroImageMobile from '$lib/images/club_intro_mobile.avif';
+	// import clubIntroImageMobile from '$lib/images/club_intro_mobile.avif';
 	import Device from 'svelte-device-info';
 </script>
 

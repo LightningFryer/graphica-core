@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { horizontalLoop } from '$lib/anims/helperFuncs';
-	// import TeamBg from '$lib/images/meet_the_team.png';
 	import gsap from 'gsap';
 	import { ScrollTrigger } from 'gsap/ScrollTrigger';
 	import { onMount } from 'svelte';
