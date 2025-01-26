@@ -3,7 +3,7 @@
 </svelte:head>
 
 <main class="flex h-fit flex-col items-center gap-4 pb-4 pt-24">
-	<h1 class="w-[88vw] font-bebas text-6xl leading-tight text-accent md:w-[60vw] md:text-[7rem]">
+	<h1 class="w-[88vw] font-bebas text-6xl leading-[1] text-accent md:w-[60vw] md:text-[7rem]">
 		The Mandela Effect and Logos
 	</h1>
 	<p class="w-[88vw] text-right font-inter text-sm md:w-[60vw] md:text-2xl">Written by Tanav</p>

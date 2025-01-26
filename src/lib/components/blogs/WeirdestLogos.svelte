@@ -13,7 +13,7 @@
 
 <main class="flex h-fit flex-col items-center gap-4 pb-4 pt-24">
 	<h1
-		class="spacing w-[88vw] font-bebas text-6xl leading-tight text-accent md:w-[60vw] md:text-[7rem]"
+		class="spacing w-[88vw] leading-[1] font-bebas text-6xl leading-tight text-accent md:w-[60vw] md:text-[7rem]"
 	>
 		The Weirdest Logos That Somehow Got Approved
 	</h1>

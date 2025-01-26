@@ -40,13 +40,13 @@
 				</div>
 				<!-- <div class="relative"> -->
 				<div
-					class="absolute top-0 flex h-[60%] w-full items-center justify-center rounded-br-[3rem] bg-[#F5F3E4]"
+					class="absolute top-0 flex h-[60%] w-full items-center justify-center rounded-br-[3rem] bg-[#F5F3E4] bg-[url('https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/psychology_of_colours/psychology_of_colors_blog_card.avif')] bg-cover bg-center"
 				>
-					<img
+					<!-- <img
 						src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/psychology_of_colours/psychology_of_colors_blog_card.avif"
 						alt="psych_of_colors_card"
 						class="size-32 md:size-40"
-					/>
+					/> -->
 				</div>
 				<div
 					class="absolute bottom-0 flex h-[40%] w-full items-center justify-center rounded-tl-[3rem] bg-[#C39F61]"
@@ -70,13 +70,13 @@
 				</div>
 				<!-- <div class="relative"> -->
 				<div
-					class="absolute top-0 flex h-[60%] w-full items-center justify-center rounded-br-[3rem] bg-[#F5F3E4]"
+					class="absolute top-0 flex h-[60%] w-full items-center justify-center rounded-br-[3rem] bg-[#F5F3E4] bg-[url('https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/weirdest_logos/weirdest_logos_blog_card.avif')] bg-cover bg-center"
 				>
-					<img
+					<!-- <img
 						src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/weirdest_logos/weirdest_logos_blog_card.avif"
 						alt="psych_of_colors_card"
 						class="size-32 md:size-40"
-					/>
+					/> -->
 				</div>
 				<div
 					class="absolute bottom-0 flex h-[40%] w-full items-center justify-center rounded-tl-[3rem] bg-[#C39F61]"
@@ -100,13 +100,13 @@
 				</div>
 				<!-- <div class="relative"> -->
 				<div
-					class="absolute top-0 flex h-[60%] w-full items-center justify-center rounded-br-[3rem] bg-[#F5F3E4]"
+					class="absolute top-0 flex h-[60%] w-full items-center justify-center rounded-br-[3rem] bg-[#F5F3E4] bg-[url('https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/mandela_effect/mandela_effect_blog_card.avif')] bg-cover bg-center"
 				>
-					<img
+					<!-- <img
 						src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/mandela_effect/mandela_effect_blog_card.avif"
 						alt="psych_of_colors_card"
-						class="size-32 h-[90%] md:h-[95%] w-[30%] md:w-[55%]"
-					/>
+						class="size-32 h-[90%] w-[30%] md:h-[95%] md:w-[55%]"
+					/> -->
 				</div>
 				<div
 					class="absolute bottom-0 flex h-[40%] w-full items-center justify-center rounded-tl-[3rem] bg-[#C39F61]"
