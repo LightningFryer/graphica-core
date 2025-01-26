@@ -3,8 +3,8 @@
 </svelte:head>
 
 <main class="flex h-fit flex-col items-center gap-4 pt-24 pb-4">
-	<h1 class="font-bebas text-6xl md:text-[7rem] leading-tight w-[88vw] md:w-[60vw] spacing text-accent">
-		The Psychology of Colors: What Your Design Says About You
+	<h1 class="font-bebas text-6xl md:text-[7rem] leading-[1] w-[88vw] md:w-[60vw] text-accent">
+		The <span class="underline decoration-[6px]">Psychology of Colors</span>: What Your Design Says About You
 	</h1>
 	<p class="text-right w-[88vw] md:w-[60vw] font-inter text-sm md:text-2xl">Written by Aria Kanani</p>
 
@@ -81,8 +81,8 @@
 			designs that are not only visually appealing but also deeply personal and meaningful.
 			Remember, the key is to use colors purposefully and thoughtfully to make a lasting impression.
 		</p>
+		<div class="w-full flex justify-center pb-8">
+			<img src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/logo/Logo_Alpha.avif" alt="graphica_logo" class="size-20 bg-white bg-opacity-65 rounded-full" />
+		</div>
 	</div>
 </main>
-
-<style>
-</style>

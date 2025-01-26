@@ -8,7 +8,7 @@
 	</h1>
 	<p class="w-[88vw] text-right font-inter text-sm md:w-[60vw] md:text-2xl">Written by Tanav</p>
 
-	<div class="w-[85%] space-y-5 md:w-[60%]">
+	<div class="w-[85%] space-y-5 md:w-[60%] flex flex-col items-center">
 		<p class="text-justify font-poppins text-md md:text-xl">
 			You've probably had that popular soft drink with a blue label made by Coca-Cola, right? Yes,
 			I'm talking about "Thums Up." Some of you might think I spelled it wrong—don't worry, I used
@@ -18,12 +18,7 @@
 			its tail doesn’t have a black tip. For me, this was a "my whole life was a lie" moment.
 		</p>
 
-		<p class="text-justify font-poppins text-md md:text-xl">
-			After a bit of googling, I discovered the Mandela Effect. While Pikachu's tail might not be a
-			big deal, imagine people thinking someone who is alive is actually dead. Sounds crazy, right?
-			Yet, many people remember Nelson Mandela's death as occurring in the 1980s, not in 2013. This
-			is why it's called the Mandela Effect.
-		</p>
+		<img src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/mandela_effect/mandela_effect_pikachu.avif" alt="mandela_effect_pika" class="p-20" />
 
 		<p class="text-justify font-poppins text-md md:text-xl">
 			After a bit of googling, I discovered the Mandela Effect. While Pikachu's tail might not be a
@@ -31,6 +26,8 @@
 			Yet, many people remember Nelson Mandela's death as occurring in the 1980s, not in 2013. This
 			is why it's called the Mandela Effect.
 		</p>
+
+		<img src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/mandela_effect/mandela_effect_monopoly.avif" alt="mandela_effect_monopoly" class="p-20" />
 
 		<p class="text-justify font-poppins text-md md:text-xl">
 			Another fun example is "Uncle Chipps" vs. "Uncle Chips." Many people remember the popular
@@ -47,6 +44,10 @@
 			perception.
 		</p>
 
+		<div>
+			<img src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/mandela_effect/mandela_effect_subway.avif" alt="mandela_effect_monopoly" class="p-16" />
+		</div>
+
 		<p class="text-justify font-poppins text-md md:text-xl">
 			Exploring the Visual Mandela Effect helps us understand how changeable our memories are and
 			how open we are to shared false beliefs. It reminds us to carefully examine our memories,
@@ -56,8 +57,11 @@
 			what if there’s more to it than just false memories?
 		</p>
 
-		<p class="w-full pb-32 text-center font-poppins text-2xl">
+		<p class="w-full pb-3 text-center font-poppins text-2xl">
 			Stay tuned for more revelations on the intriguing Mandela Effect!
 		</p>
+		<div class="w-full flex justify-center pb-8">
+			<img src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/logo/Logo_Alpha.avif" alt="graphica_logo" class="size-20 bg-white bg-opacity-65 rounded-full" />
+		</div>
 	</div>
 </main>

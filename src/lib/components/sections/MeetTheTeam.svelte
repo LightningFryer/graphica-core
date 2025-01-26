@@ -224,9 +224,21 @@
 				class="flex h-full rotate-180 flex-col justify-end p-2 backdrop-blur-[0.1rem] backdrop-brightness-95 [writing-mode:vertical-lr] md:p-4"
 			>
 				<p class="font-poppins text-lg font-extralight italic md:text-xl">
-					Social Media & <span>Marketing Head</span>
+					Social Media Head
 				</p>
 				<p class="font-poppins text-2xl font-bold italic md:text-4xl">Priyanka Sahoo</p>
+			</div>
+		</div>
+		<div
+			class="team-card relative flex h-[90%] min-w-[16%] items-end overflow-hidden rounded-tl-full rounded-tr-full bg-[url('https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/team_card_images/aadit_team_card.avif')] bg-cover bg-clip-border bg-top md:h-[95%] md:min-w-[20%]"
+		>
+			<div
+				class="flex h-full rotate-180 flex-col justify-end p-2 backdrop-blur-[0.1rem] backdrop-brightness-95 [writing-mode:vertical-lr] md:p-4"
+			>
+				<p class="font-poppins text-lg font-extralight italic md:text-xl">
+					Marketing Head
+				</p>
+				<p class="font-poppins text-2xl font-bold italic md:text-4xl">Aadit Agarwaal</p>
 			</div>
 		</div>
 	</div>

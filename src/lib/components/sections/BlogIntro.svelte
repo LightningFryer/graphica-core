@@ -43,7 +43,7 @@
 					class="absolute top-0 flex h-[60%] w-full items-center justify-center rounded-br-[3rem] bg-[#F5F3E4]"
 				>
 					<img
-						src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/psychology_of_colours/psych_of_colors_card.png"
+						src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/psychology_of_colours/psychology_of_colors_blog_card.avif"
 						alt="psych_of_colors_card"
 						class="size-32 md:size-40"
 					/>
@@ -52,7 +52,7 @@
 					class="absolute bottom-0 flex h-[40%] w-full items-center justify-center rounded-tl-[3rem] bg-[#C39F61]"
 				>
 					<div class="flex h-[70%] w-[80%] flex-col text-accent-content">
-						<p class="font-nunito text-sm">Colour Theory • Aria Kanani</p>
+						<p class="font-nunito text-sm">Insight • Aria Kanani</p>
 						<h2 class="font-poppins text-sm font-light text-[#F5F3E4]">
 							The Psychology of Colors: What Your Design Says About You
 						</h2>
@@ -73,7 +73,7 @@
 					class="absolute top-0 flex h-[60%] w-full items-center justify-center rounded-br-[3rem] bg-[#F5F3E4]"
 				>
 					<img
-						src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/psychology_of_colours/psych_of_colors_card.png"
+						src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/weirdest_logos/weirdest_logos_blog_card.avif"
 						alt="psych_of_colors_card"
 						class="size-32 md:size-40"
 					/>
@@ -103,9 +103,9 @@
 					class="absolute top-0 flex h-[60%] w-full items-center justify-center rounded-br-[3rem] bg-[#F5F3E4]"
 				>
 					<img
-						src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/psychology_of_colours/psych_of_colors_card.png"
+						src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/mandela_effect/mandela_effect_blog_card.avif"
 						alt="psych_of_colors_card"
-						class="size-32 md:size-40"
+						class="size-32 h-[90%] md:h-[95%] w-[30%] md:w-[55%]"
 					/>
 				</div>
 				<div
@@ -164,8 +164,8 @@
 		/* height: 100vh; */
 
 		background-color: black;
-		background-image: linear-gradient(to right, #ffffff7f 1px, transparent 1px),
-			linear-gradient(to bottom, #ffffff7f 1px, transparent 1px);
+		background-image: linear-gradient(to right, #c39f617f 1px, transparent 1px),
+			linear-gradient(to bottom, #c39f617f 1px, transparent 1px);
 		background-size: 70px 70px; /* Set grid cell size */
 		animation: moveLeft 2s linear infinite;
 	}

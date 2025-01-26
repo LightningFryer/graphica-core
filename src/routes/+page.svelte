@@ -85,10 +85,7 @@
 </div> -->
 
 <!-- Main content -->
-<main
-	class={`main-sec overflow-hidden`}
-	in:fade={{ duration: 1000 }}
->
+<main class={`main-sec overflow-hidden`} in:fade={{ duration: 1000 }}>
 	<Navbar />
 	<Landing loadingDone={true} />
 	<ClubIntroRework />

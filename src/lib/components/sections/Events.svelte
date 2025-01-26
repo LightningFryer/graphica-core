@@ -48,8 +48,8 @@
 		/* height: 100vh; Full viewport height */
 
 		background-color: black;
-		background-image: linear-gradient(to right, #ffffff7f 1px, transparent 1px),
-			linear-gradient(to bottom, #ffffff7f 1px, transparent 1px);
+		background-image: linear-gradient(to right, #c39f617f 1px, transparent 1px),
+			linear-gradient(to bottom, #c39f617f 1px, transparent 1px);
 		background-size: 70px 70px; /* Set grid cell size */
 		animation: moveLeft 2s linear infinite;
 	}
