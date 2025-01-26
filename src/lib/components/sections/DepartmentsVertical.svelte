@@ -107,14 +107,14 @@
 				<div class="flex flex-col items-center justify-center md:flex-row md:gap-0">
 					<div class="dept-card-sec-1">
 						<img
-							src={dept_gd_sec_card}
+							src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/gd_sec_card.avif"
 							class=" scale-[0.9] rounded-xl md:scale-[0.7]"
 							alt="gd_sec"
 						/>
 					</div>
 					<div class="dept-card-sec-1">
 						<img
-							src={dept_3d_sec_card}
+							src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/3d_sec_card.avif"
 							class=" scale-[0.9] rounded-xl md:scale-[0.7]"
 							alt="gd_sec"
 						/>
@@ -130,14 +130,14 @@
 				<div class="flex flex-col items-center justify-center md:flex-row md:gap-0">
 					<div class="dept-card-sec-2">
 						<img
-							src={dept_ui_ux_sec_card}
+							src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/ui_ux_sec_card.avif"
 							class=" scale-[0.9] rounded-xl md:scale-[0.7]"
 							alt="gd_sec"
 						/>
 					</div>
 					<div class="dept-card-sec-2">
 						<img
-							src={dept_web_dev_ux_sec_card}
+							src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/web_dev_sec_card.avif"
 							class=" scale-[0.9] rounded-xl md:scale-[0.7]"
 							alt="gd_sec"
 						/>

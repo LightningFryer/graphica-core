@@ -64,7 +64,10 @@
 			<div
 				class="logo-rotate btn btn-circle btn-accent absolute right-[-2rem] top-[-1rem] z-10 size-[5rem] scale-150 opacity-0 md:right-[-4rem] md:top-[-6rem] md:size-[12rem]"
 			>
-				<img src={graphicaLogo} alt="graphica_alpha_logo" />
+				<img
+					src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/logo/Logo_Alpha.avif"
+					alt="graphica_alpha_logo"
+				/>
 			</div>
 			<h1
 				class={`main-text flex w-full items-center justify-center text-center font-bebas text-[6.5rem] font-bold md:mt-4 md:h-[19rem] md:text-[22rem]`}

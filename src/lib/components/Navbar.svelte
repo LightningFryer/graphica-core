@@ -96,7 +96,7 @@
 		{/if}
 	</div>
 	<div class="">
-		<img src={status_bar} alt="status_bar" />
+		<img src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/status_bar.avif" alt="status_bar" />
 	</div>
 	<!-- <div class="flex flex-row border-b-2 border-accent">
 		<div class=""></div>

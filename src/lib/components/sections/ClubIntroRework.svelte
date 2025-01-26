@@ -1,5 +1,5 @@
 <script lang="ts">
-	import clubIntroImageDesktop from '$lib/images/club_intro.avif';
+	// import clubIntroImageDesktop from '$lib/images/club_intro.avif';
 	import clubIntroImageMobile from '$lib/images/club_intro_mobile.avif';
 	import Device from 'svelte-device-info';
 </script>
@@ -23,7 +23,7 @@
 		></div>
 		<div class="">
 			<img
-				src={clubIntroImageDesktop}
+				src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/club_intro.avif"
 				alt="blob"
 				class="absolute left-[-7rem] right-0 top-7 scale-[1.1]"
 			/>
@@ -34,7 +34,7 @@
 		></div>
 		<div>
 			<div class="">
-				<img src={clubIntroImageMobile} alt="blob" class="relative" />
+				<img src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/club_intro_mobile.avif" alt="blob" class="relative" />
 			</div>
 		</div>
 	{/if}
