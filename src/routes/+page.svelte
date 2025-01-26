@@ -71,29 +71,34 @@
 	<title>Graphica | Home</title>
 </svelte:head>
 
-{#if loading || !timeoutDone}
-	<!-- Splash screen -->
+<!-- {#if loading || !timeoutDone} -->
+<!-- Splash screen -->
 
-	<div class="flex h-screen flex-col items-center justify-center gap-4">
-		<img
-			src={SplashLogo}
-			alt="splash_logo"
-			class="splash-icon btn-circle size-28 bg-white bg-opacity-50 md:size-32"
-		/>
-		<h1 class="font-poppins text-xl md:text-2xl">Loading images, please wait...</h1>
-	</div>
+<div
+	class={`relative ${timeoutDone ? 'hidden' : 'visible'} flex h-screen flex-col items-center justify-center gap-4`}
+>
+	<img
+		src={SplashLogo}
+		alt="splash_logo"
+		class="splash-icon btn-circle size-28 bg-white bg-opacity-50 md:size-32"
+	/>
+	<h1 class="font-poppins text-xl md:text-2xl">Loading images, please wait...</h1>
+</div>
 
-	<!-- Main content -->
-{:else}
-	<main class="main-sec overflow-hidden" in:fade={{ duration: 1000 }}>
-		<Navbar />
-		<Landing />
-		<ClubIntroRework />
-		<!-- <DepartmentsRework /> -->
-		<DepartmentsVertical />
-		<Events />
-		<BlogIntro />
-		<MeetTheTeam />
-		<Footer />
-	</main>
-{/if}
+<!-- Main content -->
+<!-- {:else} -->
+<main
+	class={`main-sec overflow-hidden ${timeoutDone ? 'visible' : 'invisible'}`}
+	in:fade={{ duration: 1000 }}
+>
+	<Navbar />
+	<Landing loadingDone={timeoutDone} />
+	<ClubIntroRework />
+	<!-- <DepartmentsRework /> -->
+	<DepartmentsVertical />
+	<Events />
+	<BlogIntro />
+	<MeetTheTeam />
+	<Footer />
+</main>
+<!-- {/if} -->

@@ -11,34 +11,40 @@
 	import Marquee from 'svelte-fast-marquee';
 	import graphicaLogo from '$lib/images/logo/Logo_Alpha.avif';
 	import Device from 'svelte-device-info';
+	export let loadingDone: Boolean;
+	$: {
+		if (loadingDone) {
+			gts1(p1).then(() => {
+				gsap
+					.to('.logo-rotate', {
+						scale: 0.6,
+						opacity: 1,
+						duration: 0.4,
+						ease: 'power2'
+					})
+					.then(() => {
+						gsap.to('.logo-rotate', {
+							rotation: 360,
+							duration: 10,
+							ease: 'none',
+							delay: 0,
+							repeat: -1
+						});
+					});
+			});
+
+			gts2(p2).then(() => {
+				gts2Bob(p2);
+				sec1Bob(sec1);
+			});
+
+			gts3(p3);
+			sec1MarqueeEnter(sec1Marquee);
+		}
+	}
+
 	onMount(() => {
 		gsap.registerPlugin(ScrollTrigger);
-		gts1(p1).then(() => {
-			gsap
-				.to('.logo-rotate', {
-					scale: 0.6,
-					opacity: 1,
-					duration: 0.4,
-					ease: 'power2'
-				})
-				.then(() => {
-					gsap.to('.logo-rotate', {
-						rotation: 360,
-						duration: 10,
-						ease: 'none',
-						delay: 0,
-						repeat: -1
-					});
-				});
-		});
-
-		gts2(p2).then(() => {
-			gts2Bob(p2);
-			sec1Bob(sec1);
-		});
-
-		gts3(p3);
-		sec1MarqueeEnter(sec1Marquee);
 	});
 </script>
 
