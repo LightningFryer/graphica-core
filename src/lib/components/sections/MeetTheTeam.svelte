@@ -57,7 +57,7 @@
 		class="team-scroll-cards relative flex min-w-fit grow flex-row flex-nowrap items-end overflow-hidden"
 	>
 		<div
-			class="team-card relative flex h-[90%] min-w-[16%] items-end overflow-hidden rounded-tl-full rounded-tr-full bg-[url('https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/team_card_images/rithika_team_card.avif')] bg-cover bg-clip-border bg-center md:min-w-[20%]"
+			class="team-card relative flex h-[99%] min-w-[16%] items-end overflow-hidden rounded-tl-full rounded-tr-full bg-[url('https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/team_card_images/rithika_team_card.avif')] bg-cover bg-clip-border bg-center md:min-w-[20%]"
 		>
 			<div
 				class="flex h-full rotate-180 flex-col justify-end p-2 backdrop-blur-[0.1rem] backdrop-brightness-95 [writing-mode:vertical-lr] md:p-4"
@@ -67,7 +67,7 @@
 			</div>
 		</div>
 		<div
-			class="team-card relative flex h-[99%] min-w-[16%] items-end overflow-hidden rounded-tl-full rounded-tr-full bg-[url('https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/team_card_images/tanav_team_card.avif')] bg-cover bg-clip-border bg-top md:h-[95%] md:min-w-[20%]"
+			class="team-card relative flex h-[90%] min-w-[16%] items-end overflow-hidden rounded-tl-full rounded-tr-full bg-[url('https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/team_card_images/tanav_team_card.avif')] bg-cover bg-clip-border bg-top md:h-[95%] md:min-w-[20%]"
 		>
 			<div
 				class="flex h-full rotate-180 flex-col justify-end p-2 backdrop-blur-[0.1rem] backdrop-brightness-95 [writing-mode:vertical-lr] md:p-4"
@@ -77,7 +77,7 @@
 			</div>
 		</div>
 		<div
-			class="team-card relative flex h-[90%] min-w-[16%] items-end overflow-hidden rounded-tl-full rounded-tr-full bg-[url('https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/team_card_images/ishita_team_card.avif')] bg-cover bg-clip-border md:h-[95%] md:min-w-[20%]"
+			class="team-card relative flex h-[99%] min-w-[16%] items-end overflow-hidden rounded-tl-full rounded-tr-full bg-[url('https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/team_card_images/ishita_team_card.avif')] bg-cover bg-clip-border md:h-[95%] md:min-w-[20%]"
 		>
 			<div
 				class="flex h-full rotate-180 flex-col justify-end p-2 backdrop-blur-[0.1rem] backdrop-brightness-95 [writing-mode:vertical-lr] md:p-4"
@@ -223,9 +223,7 @@
 			<div
 				class="flex h-full rotate-180 flex-col justify-end p-2 backdrop-blur-[0.1rem] backdrop-brightness-95 [writing-mode:vertical-lr] md:p-4"
 			>
-				<p class="font-poppins text-lg font-extralight italic md:text-xl">
-					Social Media Head
-				</p>
+				<p class="font-poppins text-lg font-extralight italic md:text-xl">Social Media Head</p>
 				<p class="font-poppins text-2xl font-bold italic md:text-4xl">Priyanka Sahoo</p>
 			</div>
 		</div>
@@ -235,9 +233,7 @@
 			<div
 				class="flex h-full rotate-180 flex-col justify-end p-2 backdrop-blur-[0.1rem] backdrop-brightness-95 [writing-mode:vertical-lr] md:p-4"
 			>
-				<p class="font-poppins text-lg font-extralight italic md:text-xl">
-					Marketing Head
-				</p>
+				<p class="font-poppins text-lg font-extralight italic md:text-xl">Marketing Head</p>
 				<p class="font-poppins text-2xl font-bold italic md:text-4xl">Aadit Agarwaal</p>
 			</div>
 		</div>
@@ -249,8 +245,8 @@
 		/* position: relative; */
 		width: 100%;
 		height: 100vh; /* Full viewport height */
-		background-image: linear-gradient(to right, #ffffff7f 1px, transparent 1px),
-			linear-gradient(to bottom, #ffffff7f 1px, transparent 1px);
+		background-image: linear-gradient(to right, #c39f617f 1px, transparent 1px),
+			linear-gradient(to bottom, #c39f617f 1px, transparent 1px);
 		background-size: 70px 70px; /* Set grid cell size */
 		background-color: black;
 		animation: moveLeft 2s linear infinite;

@@ -13,7 +13,7 @@
 
 <main class="flex h-fit flex-col items-center gap-4 pb-4 pt-24">
 	<h1
-		class="spacing w-[88vw] leading-[1] font-bebas text-6xl leading-tight text-accent md:w-[60vw] md:text-[7rem]"
+		class="spacing w-[88vw] font-bebas text-6xl leading-[1] text-accent md:w-[60vw] md:text-[7rem]"
 	>
 		The Weirdest Logos That Somehow Got Approved
 	</h1>
@@ -22,7 +22,7 @@
 	</p>
 	<!-- <h1 class="mb-7 font-bebas text-6xl text-accent"></h1> -->
 
-	<div class=" w-[85%] place-items-center space-y-10 md:mt-20 md:w-[60%] md:pb-52">
+	<div class=" w-[85%] place-items-center space-y-10 md:mt-20 md:w-[60%]">
 		<h2 class="w-full text-center font-bebas text-5xl md:text-6xl">Society 27</h2>
 		<div class="flex flex-col-reverse items-center gap-3 md:flex-row md:gap-16">
 			<p class="text-justify font-poppins md:text-xl">
@@ -105,6 +105,13 @@
 				met with expected ambivalence and, in some unavoidable cases, hatred. It is perhaps the
 				worst logo for the Olympics to date.
 			</p>
+		</div>
+		<div class="flex w-full justify-center pb-8">
+			<img
+				src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/logo/Logo_Alpha.avif"
+				alt="graphica_logo"
+				class="size-20 rounded-full bg-white bg-opacity-65"
+			/>
 		</div>
 	</div>
 </main>

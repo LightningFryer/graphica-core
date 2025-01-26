@@ -7,16 +7,6 @@
 <main
 	class="events-sec flex h-fit min-h-screen flex-col items-center justify-center gap-4 pt-16 md:pt-0"
 >
-	<!-- <div class="h-full w-full p-28">
-		<p class="text-justify font-poppins text-3xl font-extralight">
-			As a design club, we immerse ourselves in the vibrant world of creativity and innovation. We
-			focus on design not just as a discipline, but as a way of thinking that shapes the spaces,
-			products, and experiences around us. Our scope of work includes graphic design, web
-			development, animation, and 3D modelling, allowing us to tackle a diverse range of projects
-			that challenge conventional ideas. Through collaborative workshops and hands-on challenges, we
-			cultivate a supportive environment where every idea is valued.
-		</p>
-	</div> -->
 	<div class="">
 		<h1
 			class="flex flex-row items-center gap-2 font-bebas text-3xl opacity-85 md:mt-10 md:gap-4 md:text-6xl"
@@ -39,6 +29,23 @@
 			/>
 		</div>
 	{/if}
+	<div
+		class="flex w-full flex-col items-center justify-start gap-5 pb-12 md:h-[75vh] md:gap-10 md:pb-0"
+	>
+		<h1 class="text-center font-bebas text-5xl text-accent md:text-8xl">Coming soon</h1>
+		<img
+			src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/unwrapped_event_text.avif"
+			class="w-[80vw] md:w-[60vw]"
+			alt="unwrapped_text"
+		/>
+		<p class="w-[90vw] text-justify font-poppins text-sm md:w-[80vw] md:text-2xl">
+			Explore the intersection of art and design in this two-day event! Day 1 features a visit to
+			the Museum of Art and Photography for inspiration and insights into design principles and
+			storytelling. On Day 2, dive into a hands-on Figma workshop to master layouts, typography, and
+			color schemes. Create your own personalized scrapbook and build practical design skills while
+			unleashing your creativity!
+		</p>
+	</div>
 </main>
 
 <style>
