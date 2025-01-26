@@ -12,59 +12,59 @@
 	import { fade } from 'svelte/transition';
 	import gsap from 'gsap';
 
-	let loading = true;
-	let timeoutDone = false;
+	// let loading = true;
+	// let timeoutDone = false;
 
-	$: {
-		console.log(`Log: Loading images: ${loading}, Timeout Done: ${timeoutDone}`);
-	}
+	// $: {
+	// 	console.log(`Log: Loading images: ${loading}, Timeout Done: ${timeoutDone}`);
+	// }
 
-	onMount(() => {
-		const images = document.querySelectorAll('img');
-		let loadedCount = 0;
+	// onMount(() => {
+	// 	const images = document.querySelectorAll('img');
+	// 	let loadedCount = 0;
 
-		// Helper function to check if all images are loaded
-		const checkAllImagesLoaded = () => {
-			if (loadedCount === images.length) {
-				loading = false; // Trigger reactivity
-			}
-		};
+	// 	// Helper function to check if all images are loaded
+	// 	const checkAllImagesLoaded = () => {
+	// 		if (loadedCount === images.length) {
+	// 			loading = false; // Trigger reactivity
+	// 		}
+	// 	};
 
-		images.forEach((img) => {
-			if (img.complete) {
-				loadedCount++;
-				checkAllImagesLoaded();
-			} else {
-				img.addEventListener('load', () => {
-					loadedCount++;
-					checkAllImagesLoaded();
-				});
-				img.addEventListener('error', () => {
-					loadedCount++;
-					checkAllImagesLoaded();
-				});
-			}
-		});
+	// 	images.forEach((img) => {
+	// 		if (img.complete) {
+	// 			loadedCount++;
+	// 			checkAllImagesLoaded();
+	// 		} else {
+	// 			img.addEventListener('load', () => {
+	// 				loadedCount++;
+	// 				checkAllImagesLoaded();
+	// 			});
+	// 			img.addEventListener('error', () => {
+	// 				loadedCount++;
+	// 				checkAllImagesLoaded();
+	// 			});
+	// 		}
+	// 	});
 
-		// Handle case where there are no images
-		if (images.length === 0) {
-			loading = false;
-		}
+	// 	// Handle case where there are no images
+	// 	if (images.length === 0) {
+	// 		loading = false;
+	// 	}
 
-		// Update timeoutDone reactively
-		setTimeout(() => {
-			timeoutDone = true; // This triggers Svelte's reactivity
-			console.log('Timeout finished');
-		}, 2000);
+	// 	// Update timeoutDone reactively
+	// 	setTimeout(() => {
+	// 		timeoutDone = true; // This triggers Svelte's reactivity
+	// 		console.log('Timeout finished');
+	// 	}, 2000);
 
-		gsap.to('.splash-icon', {
-			rotation: 360,
-			duration: 10,
-			ease: 'none',
-			delay: 0,
-			repeat: -1
-		});
-	});
+	// 	gsap.to('.splash-icon', {
+	// 		rotation: 360,
+	// 		duration: 10,
+	// 		ease: 'none',
+	// 		delay: 0,
+	// 		repeat: -1
+	// 	});
+	// });
 </script>
 
 <svelte:head>
@@ -73,7 +73,7 @@
 
 <!-- Splash screen -->
 
-<div 
+<!-- <div 
 	class={`relative ${timeoutDone ? 'hidden' : 'visible'}  flex h-screen flex-col items-center justify-center gap-4`}
 >
 	<img
@@ -82,15 +82,15 @@
 		class="splash-icon btn-circle size-28 bg-white bg-opacity-50 md:size-32"
 	/>
 	<h1 class="font-poppins text-xl md:text-2xl">Loading images, please wait...</h1>
-</div>
+</div> -->
 
 <!-- Main content -->
 <main
-	class={`main-sec overflow-hidden ${timeoutDone ? 'visible' : 'invisible'}`}
+	class={`main-sec overflow-hidden`}
 	in:fade={{ duration: 1000 }}
 >
 	<Navbar />
-	<Landing loadingDone={timeoutDone} />
+	<Landing loadingDone={true} />
 	<ClubIntroRework />
 	<!-- <DepartmentsRework /> -->
 	<DepartmentsVertical />
