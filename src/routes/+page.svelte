@@ -55,7 +55,7 @@
 		setTimeout(() => {
 			timeoutDone = true; // This triggers Svelte's reactivity
 			console.log('Timeout finished');
-		}, 4000);
+		}, 7000);
 
 		gsap.to('.splash-icon', {
 			rotation: 360,
@@ -72,28 +72,28 @@
 </svelte:head>
 
 {#if loading || !timeoutDone}
-<!-- Splash screen -->
+	<!-- Splash screen -->
 
-<div class="flex h-screen flex-col items-center justify-center gap-4">
-	<img
-		src={SplashLogo}
-		alt="splash_logo"
-		class="splash-icon btn-circle size-28 bg-white bg-opacity-50 md:size-32"
-	/>
-	<h1 class="font-poppins text-xl md:text-2xl">Loading images, please wait...</h1>
-</div>
+	<div class="flex h-screen flex-col items-center justify-center gap-4">
+		<img
+			src={SplashLogo}
+			alt="splash_logo"
+			class="splash-icon btn-circle size-28 bg-white bg-opacity-50 md:size-32"
+		/>
+		<h1 class="font-poppins text-xl md:text-2xl">Loading images, please wait...</h1>
+	</div>
 
-<!-- Main content -->
+	<!-- Main content -->
 {:else}
-<main class="main-sec overflow-hidden" in:fade={{ duration: 1000 }}>
-	<Navbar />
-	<Landing />
-	<ClubIntroRework />
-	<!-- <DepartmentsRework /> -->
-	<DepartmentsVertical />
-	<Events />
-	<BlogIntro />
-	<MeetTheTeam />
-	<Footer />
-</main>
+	<main class="main-sec overflow-hidden" in:fade={{ duration: 1000 }}>
+		<Navbar />
+		<Landing />
+		<ClubIntroRework />
+		<!-- <DepartmentsRework /> -->
+		<DepartmentsVertical />
+		<Events />
+		<BlogIntro />
+		<MeetTheTeam />
+		<Footer />
+	</main>
 {/if}
