@@ -19,15 +19,15 @@
 			seems.
 		</p>
 
-		<!-- <img
-			src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/mandela_effect/mandela_effect_pikachu.avif"
-			alt="mandela_effect_pika"
-			class="p-20"
-		/> -->
+		<img
+			src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/dark_side_of_design/dark_side_of_design_eg_1.avif"
+			alt="dark_side_of_design_image"
+			class="p-6 md:p-20"
+		/>
 
 		<p class="text-md text-justify font-poppins md:text-2xl">But ask yourself:</p>
 
-		<ol class="w-[40vw] list-disc space-y-2">
+		<ol class="w-[80vw] md:w-[40vw] list-disc space-y-2">
 			<li class="text-md text-justify font-poppins md:text-xl">
 				Why do you feel a pang of anxiety when a shopping site flashes “Only 2 left in stock!”?
 			</li>
@@ -41,11 +41,11 @@
 			</li>
 		</ol>
 
-		<!-- <img
-			src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/mandela_effect/mandela_effect_monopoly.avif"
+		<img
+			src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/dark_side_of_design/dark_side_of_design_eg_2.avif"
 			alt="mandela_effect_monopoly"
-			class="p-20"
-		/> -->
+			class="p-6 md:p-20"
+		/>
 
 		<p class="text-md text-justify font-poppins md:text-xl">
 			The answers lie in the dark patterns of design—intentional tactics created not to help you but
@@ -60,13 +60,13 @@
 			you’re paying for something you didn’t even know you’d agreed to.
 		</p>
 
-		<!-- <div>
+		<div>
 			<img
-				src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/mandela_effect/mandela_effect_subway.avif"
+				src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/dark_side_of_design/dark_side_of_design_eg_3.avif"
 				alt="mandela_effect_monopoly"
-				class="p-16"
+				class="p-6 md:p-20"
 			/>
-		</div> -->
+		</div>
 
 		<p class="text-md text-justify font-poppins md:text-xl">
 			Even in everyday apps like Paytm, pre-selected options for services like wallet top-ups or
@@ -81,7 +81,7 @@
 			especially those who are less digitally savvy.
 		</p>
 
-		<p class="w-full pb-3 text-justify font-poppins text-2xl">
+		<p class="md:w-full pb-3 text-justify font-poppins text-xl md:text-2xl">
 			Design is powerful. It can build trust, solve problems, and empower users—or it can exploit,
 			confuse, and deceive. The choice lies in the hands of designers and businesses. As consumers,
 			it’s time to ask: Are we making our own decisions, or are we simply following the breadcrumbs

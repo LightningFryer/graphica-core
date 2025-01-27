@@ -6,7 +6,9 @@
 	<h1 class="w-[88vw] font-bebas text-6xl leading-[1] text-accent md:w-[60vw] md:text-[7rem]">
 		The Psychology Behind Fast Food Logos: Why Red and Yellow Dominate
 	</h1>
-	<p class="w-[88vw] text-right font-inter text-sm md:w-[60vw] md:text-2xl">Written by Rithika Narikimilli</p>
+	<p class="w-[88vw] text-right font-inter text-sm md:w-[60vw] md:text-2xl">
+		Written by Rithika Narikimilli
+	</p>
 
 	<div class="flex w-[85%] flex-col items-center space-y-5 md:w-[60%]">
 		<p class="text-md text-justify font-poppins md:text-xl">
@@ -18,12 +20,24 @@
 			individuals alike.
 		</p>
 
+		<img
+			src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/fast_food_logos/fast_food_logo_eg_1.avif"
+			alt="dark_side_of_design_image"
+			class="p-2 md:p-20"
+		/>
+
 		<p class="text-md text-justify font-poppins md:text-xl">
 			Together, red and yellow form a powerful combination: red sparks excitement and appetite,
 			while yellow fosters comfort and positivity. Their high contrast ensures visibility and
 			memorability, even from a distance or in low light. Culturally, these colors symbolize joy and
 			celebration, making them universally appealing and ideal for global brands.
 		</p>
+		
+		<img
+			src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/fast_food_logos/fast_food_logo_eg_2.avif"
+			alt="dark_side_of_design_image"
+			class="p-2 md:p-20"
+		/>
 
 		<p class="text-md text-justify font-poppins md:text-xl">
 			Practical design advantages further enhance their effectiveness. Red and yellow are highly
@@ -33,6 +47,12 @@
 			colors not only captures attention but also reinforces the fast food industry's values of
 			speed, affordability, and mass appeal.
 		</p>
+
+		<img
+			src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/fast_food_logos/fast_food_logo_eg_3.avif"
+			alt="dark_side_of_design_image"
+			class="p-2 md:p-20"
+		/>
 
 		<div class="flex w-full justify-center pb-8">
 			<img

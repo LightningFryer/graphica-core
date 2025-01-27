@@ -22,7 +22,7 @@
 
 			scrollTrigger: {
 				trigger: '.department-intro-sec',
-				start: 'top 80%',
+				start: 'top 80%'
 				// markers: true,
 			}
 		});
