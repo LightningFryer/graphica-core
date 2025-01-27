@@ -102,7 +102,7 @@
 		</section>
 
 		<section
-			class="department-sec department-gd-3d-sec min-w-screen flex h-[100vh] flex-col items-center justify-center md:h-full"
+			class="department-sec department-gd-3d-sec min-w-screen flex min-h-[100vh] flex-col items-center justify-center md:h-full"
 		>
 			<div class="h-full w-full">
 				<div class="flex flex-col items-center justify-center md:flex-row md:gap-0">
@@ -125,7 +125,7 @@
 		</section>
 
 		<section
-			class="department-sec department-ui-web-sec min-w-screen flex h-[100vh] flex-col items-center justify-center md:h-full"
+			class="department-sec department-ui-web-sec min-w-screen flex min-h-[100vh] flex-col items-center justify-center md:h-full"
 		>
 			<div class="h-full w-full">
 				<div class="flex flex-col items-center justify-center md:flex-row md:gap-0">
