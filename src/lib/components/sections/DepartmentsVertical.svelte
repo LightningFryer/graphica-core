@@ -83,8 +83,11 @@
 <main class="">
 	<div class="container flex min-h-screen flex-col">
 		<section
-			class="department-intro-sec department-sec min-w-screen flex h-[50vh] flex-col items-center justify-center text-base-200 md:h-[70vh]"
+			class="department-intro-sec department-sec min-w-screen relative flex h-[50vh] flex-col items-center justify-center text-base-200 md:h-[70vh]"
 		>
+			<div
+				class="absolute h-full w-full bg-gradient-to-b from-black from-10% via-transparent via-20% to-transparent to-90%"
+			></div>
 			<!-- This is the background image that looks like the exploding thingy. DO NOT DELETE -->
 			<!-- <div class="absolute z-0 scale-[1.3]">
 				<img src={dept_intro_blob} alt="dept_intro_blob" />
@@ -151,7 +154,7 @@
 
 <style>
 	.department-intro-sec {
-		position: relative;
+		/* position: relative; */
 		width: 100vw !important;
 
 		background-color: black;
