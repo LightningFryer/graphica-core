@@ -33,7 +33,7 @@
 		class="flex w-full flex-col items-center justify-center gap-5 pb-12 md:h-fit md:gap-10 md:pb-24"
 	>
 		<h1 class="text-center font-bebas text-5xl text-accent md:text-8xl">Coming soon!</h1>
-		<div class="flex flex-row w-[80vw] space-x-6 items-center">
+		<div class="flex flex-col md:flex-row w-[80vw] space-y-5 md:space-x-6 items-center">
 			<img
 				src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/unwrapped_event.avif"
 				class="w-[80vw] md:w-[40vw] blur-[0.2rem] md:blur-[0.4rem]"
