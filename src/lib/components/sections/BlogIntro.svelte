@@ -20,9 +20,9 @@
 	<div
 		class="flex w-[90%] flex-col items-center justify-start gap-5 pb-12 md:min-h-screen md:justify-center md:gap-10"
 	>
-		<div class="flex flex-col justify-center items-center">
+		<div class="flex flex-col items-center justify-center">
 			<h1 class="font-bebas text-7xl md:text-8xl">BLOG POSTS</h1>
-	
+
 			<p
 				class="flex flex-col items-center justify-center text-center font-poppins text-xl font-extralight"
 			>
@@ -51,10 +51,10 @@
 					/> -->
 				</div>
 				<div class="absolute bottom-0 flex h-[40%] w-full items-center justify-center bg-[#C39F61]">
-					<div class="flex h-[70%] w-[80%] flex-col text-accent-content">
+					<div class="flex h-[70%] w-[80%] flex-col text-accent-content md:w-[90%]">
 						<div>
 							<p class="font-nunito text-sm">Insight • 3 mins read</p>
-							<h2 class="md:text-md font-poppins text-sm text-[#F5F3E4]">
+							<h2 class="text-left font-poppins text-sm font-bold text-[#F5F3E4] md:text-sm">
 								The Psychology of Colors: What Your Design Says About You
 							</h2>
 						</div>
@@ -84,10 +84,10 @@
 					/> -->
 				</div>
 				<div class="absolute bottom-0 flex h-[40%] w-full items-center justify-center bg-[#C39F61]">
-					<div class="flex h-[70%] w-[80%] flex-col text-accent-content">
+					<div class="flex h-[70%] w-[80%] flex-col text-accent-content md:w-[90%]">
 						<div>
 							<p class="font-nunito text-sm">Insight • 1.5 mins read</p>
-							<h2 class="text-md font-poppins text-sm text-[#F5F3E4] md:text-lg">
+							<h2 class="font-poppins text-sm font-bold text-[#F5F3E4] md:text-sm">
 								The Weirdest Logos That Somehow Got Approved
 							</h2>
 						</div>
@@ -117,10 +117,10 @@
 					/> -->
 				</div>
 				<div class="absolute bottom-0 flex h-[40%] w-full items-center justify-center bg-[#C39F61]">
-					<div class="flex h-[70%] w-[80%] flex-col text-accent-content">
+					<div class="flex h-[70%] w-[80%] flex-col text-accent-content md:w-[90%]">
 						<div>
 							<p class="font-nunito text-sm">Insight • 2 mins read</p>
-							<h2 class="text-md font-poppins text-sm text-[#F5F3E4] md:text-lg">
+							<h2 class="text-md font-poppins text-sm font-bold text-[#F5F3E4] md:text-sm">
 								The Mandela Effect and Logos
 							</h2>
 						</div>
@@ -152,10 +152,10 @@
 					/> -->
 				</div>
 				<div class="absolute bottom-0 flex h-[40%] w-full items-center justify-center bg-[#C39F61]">
-					<div class="flex h-[70%] w-[80%] flex-col text-accent-content">
+					<div class="flex h-[70%] w-[80%] flex-col text-accent-content md:w-[90%]">
 						<div>
 							<p class="font-nunito text-sm">Insight • 2 mins read</p>
-							<h2 class="font-poppins text-sm text-[#F5F3E4] md:text-base">
+							<h2 class="font-poppins text-sm font-bold text-[#F5F3E4] md:text-sm">
 								The Dark Side of Design: How Manipulative Graphics Drive Consumer Behavior
 							</h2>
 						</div>
@@ -185,10 +185,10 @@
 					/> -->
 				</div>
 				<div class="absolute bottom-0 flex h-[40%] w-full items-center justify-center bg-[#C39F61]">
-					<div class="flex h-[70%] w-[80%] flex-col text-accent-content">
+					<div class="flex h-[70%] w-[80%] flex-col text-accent-content md:w-[90%]">
 						<div>
 							<p class="font-nunito text-sm">Insight • 1.5 mins read</p>
-							<h2 class="font-poppins text-sm text-[#F5F3E4] md:text-base">
+							<h2 class="font-poppins text-sm font-bold text-[#F5F3E4] md:text-sm">
 								The Psychology Behind Fast Food Logos: Why Red and Yellow Dominate
 							</h2>
 						</div>
