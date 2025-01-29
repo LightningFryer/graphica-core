@@ -38,7 +38,7 @@
 
 			scrollTrigger: {
 				trigger: '.department-gd-3d-sec',
-				start: 'top center'
+				start: 'top 90%'
 				// markers: true
 			}
 		});
@@ -55,7 +55,7 @@
 
 			scrollTrigger: {
 				trigger: '.department-ui-web-sec',
-				start: 'top center'
+				start: 'top 99%'
 				// markers: true
 			}
 		});
@@ -83,7 +83,7 @@
 <main class="">
 	<div class="container flex min-h-screen flex-col">
 		<section
-			class="department-intro-sec department-sec min-w-screen relative flex h-[50vh] flex-col items-center justify-center text-base-200 md:h-[70vh]"
+			class="department-intro-sec department-sec relative flex h-[50vh] flex-col items-center justify-center text-base-200 md:h-[70vh]"
 		>
 			<div
 				class="absolute h-full w-full bg-gradient-to-b from-black from-10% via-transparent via-20% to-transparent to-90%"
@@ -92,16 +92,16 @@
 			<!-- <div class="absolute z-0 scale-[1.3]">
 				<img src={dept_intro_blob} alt="dept_intro_blob" />
 			</div> -->
-			<div class="flex h-full w-full items-center justify-center">
-				<div class="flex flex-col items-center justify-center">
-					<h1 class="intro-text text-center font-bebas text-3xl text-white md:text-7xl">
-						What about our <span class="text-[#ffda45]">various departments</span> you ask?
-					</h1>
-					<h1 class="intro-text text-center font-bebas text-3xl text-white md:text-5xl">
-						Scroll on to see what <span class="text-7xl">we</span> have to offer!
-					</h1>
-				</div>
+			<!-- <div class="flex h-full w-full items-center justify-center"> -->
+			<div class="flex flex-col items-center justify-center">
+				<h1 class="intro-text text-center font-bebas text-3xl text-white md:text-7xl">
+					What about our <span class="text-[#ffda45]">various departments</span> you ask?
+				</h1>
+				<h1 class="intro-text text-center font-bebas text-3xl text-white md:text-5xl">
+					Scroll on to see what <span class="text-7xl">we</span> have to offer!
+				</h1>
 			</div>
+			<!-- </div> -->
 		</section>
 
 		<section

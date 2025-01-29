@@ -22,7 +22,10 @@
 			/>
 		</div>
 	{:else}
-		<div class="relative">
+		<div class="relative flex justify-center items-center">
+			<div class="size-10 border-4">
+
+			</div>
 			<img
 				src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/past_events.avif"
 				alt="the_full_image"
@@ -36,10 +39,10 @@
 		<div class="flex flex-col md:flex-row w-[80vw] space-y-5 md:space-x-6 items-center">
 			<img
 				src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/unwrapped_event.avif"
-				class="w-[80vw] md:w-[40vw] blur-[0.2rem] md:blur-[0.4rem]"
+				class="w-[80vw] md:w-[40vw] blur-[0.2rem] md:blur-[0.4rem] select-none"
 				alt="unwrapped_text"
 			/>
-			<p class="w-[90vw] text-justify font-poppins text-sm md:w-[80vw] md:text-xl blur-sm">
+			<p class="w-[90vw] text-justify font-poppins text-sm md:w-[80vw] md:text-xl blur-sm select-none">
 				Explore the intersection of art and design in this two-day event! Day 1 features a visit to
 				the Museum of Art and Photography for inspiration and insights into design principles and
 				storytelling. On Day 2, dive into a hands-on Figma workshop to master layouts, typography, and
