@@ -16,8 +16,14 @@
 			psychological tricks to keep you hooked!
 		</p>
 
-		<div class="space-y-5">
-			<div>
+		<img
+			src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/designed_to_keep_you_hooked/designed_to_keep_you_hooked_blog_eg_1.gif"
+			alt="dark_side_of_design_image"
+			class="p-2 md:p-12"
+		/>
+
+		<div class="md:space-y-20">
+			<div class="space-y-3">
 				<h2 class="text-md w-full text-justify font-bebas md:text-6xl">
 					Trick #1: Infinite Scrolling
 				</h2>
@@ -26,7 +32,7 @@
 					<h3 class="font-poppins font-semibold md:text-4xl">So how does it work?</h3>
 					<ol class="list-disc space-y-3 font-poppins md:text-xl">
 						<li>
-							Infinite scrolling* means there’s no stopping point, so you’re always tempted to see
+							Infinite scrolling means there’s no stopping point, so you’re always tempted to see
 							what comes next.
 						</li>
 						<li>
@@ -47,7 +53,7 @@
 				</div>
 			</div>
 
-			<div>
+			<div class="space-y-3">
 				<h2 class="text-md w-full text-justify font-bebas md:text-6xl">
 					Trick #2: Autoplay & Next Episode Countdown
 				</h2>
@@ -73,41 +79,65 @@
 					</ol>
 				</div>
 			</div>
+
+			<img
+				src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/designed_to_keep_you_hooked/designed_to_keep_you_hooked_blog_eg_2.avif"
+				alt="dark_side_of_design_image"
+				class="p-2 md:p-5"
+			/>
+
+			<div class="space-y-5">
+				<h2 class="text-md w-full text-justify font-bebas md:text-6xl">
+					Trick #3: "Trending" & Personalized Feeds
+				</h2>
+
+				<div class="space-y-3">
+					<p class="font-poppins md:text-xl">
+						Platforms like TikTok and YouTube personalize your feed based on what you watch and
+						like, keeping you engaged with content designed for you.
+					</p>
+					<h3 class="font-poppins font-semibold md:text-4xl">So how does it work?</h3>
+					<ol class="list-disc space-y-3 font-poppins md:text-xl">
+						<li>
+							Personalized recommendations feed you more of what you love, keeping you interested
+							and entertained.
+						</li>
+						<li>Trending content makes you feel like you’re missing out if you don’t watch.</li>
+					</ol>
+				</div>
+
+				<div class="space-y-3">
+					<h3 class="font-poppins font-semibold md:text-4xl">But why does it work?</h3>
+					<ol class="list-disc space-y-3 font-poppins md:text-xl">
+						<li>
+							Dopamine-driven recommendations reinforce the habit of watching more, while social
+							pressure keeps you in the loop.
+						</li>
+					</ol>
+				</div>
+			</div>
+
+			<div class="space-y-5">
+				<h2 class="text-md w-full text-center font-bebas md:text-6xl">
+					Why Is This Design So Effective?
+				</h2>
+				<p class="font-poppins md:text-xl">
+					The combination of instant gratification, minimal effort, and social influence makes these
+					platforms incredibly addictive. They’re designed to give you a constant stream of content
+					with no need to decide what to watch next, keeping you engaged for longer than you’d
+					expect.
+				</p>
+			</div>
+
+			<div class="space-y-5">
+				<h2 class="text-md w-full text-center font-bebas md:text-6xl">Final Thoughts</h2>
+				<p class="font-poppins md:text-xl">
+					Now that you know the tricks, you’ll start noticing them the next time you’re
+					binge-watching or scrolling. These platforms aren’t just about the content—they’re about
+					creating an experience that keeps you coming back for more.
+				</p>
+			</div>
 		</div>
-
-		<img
-			src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/fast_food_logos/fast_food_logo_eg_1.avif"
-			alt="dark_side_of_design_image"
-			class="p-2 md:p-20"
-		/>
-
-		<p class="text-md text-justify font-poppins md:text-xl">
-			Together, red and yellow form a powerful combination: red sparks excitement and appetite,
-			while yellow fosters comfort and positivity. Their high contrast ensures visibility and
-			memorability, even from a distance or in low light. Culturally, these colors symbolize joy and
-			celebration, making them universally appealing and ideal for global brands.
-		</p>
-
-		<img
-			src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/fast_food_logos/fast_food_logo_eg_2.avif"
-			alt="dark_side_of_design_image"
-			class="p-2 md:p-20"
-		/>
-
-		<p class="text-md text-justify font-poppins md:text-xl">
-			Practical design advantages further enhance their effectiveness. Red and yellow are highly
-			visible, even in challenging conditions, and their boldness makes logos memorable. Iconic
-			brands like McDonald’s, Burger King, and KFC have mastered this combination to create lasting
-			impressions, proving how thoughtful design can drive success. The strategic use of these
-			colors not only captures attention but also reinforces the fast food industry's values of
-			speed, affordability, and mass appeal.
-		</p>
-
-		<img
-			src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/fast_food_logos/fast_food_logo_eg_3.avif"
-			alt="dark_side_of_design_image"
-			class="p-2 md:p-20"
-		/>
 
 		<div class="flex w-full justify-center pb-8">
 			<img

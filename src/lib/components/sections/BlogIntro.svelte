@@ -59,7 +59,7 @@
 							</h2>
 						</div>
 						<div class="flex grow items-end justify-end">
-							<p>Aria Kanani</p>
+							<p>By Aria Kanani</p>
 						</div>
 					</div>
 				</div>
@@ -77,11 +77,7 @@
 				<div
 					class="absolute top-0 flex h-[60%] w-full items-center justify-center rounded-br-[3rem] bg-[#F5F3E4] bg-[url('https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/weirdest_logos/weirdest_logos_blog_card.avif')] bg-cover bg-center"
 				>
-					<!-- <img
-						src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/weirdest_logos/weirdest_logos_blog_card.avif"
-						alt="psych_of_colors_card"
-						class="size-32 md:size-40"
-					/> -->
+					
 				</div>
 				<div class="absolute bottom-0 flex h-[40%] w-full items-center justify-center bg-[#C39F61]">
 					<div class="flex h-[70%] w-[80%] flex-col text-accent-content md:w-[90%]">
@@ -92,7 +88,7 @@
 							</h2>
 						</div>
 						<div class="flex grow items-end justify-end">
-							<p>Shristi Shree Sahoo</p>
+							<p>By Shristi Shree Sahoo</p>
 						</div>
 					</div>
 				</div>
@@ -125,7 +121,7 @@
 							</h2>
 						</div>
 						<div class="flex grow items-end justify-end">
-							<p>Tanav</p>
+							<p>By Tanav</p>
 						</div>
 					</div>
 				</div>
@@ -160,7 +156,7 @@
 							</h2>
 						</div>
 						<div class="flex grow items-end justify-end">
-							<p>Ishita Khanikar</p>
+							<p>By Ishita Khanikar</p>
 						</div>
 					</div>
 				</div>
@@ -178,11 +174,7 @@
 				<div
 					class="absolute top-0 flex h-[60%] w-full items-center justify-center rounded-br-[3rem] bg-[#F5F3E4] bg-[url('https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/fast_food_logos/fast_food_logo_blog_card.avif')] bg-contain bg-center"
 				>
-					<!-- <img
-						src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/weirdest_logos/weirdest_logos_blog_card.avif"
-						alt="psych_of_colors_card"
-						class="size-32 md:size-40"
-					/> -->
+					
 				</div>
 				<div class="absolute bottom-0 flex h-[40%] w-full items-center justify-center bg-[#C39F61]">
 					<div class="flex h-[70%] w-[80%] flex-col text-accent-content md:w-[90%]">
@@ -193,7 +185,7 @@
 							</h2>
 						</div>
 						<div class="flex grow items-end justify-end">
-							<p>Rithika Narikimilli</p>
+							<p>By Rithika Narikimilli</p>
 						</div>
 					</div>
 				</div>
@@ -209,24 +201,20 @@
 				</div>
 				<!-- <div class="relative"> -->
 				<div
-					class="absolute top-0 flex h-[60%] w-full items-center justify-center rounded-br-[3rem] bg-[#F5F3E4] bg-[url('https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/fast_food_logos/fast_food_logo_blog_card.avif')] bg-contain bg-center"
+					class="absolute top-0 flex h-[60%] w-full items-center justify-center rounded-br-[3rem] bg-[#F5F3E4] bg-[url('https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/designed_to_keep_you_hooked/designed_to_keep_you_hooked_blog_card.avif')] bg-cover bg-center"
 				>
-					<!-- <img
-						src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/weirdest_logos/weirdest_logos_blog_card.avif"
-						alt="psych_of_colors_card"
-						class="size-32 md:size-40"
-					/> -->
+				
 				</div>
 				<div class="absolute bottom-0 flex h-[40%] w-full items-center justify-center bg-[#C39F61]">
 					<div class="flex h-[70%] w-[80%] flex-col text-accent-content">
 						<div>
-							<p class="font-nunito text-sm">Insight • 1.5 mins read</p>
-							<h2 class="font-poppins text-sm text-[#F5F3E4] md:text-base">
+							<p class="font-nunito text-sm">Insight • 2 mins read</p>
+							<h2 class="font-poppins text-sm font-bold text-[#F5F3E4] md:text-sm">
 								The Psychology Behind Fast Food Logos: Why Red and Yellow Dominate
 							</h2>
 						</div>
 						<div class="flex grow items-end justify-end">
-							<p>Rithika Narikimilli</p>
+							<p>By Joel Josy</p>
 						</div>
 					</div>
 				</div>
