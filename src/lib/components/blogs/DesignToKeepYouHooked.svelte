@@ -22,14 +22,14 @@
 			class="p-2 md:p-12"
 		/>
 
-		<div class="md:space-y-20">
+		<div class="space-y-10 md:space-y-20">
 			<div class="space-y-3">
-				<h2 class="text-md w-full text-justify font-bebas md:text-6xl">
+				<h2 class="text-md w-full text-justify font-bebas text-4xl md:text-6xl">
 					Trick #1: Infinite Scrolling
 				</h2>
 
 				<div class="space-y-3">
-					<h3 class="font-poppins font-semibold md:text-4xl">So how does it work?</h3>
+					<h3 class="font-poppins text-xl font-semibold md:text-4xl">So how does it work?</h3>
 					<ol class="list-disc space-y-3 font-poppins md:text-xl">
 						<li>
 							Infinite scrolling means there’s no stopping point, so you’re always tempted to see
@@ -43,7 +43,7 @@
 				</div>
 
 				<div class="space-y-3">
-					<h3 class="font-poppins font-semibold md:text-4xl">But why does it work?</h3>
+					<h3 class="font-poppins text-xl font-semibold md:text-4xl">But why does it work?</h3>
 					<ol class="list-disc space-y-3 font-poppins md:text-xl">
 						<li>
 							Your brain craves dopamine hits every time you see something exciting or funny, which
@@ -54,12 +54,12 @@
 			</div>
 
 			<div class="space-y-3">
-				<h2 class="text-md w-full text-justify font-bebas md:text-6xl">
+				<h2 class="text-md w-full text-justify font-bebas text-4xl md:text-6xl">
 					Trick #2: Autoplay & Next Episode Countdown
 				</h2>
 
 				<div class="space-y-3">
-					<h3 class="font-poppins font-semibold md:text-4xl">So how does it work?</h3>
+					<h3 class="font-poppins text-xl font-semibold md:text-4xl">So how does it work?</h3>
 					<ol class="list-disc space-y-3 font-poppins md:text-xl">
 						<li>
 							Next episode countdowns create a sense of urgency, nudging you to watch just one more
@@ -70,7 +70,7 @@
 				</div>
 
 				<div class="space-y-3">
-					<h3 class="font-poppins font-semibold md:text-4xl">But why does it work?</h3>
+					<h3 class="font-poppins text-xl font-semibold md:text-4xl">But why does it work?</h3>
 					<ol class="list-disc space-y-3 font-poppins md:text-xl">
 						<li>
 							Your brain craves dopamine hits every time you see something exciting or funny, which
@@ -87,7 +87,7 @@
 			/>
 
 			<div class="space-y-5">
-				<h2 class="text-md w-full text-justify font-bebas md:text-6xl">
+				<h2 class="text-md w-full text-justify font-bebas text-4xl md:text-6xl">
 					Trick #3: "Trending" & Personalized Feeds
 				</h2>
 
@@ -96,7 +96,7 @@
 						Platforms like TikTok and YouTube personalize your feed based on what you watch and
 						like, keeping you engaged with content designed for you.
 					</p>
-					<h3 class="font-poppins font-semibold md:text-4xl">So how does it work?</h3>
+					<h3 class="font-poppins text-xl font-semibold md:text-4xl">So how does it work?</h3>
 					<ol class="list-disc space-y-3 font-poppins md:text-xl">
 						<li>
 							Personalized recommendations feed you more of what you love, keeping you interested
@@ -107,7 +107,7 @@
 				</div>
 
 				<div class="space-y-3">
-					<h3 class="font-poppins font-semibold md:text-4xl">But why does it work?</h3>
+					<h3 class="font-poppins text-xl font-semibold md:text-4xl">But why does it work?</h3>
 					<ol class="list-disc space-y-3 font-poppins md:text-xl">
 						<li>
 							Dopamine-driven recommendations reinforce the habit of watching more, while social
@@ -118,7 +118,7 @@
 			</div>
 
 			<div class="space-y-5">
-				<h2 class="text-md w-full text-center font-bebas md:text-6xl">
+				<h2 class="text-md w-full text-center font-bebas text-4xl md:text-6xl">
 					Why Is This Design So Effective?
 				</h2>
 				<p class="font-poppins md:text-xl">
@@ -130,7 +130,7 @@
 			</div>
 
 			<div class="space-y-5">
-				<h2 class="text-md w-full text-center font-bebas md:text-6xl">Final Thoughts</h2>
+				<h2 class="text-md w-full text-center font-bebas text-4xl md:text-6xl">Final Thoughts</h2>
 				<p class="font-poppins md:text-xl">
 					Now that you know the tricks, you’ll start noticing them the next time you’re
 					binge-watching or scrolling. These platforms aren’t just about the content—they’re about

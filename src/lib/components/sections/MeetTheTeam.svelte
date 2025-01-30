@@ -80,7 +80,7 @@
 			class="team-card relative flex h-[99%] min-w-[16%] items-end overflow-hidden rounded-tl-full rounded-tr-full bg-[url('https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/team_card_images/ishita_team_card.avif')] bg-cover bg-clip-border md:min-w-[20%]"
 		>
 			<div
-				class="flex h-full rotate-180 flex-col justify-end p-2 backdrop-blur-[0.1rem] backdrop-brightness-95 [writing-mode:vertical-lr] md:p-4"
+				class="flex h-full rotate-180 flex-col justify-end p-2 backdrop-blur-[0.1rem] backdrop-brightness-75 [writing-mode:vertical-lr] md:p-4"
 			>
 				<p class="font-poppins text-xl font-extralight italic md:text-2xl">President</p>
 				<p class="font-poppins text-2xl font-bold italic md:text-4xl">Ishita Khanikar</p>
@@ -114,14 +114,14 @@
 				class="flex h-full rotate-180 flex-col justify-end p-2 backdrop-blur-[0.1rem] backdrop-brightness-90 [writing-mode:vertical-lr] md:p-4"
 			>
 				<p class="font-poppins text-xl font-extralight italic md:text-2xl">Treasurer</p>
-				<p class="font-poppins text-2xl font-bold italic md:text-3xl">Shristi Shree Sahoo</p>
+				<p class="font-poppins text-2xl font-bold italic md:text-2xl">Shristi Shree Sahoo</p>
 			</div>
 		</div>
 		<div
 			class="team-card relative flex h-[99%] min-w-[16%] items-end overflow-hidden rounded-tl-full rounded-tr-full bg-[url('https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/team_card_images/mahadev_team_card.avif')] bg-cover bg-clip-border bg-center md:h-[95%] md:min-w-[20%]"
 		>
 			<div
-				class="flex h-full rotate-180 flex-col justify-end p-2 backdrop-blur-[0.1rem] backdrop-brightness-95 [writing-mode:vertical-lr] md:p-4"
+				class="flex h-full rotate-180 flex-col justify-end p-2 backdrop-blur-[0.1rem] backdrop-brightness-75 [writing-mode:vertical-lr] md:p-4"
 			>
 				<p class="font-poppins text-xl font-extralight italic md:text-2xl">Lead Web Dev</p>
 				<p class="font-poppins text-2xl font-bold italic md:text-4xl">Mahadev</p>
@@ -131,7 +131,7 @@
 			class="team-card relative flex h-[90%] min-w-[16%] items-end overflow-hidden rounded-tl-full rounded-tr-full bg-[url('https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/team_card_images/aria_team_card.avif')] bg-cover bg-clip-border bg-center md:min-w-[20%]"
 		>
 			<div
-				class="flex h-full rotate-180 flex-col justify-end p-2 backdrop-blur-[0.1rem] backdrop-brightness-95 [writing-mode:vertical-lr] md:p-4"
+				class="flex h-full rotate-180 flex-col justify-end p-2 backdrop-blur-[0.1rem] backdrop-brightness-75 [writing-mode:vertical-lr] md:p-4"
 			>
 				<p class="font-poppins text-xl font-extralight italic md:text-2xl">Executive Head</p>
 				<p class="font-poppins text-2xl font-bold italic md:text-4xl">Aria Kanani</p>
