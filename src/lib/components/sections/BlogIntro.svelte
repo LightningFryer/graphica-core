@@ -76,9 +76,7 @@
 				<!-- <div class="relative"> -->
 				<div
 					class="absolute top-0 flex h-[60%] w-full items-center justify-center rounded-br-[3rem] bg-[#F5F3E4] bg-[url('https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/weirdest_logos/weirdest_logos_blog_card.avif')] bg-cover bg-center"
-				>
-					
-				</div>
+				></div>
 				<div class="absolute bottom-0 flex h-[40%] w-full items-center justify-center bg-[#C39F61]">
 					<div class="flex h-[70%] w-[80%] flex-col text-accent-content md:w-[90%]">
 						<div>
@@ -173,9 +171,7 @@
 				<!-- <div class="relative"> -->
 				<div
 					class="absolute top-0 flex h-[60%] w-full items-center justify-center rounded-br-[3rem] bg-[#F5F3E4] bg-[url('https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/fast_food_logos/fast_food_logo_blog_card.avif')] bg-contain bg-center"
-				>
-					
-				</div>
+				></div>
 				<div class="absolute bottom-0 flex h-[40%] w-full items-center justify-center bg-[#C39F61]">
 					<div class="flex h-[70%] w-[80%] flex-col text-accent-content md:w-[90%]">
 						<div>
@@ -202,15 +198,13 @@
 				<!-- <div class="relative"> -->
 				<div
 					class="absolute top-0 flex h-[60%] w-full items-center justify-center rounded-br-[3rem] bg-[#F5F3E4] bg-[url('https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/designed_to_keep_you_hooked/designed_to_keep_you_hooked_blog_card.avif')] bg-cover bg-center"
-				>
-				
-				</div>
+				></div>
 				<div class="absolute bottom-0 flex h-[40%] w-full items-center justify-center bg-[#C39F61]">
 					<div class="flex h-[70%] w-[80%] flex-col text-accent-content">
 						<div>
 							<p class="font-nunito text-sm">Insight • 2 mins read</p>
 							<h2 class="font-poppins text-sm font-bold text-[#F5F3E4] md:text-sm">
-								The Psychology Behind Fast Food Logos: Why Red and Yellow Dominate
+								How Netflix, YouTube & TikTok Use Design to Keep You Hooked
 							</h2>
 						</div>
 						<div class="flex grow items-end justify-end">
