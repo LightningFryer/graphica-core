@@ -192,7 +192,7 @@
 			</a>
 
 			<a
-				href="/blog/DesignedToKeepYouHooked"
+				href="/blog/DesignToKeepYouHooked"
 				class="relative h-[15rem] w-[18rem] justify-end transition-all duration-200 ease-linear hover:scale-[102%] hover:cursor-pointer md:h-[22rem] md:w-[18rem]"
 			>
 				<div class="flex h-full w-full flex-row">
