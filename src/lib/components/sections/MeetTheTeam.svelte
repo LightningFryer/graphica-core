@@ -9,7 +9,10 @@
 	onMount(() => {
 		const teamCards = gsap.utils.toArray('.team-card');
 		gsap.registerPlugin(ScrollTrigger);
-		loop = horizontalLoop(teamCards, { repeat: -1, speed: 1 });
+		setTimeout(() => {
+			loop = horizontalLoop(teamCards, { repeat: -1, speed: 1 });
+			// console.log("Hello world")
+		}, 2000);
 		// console.log(Device.isMobile)
 		// if (!Device.isMobile) {
 

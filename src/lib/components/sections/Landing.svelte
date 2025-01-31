@@ -9,8 +9,6 @@
 	import gsap from 'gsap';
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	import Marquee from 'svelte-fast-marquee';
-	// import graphicaLogo from '$lib/images/logo/Logo_Alpha.avif';
-	import Device from 'svelte-device-info';
 	export let loadingDone: Boolean;
 	$: {
 		if (loadingDone) {
