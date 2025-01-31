@@ -117,7 +117,7 @@
 				class="flex h-full rotate-180 flex-col justify-end p-2 backdrop-blur-[0.1rem] backdrop-brightness-90 [writing-mode:vertical-lr] md:p-4"
 			>
 				<p class="font-poppins text-xl font-extralight italic md:text-2xl">Treasurer</p>
-				<p class="font-poppins text-2xl font-bold italic md:text-2xl">Shristi Shree Sahoo</p>
+				<p class="font-poppins text-xl font-bold italic md:text-2xl">Shristi Shree Sahoo</p>
 			</div>
 		</div>
 		<div
