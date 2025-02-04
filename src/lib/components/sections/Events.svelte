@@ -23,9 +23,9 @@
 		</div>
 	{:else}
 		<div class="relative flex justify-center items-center">
-			<div class="size-10 border-4">
+			<!-- <div class="size-10 border-4">
 
-			</div>
+			</div> -->
 			<img
 				src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/past_events.avif"
 				alt="the_full_image"

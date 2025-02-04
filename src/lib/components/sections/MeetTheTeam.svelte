@@ -176,7 +176,7 @@
 			class="team-card relative flex h-[99%] min-w-[16%] items-end overflow-hidden rounded-tl-full rounded-tr-full bg-[url('https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/team_card_images/siddarth_team_card.avif')] bg-cover bg-clip-border bg-center md:h-[95%] md:min-w-[20%]"
 		>
 			<div
-				class="flex h-full rotate-180 flex-col justify-end p-2 backdrop-blur-[0.1rem] backdrop-brightness-95 [writing-mode:vertical-lr] md:p-4"
+				class="flex h-full rotate-180 flex-col justify-end p-2 backdrop-blur-[0.1rem] backdrop-brightness-75 [writing-mode:vertical-lr] md:p-4"
 			>
 				<p class="font-poppins font-extralight italic md:text-2xl">3D Designer</p>
 				<p class="font-poppins text-2xl font-bold italic md:text-4xl">Siddarth</p>
