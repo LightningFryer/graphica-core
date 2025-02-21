@@ -1,4 +1,5 @@
 <script lang="ts">
+	import SplashScreen from '$lib/components/SplashScreen.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Landing from '$lib/components/sections/Landing.svelte';
 	import ClubIntroRework from '$lib/components/sections/ClubIntroRework.svelte';
@@ -8,13 +9,89 @@
 	import MeetTheTeam from '$lib/components/sections/MeetTheTeam.svelte';
 	import DepartmentsVertical from '$lib/components/sections/DepartmentsVertical.svelte';
 	import { onMount } from 'svelte';
-	import { fade } from 'svelte/transition';
 
+	import gsap from 'gsap';
+
+	let loaded = false;
 	onMount(() => {
-		console.log("Hello World! And hello to whoever is looking at the console here!")
-	})
+		console.log('Hello World! And hello to whoever is looking at the console here!');
+		// Splash screen animation
+		gsap
+			.fromTo(
+				'.pop-text-1',
+				{
+					opacity: 0,
+					display: 'none',
+					scale: 5
+				},
+				{
+					duration: 1,
+					opacity: 1,
+					scale: 1,
+					display: 'block',
+					ease: 'power4.inOut',
+					onComplete: () => {
+						gsap.set('.pop-text-1', {
+							display: 'none'
+						});
+					}
+				}
+			)
+			.then(() => {
+				gsap
+					.fromTo(
+						'.pop-text-2',
+						{
+							opacity: 0,
+							display: 'none',
+							scale: 5
+						},
+						{
+							duration: 1,
+							opacity: 1,
+							scale: 1,
+							display: 'block',
+							ease: 'power4.inOut',
+							onComplete: () => {
+								gsap.set('.pop-text-2', {
+									display: 'none'
+								});
+							}
+						}
+					)
+					.then(() => {
+						gsap.fromTo(
+							'.pop-text-3',
+							{
+								opacity: 0,
+								display: 'none',
+								scale: 5
+							},
+							{
+								duration: 1,
+								opacity: 1,
+								scale: 1,
+								display: 'block',
+								ease: 'power4.inOut',
+								onComplete: () => {
+									gsap.set('.pop-text-3', {
+										display: 'none',
+										onComplete: () => {
+											loaded = true;
+											gsap.to('.splash-container', {
+												duration: 1,
+												yPercent: -100,
+												ease: 'power3.inOut'
+											});
+										}
+									});
+								}
+							}
+						);
+					});
+			});
+	});
 
-	// let loading = true;
 	// let timeoutDone = false;
 
 	// $: {
@@ -73,28 +150,16 @@
 	<title>Graphica | Home</title>
 </svelte:head>
 
-<!-- Splash screen -->
-
-<!-- <div 
-	class={`relative ${timeoutDone ? 'hidden' : 'visible'}  flex h-screen flex-col items-center justify-center gap-4`}
->
-	<img
-		src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/logo/Logo_Alpha.avif"
-		alt="splash_logo"
-		class="splash-icon btn-circle size-28 bg-white bg-opacity-50 md:size-32"
-	/>
-	<h1 class="font-poppins text-xl md:text-2xl">Loading images, please wait...</h1>
-</div> -->
-
-<!-- Main content -->
-<main class={`main-sec overflow-hidden`} in:fade={{ duration: 1000 }}>
-	<Navbar />
-	<Landing loadingDone={true} />
-	<ClubIntroRework />
-	<!-- <DepartmentsRework /> -->
-	<DepartmentsVertical />
-	<Events />
-	<BlogIntro />
-	<MeetTheTeam />
-	<Footer />
+<main class={`main-sec overflow-hidden`}>
+	<SplashScreen />
+	{#if loaded}
+		<Navbar />
+		<Landing loadingDone={loaded} />
+		<ClubIntroRework />
+		<DepartmentsVertical />
+		<Events />
+		<BlogIntro />
+		<MeetTheTeam />
+		<Footer />
+	{/if}
 </main>

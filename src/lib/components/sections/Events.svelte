@@ -35,20 +35,24 @@
 	<div
 		class="flex w-full flex-col items-center justify-center gap-5 pb-12 md:h-fit md:gap-10 md:pb-24"
 	>
-		<h1 class="text-center font-bebas text-5xl text-accent md:text-8xl">Coming soon!</h1>
-		<div class="flex flex-col md:flex-row w-[80vw] space-y-5 md:space-x-6 items-center">
+		<!-- <h1 class="text-center font-bebas text-5xl text-accent md:text-8xl">Coming soon!</h1> -->
+		<div class="flex flex-col md:flex-row w-[80vw] space-y-5 md:space-x-8 items-center ">
 			<img
-				src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/unwrapped_event.avif"
-				class="w-[80vw] md:w-[40vw] blur-[0.2rem] md:blur-[0.4rem] select-none"
+				src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/reframe_event.avif"
+				class="w-[80vw] md:w-[40vw]"
 				alt="unwrapped_text"
 			/>
-			<p class="w-[90vw] text-justify font-poppins text-sm md:w-[80vw] md:text-xl blur-sm select-none">
-				Explore the intersection of art and design in this two-day event! Day 1 features a visit to
-				the Museum of Art and Photography for inspiration and insights into design principles and
-				storytelling. On Day 2, dive into a hands-on Figma workshop to master layouts, typography, and
-				color schemes. Create your own personalized scrapbook and build practical design skills while
-				unleashing your creativity!
-			</p>
+			<div class="flex flex-col gap-y-4 items-center justify-center ">
+				<p class="text-justify font-poppins text-sm md:text-xl">
+					Explore the intersection of art and design in this two-day event! Day 1 features a visit to
+					the Museum of Art and Photography for inspiration and insights into design principles and
+					storytelling. On Day 2, dive into a hands-on Figma workshop to master layouts, typography, and
+					color schemes. Create your own personalized scrapbook and build practical design skills while
+					unleashing your creativity!
+				</p>
+
+				<a href="/blog/ReframeEventRuleBook" class="btn btn-primary rounded-full btn-lg">Rule Book</a>
+			</div>
 		</div>
 	</div>
 </main>

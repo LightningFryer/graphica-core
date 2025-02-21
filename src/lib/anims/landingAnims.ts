@@ -47,6 +47,7 @@ export const gts1 = (p1: HTMLElement) => {
 export const gts2 = (p2: HTMLElement) => {
 	const gts2Chars = SplitType.create(p2);
 	return gsap.from(gts2Chars.chars, {
+		delay: 0.5,
 		opacity: 0,
 		yPercent: 20,
 		duration: 2,
