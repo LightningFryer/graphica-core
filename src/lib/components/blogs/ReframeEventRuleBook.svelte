@@ -57,7 +57,7 @@
 	<div class="w-[85%] space-y-5 md:w-[60%]">
 		<h2 class="font-poppins text-5xl">Submission Guidelines</h2>
 		<ul class="flex list-decimal flex-col gap-y-1 font-poppins text-lg">
-			<li>Teams must submit their final designs in Graphica’s Figma file which will be shared.</li>
+			<li>Teams must upload their figma file links in a form that will be provided.</li>
 			<li>Keep high quality exported PNGs separately.</li>
 			<li>
 				Submissions must be sent to the organizers within the given deadline — <span
@@ -72,7 +72,7 @@
 		<ul class="flex list-decimal flex-col gap-y-3 font-poppins text-lg">
 			<li>
 				<div class="flex flex-col">
-					<h3 class="font-bold text-xl">Design Improvement</h3>
+					<h3 class="text-xl font-bold">Design Improvement</h3>
 					<p>
 						How effectively does the redesign improve upon the original? Does it fix flaws, enhance
 						clarity, or make it more functional and engaging?
@@ -82,7 +82,7 @@
 
 			<li>
 				<div class="flex flex-col">
-					<h3 class="font-bold text-xl">Visual Appeal & Aesthetics</h3>
+					<h3 class="text-xl font-bold">Visual Appeal & Aesthetics</h3>
 					<p>
 						Is the design visually striking, well-balanced, and polished? Does it follow strong
 						design principles like color harmony, typography, and layout?
@@ -92,7 +92,7 @@
 
 			<li>
 				<div class="flex flex-col">
-					<h3 class="font-bold text-xl">Functionality & Usability</h3>
+					<h3 class="text-xl font-bold">Functionality & Usability</h3>
 					<p>
 						Does the redesign make the item more practical and user-friendly? Is it intuitive,
 						readable, and accessible in real-world use?
@@ -102,7 +102,7 @@
 
 			<li>
 				<div class="flex flex-col">
-					<h3 class="font-bold text-xl">Creativity & Innovation</h3>
+					<h3 class="text-xl font-bold">Creativity & Innovation</h3>
 					<p>
 						Does the team bring a fresh, unique perspective to the redesign? Have they reimagined
 						the concept rather than making minor tweaks?
@@ -112,7 +112,7 @@
 
 			<li>
 				<div class="flex flex-col">
-					<h3 class="font-bold text-xl">Attention to Detail</h3>
+					<h3 class="text-xl font-bold">Attention to Detail</h3>
 					<p>
 						Are the finer aspects—alignment, consistency, proportions, and overall execution—handled
 						with precision? Does the design feel refined and professional?
