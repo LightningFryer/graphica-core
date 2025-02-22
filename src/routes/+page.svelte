@@ -12,7 +12,7 @@
 
 	import gsap from 'gsap';
 
-	let loaded = false;
+	let loaded = true;
 	onMount(() => {
 		console.log('Hello World! And hello to whoever is looking at the console here!');
 		// Splash screen animation
@@ -151,7 +151,7 @@
 </svelte:head>
 
 <main class={`main-sec overflow-hidden`}>
-	<SplashScreen />
+	<!-- <SplashScreen /> -->
 	{#if loaded}
 		<Navbar />
 		<Landing loadingDone={loaded} />
