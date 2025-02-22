@@ -7,7 +7,7 @@
 		<img
 			src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/blog/reframe_event/reframe_event_graphic_text.avif"
 			alt="reframe_event_graphic_text"
-			class="max-h-32"
+			class="max-h-20 md:max-h-32"
 		/>
 		<h1
 			class="w-[88vw] text-center font-bebas text-6xl leading-[1] text-accent md:w-[30vw] md:text-[7rem]"
@@ -17,7 +17,7 @@
 	</div>
 
 	<div class="w-[85%] space-y-5 md:w-[60%]">
-		<h2 class="font-poppins text-5xl">General Rules</h2>
+		<h2 class="font-poppins text-4xl md:text-5xl">General Rules</h2>
 		<ul class="flex list-decimal flex-col gap-y-1 font-poppins text-lg">
 			<li>Each team must consist of <span class="font-bold">2-5 members</span>.</li>
 			<li>
@@ -40,7 +40,7 @@
 				<span class="font-bold">No external help</span> (asking seniors, mentors, or using AI-generated
 				designs).
 			</li>
-			<li>Event TimeLine</li>
+			<li><span class="font-bold">Event TimeLine</span></li>
 
 			<ul class="list-inside list-disc">
 				<li>Exploration: <span class="font-bold">30 mins</span></li>
@@ -55,7 +55,7 @@
 	</div>
 
 	<div class="w-[85%] space-y-5 md:w-[60%]">
-		<h2 class="font-poppins text-5xl">Submission Guidelines</h2>
+		<h2 class="font-poppins text-4xl md:text-5xl">Submission Guidelines</h2>
 		<ul class="flex list-decimal flex-col gap-y-1 font-poppins text-lg">
 			<li>Teams must upload their figma file links in a form that will be provided.</li>
 			<li>Keep high quality exported PNGs separately.</li>
@@ -68,7 +68,7 @@
 	</div>
 
 	<div class="w-[85%] space-y-5 md:w-[60%]">
-		<h2 class="font-poppins text-5xl">Judging Criteria</h2>
+		<h2 class="font-poppins text-4xl md:text-5xl">Judging Criteria</h2>
 		<ul class="flex list-decimal flex-col gap-y-3 font-poppins text-lg">
 			<li>
 				<div class="flex flex-col">
@@ -120,5 +120,13 @@
 				</div>
 			</li>
 		</ul>
+
+		<div class="flex w-full justify-center pb-8">
+			<img
+				src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/logo/Logo_Alpha.avif"
+				alt="graphica_logo"
+				class="size-20 rounded-full bg-white bg-opacity-65"
+			/>
+		</div>
 	</div>
 </main>
