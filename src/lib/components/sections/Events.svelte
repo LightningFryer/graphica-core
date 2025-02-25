@@ -48,9 +48,14 @@
 					introduction to the world of design.
 				</p>
 
-				<a href="/blog/ReframeEventRuleBook" class="btn btn-primary btn-lg rounded-full"
-					>Rule Book</a
-				>
+				<div class="flex flex-row gap-5">
+					<a href="/blog/ReframeEventRuleBook" class="btn btn-primary btn-lg rounded-full"
+						>Rule Book</a
+					>
+					<a href="https://www.figma.com/design/F431WRlmTY8IPgGirPcoaJ/Graphica?node-id=0-1&t=Yt3fIkoYbEMV0zet-1" target="_blank" class="btn btn-primary btn-lg rounded-full"
+						>Figma Design File</a
+					>
+				</div>
 			</div>
 		</div>
 	</div>
