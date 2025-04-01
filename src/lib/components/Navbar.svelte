@@ -88,6 +88,13 @@
 					class="btn btn-ghost rounded-none text-base font-light hover:border-b-2 hover:border-b-accent md:text-xl md:tracking-wide"
 					>Team</button
 				>
+
+				<a
+					href="https://1drv.ms/p/c/acbef9fda57d6110/EZbiKA6Ud4pImGeN5Xe3mxIB2jAXPIEXhscMvyXyIBFtkQ?e=LSwQeq"
+					target="_blank"
+					class="btn btn-accent rounded-sm text-base font-normal hover:border-b-2 hover:border-b-accent md:text-xl md:tracking-wide"
+					>Blender Tutorial</a
+				>
 			</div>
 
 			<div class="navbar-end font-jost font-light md:flex md:text-xl">
@@ -96,7 +103,10 @@
 		{/if}
 	</div>
 	<div class="">
-		<img src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/status_bar.avif" alt="status_bar" />
+		<img
+			src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/status_bar.avif"
+			alt="status_bar"
+		/>
 	</div>
 	<!-- <div class="flex flex-row border-b-2 border-accent">
 		<div class=""></div>
