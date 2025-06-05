@@ -2,6 +2,17 @@
 	import '../app.css';
 	let { children } = $props();
 	import ViewTransition from '$lib/components/Navigation.svelte';
+	import { ScrollSmoother } from 'gsap/ScrollSmoother';
+	import { onMount } from 'svelte';
+	import gsap from 'gsap';
+
+	onMount(() => {
+		gsap.registerPlugin(ScrollSmoother);
+		ScrollSmoother.create({
+			smooth: 0.8,
+			effects: true
+		});
+	});
 </script>
 
 <svelte:head>
@@ -19,6 +30,9 @@
 		content="Explore the world of cutting-edge design at Club Graphica. Learn, create, and share!"
 	/>
 </svelte:head>
-
-<ViewTransition />
-{@render children()}
+<div id="smooth-wrapper">
+	<div id="smooth-content">
+		<ViewTransition />
+		{@render children()}
+	</div>
+</div>
